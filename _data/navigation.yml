@@ -20,3 +20,25 @@ main:
 
   - title: "Patents and Copyrights"
     url: "/#-patents-and-copyrights"
+
+main_zh:
+  - title: "关于我"
+    url: "/zh/#about-me"
+
+  - title: "新闻动态"
+    url: "/zh/#-news"
+
+  - title: "学术成果"
+    url: "/zh/#-publications"
+
+  - title: "荣誉奖项"
+    url: "/zh/#-honors-and-awards"
+
+  - title: "教育背景"
+    url: "/zh/#-educations"
+
+  - title: "研究课题"
+    url: "/zh/#-research-topics"
+
+  - title: "专利版权"
+    url: "/zh/#-patents-and-copyrights"
