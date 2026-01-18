@@ -1,21 +1,33 @@
 <script>
 $(document).ready(function () {
-  var gsDataUrl = '/google-scholar-stats/gs_data.json';
+  var gsDataUrl = '{{ site.baseurl }}/google-scholar-stats/gs_data.json';
   
   $.getJSON(gsDataUrl, function (data) {
-    if (data && data.publications) {
-      $('.paper_citations').each(function () {
-        var paperId = $(this).data('paper-id');
-        if (paperId && data.publications[paperId]) {
-          var numCitations = data.publications[paperId].num_citations;
-          // Update Shields.io badge URL
-          var newSrc = 'https://img.shields.io/badge/Citations-' + numCitations + '-blue?style=social&logo=google-scholar';
+    console.log("Successfully loaded Google Scholar data:", data);
+    if (data) {
+      // Update total citations
+      if (data.citedby !== undefined) {
+        $('.total_citations').each(function() {
+          var newSrc = 'https://img.shields.io/badge/Total%20Citations-' + data.citedby + '-blue?style=social&logo=google-scholar';
           $(this).attr('src', newSrc);
-        }
-      });
+        });
+      }
+      
+      // Update individual paper citations
+      if (data.publications) {
+        $('.paper_citations').each(function () {
+          var paperId = $(this).data('paper-id');
+          if (paperId && data.publications[paperId]) {
+            var numCitations = data.publications[paperId].num_citations;
+            var newSrc = 'https://img.shields.io/badge/Citations-' + numCitations + '-blue?style=social&logo=google-scholar';
+            $(this).attr('src', newSrc);
+          }
+        });
+      }
     }
-  }).fail(function() {
+  }).fail(function(jqXHR, textStatus, errorThrown) {
     console.log("Failed to load Google Scholar stats from " + gsDataUrl);
+    console.log("Error details:", textStatus, errorThrown);
   });
 });
 </script>

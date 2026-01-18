@@ -21,6 +21,8 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
+
+<a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img class="total_citations" src="https://img.shields.io/badge/Total%20Citations-loading-blue?style=social&logo=google-scholar" alt="Google Scholar"></a>
 I am currently in my senior year at Guangdong Polytechnic Normal University in China
 I am currently engaged in multimodal sentiment analysis, medical multimodal data fusion and other research. If you're looking for an intern, please feel free to email me at <a href='mailto:yueshenghuang@stu.gpnu.edu.cn'>yueshenghuang@stu.gpnu.edu.cn</a> I am looking for an internship.
 I am enrolled in the Department of Internet of Things Engineering in GPNU's School of Computer Science under the supervision of Assistant Professor Jiawen Li. Many of the topics I explored and experimented with myself.

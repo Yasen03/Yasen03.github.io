@@ -23,6 +23,8 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
+<a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img class="total_citations" src="https://img.shields.io/badge/Total%20Citations-loading-blue?style=social&logo=google-scholar" alt="Google Scholar"></a>
+
 我目前是广东技术师范大学的大四学生，专注于多模态情感分析、医学多模态数据融合等研究方向。我正在积极寻求实习机会，如果您正在寻找实习生，请随时通过邮件联系我 <a href='mailto:yueshenghuang@stu.gpnu.edu.cn'>yueshenghuang@stu.gpnu.edu.cn</a>。我就读于广东技术师范大学计算机科学学院物联网工程系，师从黎嘉文助理教授。我探索并自学了许多研究课题。在2024年，我获得了广东省年度人物奖（全省仅10名获奖者）和人民日报国家奖学金学生代表（广东省仅4名获奖者）。我的研究兴趣包括医学人工智能、社会计算等。由于尚未深入研究，我发表的论文水平较低。我很荣幸多次担任IJCNN国际会议的审稿人之一。
 
 # 🔥 新闻
@@ -87,7 +89,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 
 <ul>
-<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
+<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a> <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:qjMakFHDy7sC"><img id="citation-badge-finbert-zh" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:qjMakFHDy7sC" alt="Scholar Citations"></a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
 <li><code class="language-plaintext highlighter-rouge">EIECT 2023</code> <a href="https://ieeexplore.ieee.org/document/10442935">An Ensemble Learning Approach for Wind Power Forecasting</a>, <strong>Yuesheng Huang</strong>, Sida Chen, Qilin Wu, et al. </li>
 </ul>
 
