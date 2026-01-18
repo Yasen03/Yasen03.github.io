@@ -1,27 +1,23 @@
 {
   "name": "Yuesheng Huang",
-  "citedby": 5,
-  "updated": "2024-07-10 12:00:00.000000",
+  "citedby": 7,
+  "updated": "2026-01-18",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
-      "num_citations": 2,
-      "title": "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model",
-      "author_pub_id": "edyJPQQAAAAJ:d1gkVwhDpl0C"
+      "num_citations": 14,
+      "title": "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image..."
     },
     "edyJPQQAAAAJ:2osOgNQ5qMEC": {
+      "num_citations": 8,
+      "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm..."
+    },
+    "edyJPQQAAAAJ:YsMSGLbcyi4C": {
       "num_citations": 3,
-      "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction",
-      "author_pub_id": "edyJPQQAAAAJ:2osOgNQ5qMEC"
+      "title": "A FinBERT framework for sentiment analysis of Chinese financial news"
     },
-    "edyJPQQAAAAJ:ufrVoPGSRksC": {
-      "num_citations": 0,
-      "title": "A FinBERT Framework for Sentiment Analysis of Chinese Financial News",
-      "author_pub_id": "edyJPQQAAAAJ:ufrVoPGSRksC"
-    },
-    "edyJPQQAAAAJ:9yKSN-GCB0IC": {
-      "num_citations": 0,
-      "title": "An Ensemble Learning Approach for Wind Power Forecasting",
-      "author_pub_id": "edyJPQQAAAAJ:9yKSN-GCB0IC"
+    "edyJPQQAAAAJ:W7OEmFMy1HYC": {
+      "num_citations": 2,
+      "title": "Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?"
     }
   }
-} 
+}
