@@ -22,18 +22,24 @@ redirect_from:
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
 
-<a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img class="total_citations" src="https://img.shields.io/badge/Total%20Citations-loading-blue?style=social&logo=google-scholar" alt="Google Scholar"></a>
-I am currently in my senior year at Guangdong Polytechnic Normal University in China
-I am currently engaged in multimodal sentiment analysis, medical multimodal data fusion and other research. If you're looking for an intern, please feel free to email me at <a href='mailto:yueshenghuang@stu.gpnu.edu.cn'>yueshenghuang@stu.gpnu.edu.cn</a> I am looking for an internship.
-I am enrolled in the Department of Internet of Things Engineering in GPNU's School of Computer Science under the supervision of Assistant Professor Jiawen Li. Many of the topics I explored and experimented with myself.
-In 2024, I won the Guangdong Provincial Person of the Year (10 winners from Guangdong) and the Student representative of the People's Daily National Scholarship (only 4 winners from Guangdong).
-My research interests include medical artificial intelligence, social computing, etc. As I have not yet deeply studied, my published papers are at a low level. I am honored to be one of the reviewers of the IJCNN International Conference.
+I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on **Agentic AI** and **Multimodal Affective Intelligence**.
 
+I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
+
+In 2024, I was recognized as the **Guangdong Provincial Person of the Year** (one of only 10 winners) and selected as a student representative of the **People's Daily National Scholarship** (one of only 4 winners from Guangdong).
+
+<a href="https://github.com/Yasen03/awesome-affective-computing" class="btn btn--info" style="margin-top: 10px; margin-bottom: 10px;">
+  <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing Repository <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
+</a>
+
+Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 
 # 🔥 News
 <span class='anchor' id='-news'></span>
-- *2024.12*: &nbsp;🎉🎉 Yuesheng Huang was selected as the 2023 **Guangdong Provincial Person of the Year**. Guangdong Province only selected **10 people**. He is the **youngest winner** in the same year and the only undergraduate student enrolled in the class of 2021.
-- *2024.05*: &nbsp;🎉🎉 Yuesheng Huang was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
+- *2025.01*: &nbsp;🏆🏆 Won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
+- *2025.01*: &nbsp;📄📄 First-author paper accepted by **ACM MM 2025 Main Conference Grand Challenge Track**!
+- *2024.12*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was selected as the 2023 **Guangdong Provincial Person of the Year**. Guangdong Province only selected **10 people**. He is the **youngest winner** in the same year.
+- *2024.05*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
 
 # 📝 Publications 
 <span class='anchor' id='-publications'></span>
