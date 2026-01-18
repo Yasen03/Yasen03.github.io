@@ -3,6 +3,7 @@ permalink: /zh/
 title: ""
 excerpt: ""
 author_profile: true
+lang: zh
 redirect_from: 
   - /zh/about/
   - /zh/about.html
@@ -29,16 +30,16 @@ redirect_from:
 
 在2024年，我获得了**广东省年度人物奖**（全省仅10名获奖者）和**人民日报国家奖学金学生代表**（广东省仅4名获奖者）。
 
-<a href="https://github.com/Yasen03/awesome-affective-computing" class="btn btn--info" style="margin-top: 10px; margin-bottom: 10px;">
-  <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing 仓库 <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
+<a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none; display: inline-block; margin-top: 10px;">
+  <i class="fab fa-fw fa-github" aria-hidden="true"></i> **Awesome Affective Computing 仓库** <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
 </a>
 
 联系方式：[huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 
 # 🔥 新闻
 <span class='anchor' id='-news'></span>
-- *2025.01*: &nbsp;🏆🏆 获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
-- *2025.01*: &nbsp;📄📄 第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
+- *2025.08*: &nbsp;🏆🏆 获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
+- *2025.08*: &nbsp;📄📄 第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
 - *2024.12*: &nbsp;&nbsp;🎉🎉 获评 2023 年度**广东省年度大学生人物**（全省仅 10 人），是同年度**最年轻的获奖者**。
 - *2024.05*: &nbsp;&nbsp;🎉🎉 作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
 
@@ -115,11 +116,6 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 </div>
 </div>
-
-<ul>
-<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:YsMSGLbcyi4C"><img id="citation-badge-finbert-zh" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:YsMSGLbcyi4C" alt="Scholar Citations"></a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
-<li><code class="language-plaintext highlighter-rouge">EIECT 2023</code> <a href="https://ieeexplore.ieee.org/document/10442935">An Ensemble Learning Approach for Wind Power Forecasting</a>, <strong>Yuesheng Huang</strong>, Sida Chen, Qilin Wu, et al. </li>
-</ul>
 
 # 🏆 荣誉和奖项
 <span class='anchor' id='-honors-and-awards'></span>

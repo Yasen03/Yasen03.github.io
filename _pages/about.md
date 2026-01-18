@@ -28,16 +28,16 @@ I am honored to have served as the team leader and won **1st Place** in the **DE
 
 In 2024, I was recognized as the **Guangdong Provincial Person of the Year** (one of only 10 winners) and selected as a student representative of the **People's Daily National Scholarship** (one of only 4 winners from Guangdong).
 
-<a href="https://github.com/Yasen03/awesome-affective-computing" class="btn btn--info" style="margin-top: 10px; margin-bottom: 10px;">
-  <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing Repository <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
+<a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none; display: inline-block; margin-top: 10px;">
+  <i class="fab fa-fw fa-github" aria-hidden="true"></i> **Awesome Affective Computing** <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
 </a>
 
 Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 
 # 🔥 News
 <span class='anchor' id='-news'></span>
-- *2025.01*: &nbsp;🏆🏆 Won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
-- *2025.01*: &nbsp;📄📄 First-author paper accepted by **ACM MM 2025 Main Conference Grand Challenge Track**!
+- *2025.08*: &nbsp;🏆🏆 Won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
+- *2025.08*: &nbsp;📄📄 First-author paper accepted by **ACM MM 2025 Main Conference Grand Challenge Track**!
 - *2024.12*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was selected as the 2023 **Guangdong Provincial Person of the Year**. Guangdong Province only selected **10 people**. He is the **youngest winner** in the same year.
 - *2024.05*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
 
@@ -114,11 +114,6 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 </div>
 </div>
-
-<ul>
-<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:YsMSGLbcyi4C"><img id="citation-badge-finbert" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:YsMSGLbcyi4C" alt="Scholar Citations"></a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
-<li><code class="language-plaintext highlighter-rouge">EIECT 2023</code> <a href="https://ieeexplore.ieee.org/document/10442935">An Ensemble Learning Approach for Wind Power Forecasting</a>, <strong>Yuesheng Huang</strong>, Sida Chen, Qilin Wu, et al. </li>
-</ul>
 
 # 🏆 Honors and Awards
 <span class='anchor' id='-honors-and-awards'></span>
