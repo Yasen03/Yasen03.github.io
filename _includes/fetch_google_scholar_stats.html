@@ -1,0 +1,17 @@
+<script>
+    // 禁用所有动态加载，使用硬编码值
+    console.log("引用数据使用硬编码值");
+    
+    // 我们可以在这里添加一些调试信息，但不执行任何数据加载或DOM修改
+    $(document).ready(function() {
+        console.log("页面已加载");
+        console.log("徽章元素数量: " + document.getElementsByClassName('paper_citations').length);
+        
+        // 仅记录硬编码的引用数
+        var badges = document.getElementsByClassName('paper_citations');
+        for (var i = 0; i < badges.length; i++) {
+            var src = badges[i].getAttribute('src');
+            console.log("徽章 #" + (i+1) + " URL: " + src);
+        }
+    });
+</script>
