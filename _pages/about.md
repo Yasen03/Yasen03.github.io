@@ -44,6 +44,7 @@ My research interests include medical artificial intelligence, social computing,
 **Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
 
 - <a href="https://arxiv.org/abs/2506.17623">arXiv:2506.17623</a>
+<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 <span class="citation-btn" onclick="toggleCitation('citation-arxiv2025')">Cite</span>
 <div id="citation-arxiv2025" class="citation-popup">
   <div class="citation-format-container">
@@ -60,9 +61,9 @@ My research interests include medical artificial intelligence, social computing,
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
 
-[**Project**](https://github.com/Yorkson-huang/Text-to-image-SA)
+[**Project**](https://github.com/Yasen03/Text-to-image-SA)
 
-- <a> https://github.com/Yorkson-huang/Text-to-image-SA <img src="https://img.shields.io/github/stars/Yorkson-huang/Text-to-image-SA?style=social" alt=""></a>
+- <a> https://github.com/Yasen03/Text-to-image-SA <img src="https://img.shields.io/github/stars/Yasen03/Text-to-image-SA?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"> <img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation1')">Cite</span>
 <div id="citation1" class="citation-popup">
   <div class="citation-format-container">
@@ -86,9 +87,9 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
   
 **Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
-[**Project**](https://github.com/Yorkson-huang/CNN-LSTM-Attention-Prediction)
+[**Project**](https://github.com/Yasen03/CNN-LSTM-Attention-Prediction)
 
-- <a>KOA-CNN-LSTM-Attention-Prediction <img src="https://img.shields.io/github/stars/Yorkson-huang/CNN-LSTM-Attention-Prediction?style=social" alt=""></a>
+- <a>KOA-CNN-LSTM-Attention-Prediction <img src="https://img.shields.io/github/stars/Yasen03/CNN-LSTM-Attention-Prediction?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"> <img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation2')">Cite</span>
 <div id="citation2" class="citation-popup">
   <div class="citation-format-container">
@@ -109,7 +110,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 
 <ul>
-<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a> <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:qjMakFHDy7sC"><img id="citation-badge-finbert" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:qjMakFHDy7sC" alt="Scholar Citations"></a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
+<li><code class="language-plaintext highlighter-rouge">ISCTIS 2024</code> <a href="https://ieeexplore.ieee.org/document/10699096">A FinBERT Framework for Sentiment Analysis of Chinese Financial News</a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:YsMSGLbcyi4C"><img id="citation-badge-finbert" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:YsMSGLbcyi4C" alt="Scholar Citations"></a>, <strong>Yuesheng Huang</strong>, Renyi Lin, Jiawen Li, et al. </li>
 <li><code class="language-plaintext highlighter-rouge">EIECT 2023</code> <a href="https://ieeexplore.ieee.org/document/10442935">An Ensemble Learning Approach for Wind Power Forecasting</a>, <strong>Yuesheng Huang</strong>, Sida Chen, Qilin Wu, et al. </li>
 </ul>
 
