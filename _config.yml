@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yuesheng Huang"
-description              : "IoT Engineering undergraduate with a focus on multimodal affective computing"
+description              : "Student at China Agricultural University, focused on Agentic AI and Multimodal Affective Intelligence"
 url                      : "https://yasen03.github.io" # your site's URL
 baseurl                  : "" # the subpath of your site, e.g. /blog
 repository               : "Yasen03/Yasen03.github.io"
@@ -25,12 +25,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuesheng Huang"
   avatar           : "/images/android-chrome-512x512.png"
-  bio              : "Guangdong Polytechnic Normal University"
-  location         : "Guangzhou, China"
+  bio              : "China Agricultural University"
+  location         : "Beijing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=edyJPQQAAAAJ"
-  email            : "yueshenghuang@stu.gpnu.edu.cn"
+  email            : "huangyuesheng@cau.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              : "https://yasen03.github.io/"
   bitbucket        :
