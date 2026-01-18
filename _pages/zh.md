@@ -23,17 +23,45 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-<a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img class="total_citations" src="https://img.shields.io/badge/Total%20Citations-loading-blue?style=social&logo=google-scholar" alt="Google Scholar"></a>
+我目前是**中国农业大学（CAU）**的学生。我的研究兴趣主要集中在 **Agentic AI** 和 **多模态情感智能**。
 
-我目前是广东技术师范大学的大四学生，专注于多模态情感分析、医学多模态数据融合等研究方向。我正在积极寻求实习机会，如果您正在寻找实习生，请随时通过邮件联系我 <a href='mailto:yueshenghuang@stu.gpnu.edu.cn'>yueshenghuang@stu.gpnu.edu.cn</a>。我就读于广东技术师范大学计算机科学学院物联网工程系，师从黎嘉文助理教授。我探索并自学了许多研究课题。在2024年，我获得了广东省年度人物奖（全省仅10名获奖者）和人民日报国家奖学金学生代表（广东省仅4名获奖者）。我的研究兴趣包括医学人工智能、社会计算等。由于尚未深入研究，我发表的论文水平较低。我很荣幸多次担任IJCNN国际会议的审稿人之一。
+我曾担任团队负责人并获得了 **ACM MM 2025 MER (多模态情感识别) 挑战赛 DES 赛道的第一名**。此外，我的第一作者论文已被 **ACM MM 主会 Grand Challenge 赛道**录用。
+
+在2024年，我获得了**广东省年度人物奖**（全省仅10名获奖者）和**人民日报国家奖学金学生代表**（广东省仅4名获奖者）。
+
+<a href="https://github.com/Yasen03/awesome-affective-computing" class="btn btn--info" style="margin-top: 10px; margin-bottom: 10px;">
+  <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing 仓库 <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
+</a>
+
+联系方式：[huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 
 # 🔥 新闻
 <span class='anchor' id='-news'></span>
-- *2024.12*: &nbsp;🎉🎉 我被评为2023年度**广东省年度大学生人物**。广东省仅选出**10人**。我是同年度**最年轻的获奖者**，也是唯一一位2021级在校本科生，其余均为硕博和本科毕业生。
-- *2024.05*: &nbsp;🎉🎉 我作为100名本科生国家奖学金获得者代表之一被**人民日报**报道，其中广东省仅**4名**。
+- *2025.01*: &nbsp;🏆🏆 获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
+- *2025.01*: &nbsp;📄📄 第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
+- *2024.12*: &nbsp;&nbsp;🎉🎉 获评 2023 年度**广东省年度大学生人物**（全省仅 10 人），是同年度**最年轻的获奖者**。
+- *2024.05*: &nbsp;&nbsp;🎉🎉 作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
 
 # 📝 发表论文
 <span class='anchor' id='-publications'></span>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?](https://arxiv.org/abs/2506.17623)
+  
+**Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
+
+- <a href="https://arxiv.org/abs/2506.17623">arXiv:2506.17623</a>
+<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
+<span class="citation-btn" onclick="toggleCitation('citation-arxiv2025-zh')">引用</span>
+<div id="citation-arxiv2025-zh" class="citation-popup">
+  <div class="citation-format-container">
+    <div class="citation-format-label">BibTeX</div>
+    <div class="citation-format">@misc{huang2025generatedimagesserveviable,<br>      title={Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?}, <br>      author={Yuesheng Huang and Peng Zhang and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
+  </div>
+</div>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CMC 2024</div><img src='{{ site.baseurl }}/images/cmc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model](https://www.techscience.com/cmc/v80n1/57421)
@@ -106,7 +134,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学。（**GPA:92.3/100, 排名:1/111**）
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学。（**GPA:91.9/100, 排名:1/112**）
   - **毕业设计:** <span class="thesis-title" onclick="toggleThesis('thesis-zh')">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</span>
   <div id="thesis-zh" class="thesis-abstract">
     <strong>摘要</strong><br>
