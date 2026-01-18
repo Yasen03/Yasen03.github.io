@@ -8,13 +8,14 @@
 # Site Settings
 title                    : "Yuesheng Huang"
 description              : "IoT Engineering undergraduate with a focus on multimodal affective computing"
-url                      : "https://yasen03.github.io" # your site's URL
+url                      : "https://yorkson-huang.github.io" # your site's URL
 baseurl                  : "" # the subpath of your site, e.g. /blog
-repository               : "Yasen03/Yasen03.github.io"
+repository               : "Yorkson-huang/Yorkson-Huang.github.io"
+google_scholar_id        : "edyJPQQAAAAJ"
 google_scholar_stats_use_cdn : false
 
 # google analytics
-google_analytics_id      : "edyJPQQAAAAJ" # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      : "" # get google_analytics_id from https://analytics.google.com/analytics/ (e.g., G-XXXXXXXXXX)
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about

@@ -1,17 +1,21 @@
 <script>
-    // 禁用所有动态加载，使用硬编码值
-    console.log("引用数据使用硬编码值");
-    
-    // 我们可以在这里添加一些调试信息，但不执行任何数据加载或DOM修改
-    $(document).ready(function() {
-        console.log("页面已加载");
-        console.log("徽章元素数量: " + document.getElementsByClassName('paper_citations').length);
-        
-        // 仅记录硬编码的引用数
-        var badges = document.getElementsByClassName('paper_citations');
-        for (var i = 0; i < badges.length; i++) {
-            var src = badges[i].getAttribute('src');
-            console.log("徽章 #" + (i+1) + " URL: " + src);
+$(document).ready(function () {
+  var gsDataUrl = '/google-scholar-stats/gs_data.json';
+  
+  $.getJSON(gsDataUrl, function (data) {
+    if (data && data.publications) {
+      $('.paper_citations').each(function () {
+        var paperId = $(this).data('paper-id');
+        if (paperId && data.publications[paperId]) {
+          var numCitations = data.publications[paperId].num_citations;
+          // Update Shields.io badge URL
+          var newSrc = 'https://img.shields.io/badge/Citations-' + numCitations + '-blue?style=social&logo=google-scholar';
+          $(this).attr('src', newSrc);
         }
-    });
+      });
+    }
+  }).fail(function() {
+    console.log("Failed to load Google Scholar stats from " + gsDataUrl);
+  });
+});
 </script>
