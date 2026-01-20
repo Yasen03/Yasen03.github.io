@@ -15,26 +15,43 @@
   text-align: center;
 }
 
-/* 引用按钮样式 */
-.citation-btn {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 2px 8px;
-  background-color: #0366d6;
-  color: white;
-  border-radius: 4px;
-  font-size: 0.85em;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.paper-box {
+  padding: 1.2em 0;
 }
-.citation-btn:hover {
-  background-color: #0550ab;
+
+.paper-box:last-child {
+  border-bottom: none;
 }
-.citation-btn::before {
-  content: "\f0c1";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 4px;
+
+.paper-title {
+  font-weight: 600;
+  font-size: 1.05em;
+  margin-bottom: 0.2em;
+}
+
+.paper-meta {
+  color: #555;
+  margin: 0.35em 0;
+  font-size: 0.95em;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.35em;
+}
+
+.paper-links a {
+  text-decoration: none;
+}
+
+.paper-links span {
+  display: inline-flex;
+}
+
+.paper-links img {
+  vertical-align: middle;
 }
 
 /* 引用弹窗样式 */

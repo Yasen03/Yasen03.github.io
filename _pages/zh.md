@@ -47,12 +47,16 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow](https://dl.acm.org/doi/10.1145/3695952.3731175) <img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion">
+<div class="paper-title">Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow</div>
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
 
-- ACM MM 2025 主会 Grand Challenge 赛道
-<span class="citation-btn" onclick="toggleCitation('citation-acmmm2025-zh')">引用</span>
+<div class="paper-meta">ACM MM 2025 主会 Grand Challenge 赛道</div>
+<div class="paper-links">
+  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
+  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-acmmm2025-zh')"><img src="https://img.shields.io/badge/引用-BibTeX-6c757d" alt="引用"></a>
+</div>
 <div id="citation-acmmm2025-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">BibTeX</div>
@@ -64,13 +68,16 @@ redirect_from:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC workshop@ACM MM</div><img src='{{ site.baseurl }}/images/DARE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition](https://dl.acm.org/doi/10.1145/3706591.3706600) <img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="7th Place">
+<div class="paper-title">DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition</div>
   
 **Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
 
-- [**项目**](https://github.com/GPNU-AIoT/DARE)
-- <a href="https://github.com/GPNU-AIoT/DARE">https://github.com/GPNU-AIoT/DARE <img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt=""></a>
-<span class="citation-btn" onclick="toggleCitation('citation-dare2025-zh')">引用</span>
+<div class="paper-links">
+  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
+  <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/badge/项目-GitHub-24292e" alt="GitHub"></a>
+  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-dare2025-zh')"><img src="https://img.shields.io/badge/引用-BibTeX-6c757d" alt="引用"></a>
+</div>
 <div id="citation-dare2025-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">BibTeX</div>
@@ -82,13 +89,15 @@ redirect_from:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML Workshop</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?](https://arxiv.org/abs/2506.17623)
+<div class="paper-title">Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?</div>
   
 **Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
 
-- <a href="https://arxiv.org/abs/2506.17623">arXiv:2506.17623</a>
-<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
-<span class="citation-btn" onclick="toggleCitation('citation-arxiv2025-zh')">引用</span>
+<div class="paper-links">
+  <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-555" alt="arXiv"></a>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
+  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-arxiv2025-zh')"><img src="https://img.shields.io/badge/引用-BibTeX-6c757d" alt="引用"></a>
+</div>
 <div id="citation-arxiv2025-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">BibTeX</div>
@@ -100,14 +109,16 @@ redirect_from:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CMC 2024</div><img src='{{ site.baseurl }}/images/cmc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model](https://www.techscience.com/cmc/v80n1/57421)
+<div class="paper-title">Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model</div>
   
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
-[**项目**](https://github.com/Yasen03/T2I-SA)
-
-- <a href="https://github.com/Yasen03/T2I-SA">https://github.com/Yasen03/T2I-SA <img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt=""></a>
-- <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"> <img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation1-zh')">引用</span>
+<div class="paper-links">
+  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
+  <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/badge/项目-GitHub-24292e" alt="GitHub"></a>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
+  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation1-zh')"><img src="https://img.shields.io/badge/引用-BibTeX-6c757d" alt="引用"></a>
+</div>
 <div id="citation1-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">GB/T</div>
@@ -127,14 +138,16 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Engineering Letters</div><img src='{{ site.baseurl }}/images/EL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)
+<div class="paper-title">An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction</div>
   
 **Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
-[**项目**](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)
-
-- <a href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention">https://github.com/Yasen03/KOA-CNN-LSTM-Attention <img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt=""></a>
-- <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"> <img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation2-zh')">引用</span>
+<div class="paper-links">
+  <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-555" alt="Engineering Letters"></a>
+  <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/badge/项目-GitHub-24292e" alt="GitHub"></a>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
+  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation2-zh')"><img src="https://img.shields.io/badge/引用-BibTeX-6c757d" alt="引用"></a>
+</div>
 <div id="citation2-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">GB/T</div>
