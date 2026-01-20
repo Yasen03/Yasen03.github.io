@@ -17,7 +17,7 @@ redirect_from:
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
 
-I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on **Agentic AI** and **Multimodal Affective Intelligence**.
+I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #FF7F0E;">Agentic AI</span> and <span class="paper-badge-text" style="background-color: #2196F3;">Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
 
 I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
 
@@ -44,7 +44,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 
 <div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
+  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-Champion-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025', event)">Cite</button>
 </div>
@@ -65,9 +65,10 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 
 <div class="paper-meta">ACM MM 2025 MRAC Workshop</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
+  <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
+  <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025', event)">Cite</button>
 </div>
 <div id="citation-dare2025" class="citation-popup">
@@ -87,7 +88,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 
 <div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-555" alt="arXiv"></a>
+  <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-FF7F0E" alt="arXiv"></a>
   <a class="paper-badge-text" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
@@ -111,6 +112,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <div class="paper-links">
   <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
+  <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
 </div>
@@ -137,9 +139,11 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
   
 **Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
+<div class="paper-meta">Engineering Letters</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-555" alt="Engineering Letters"></a>
+  <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-4CAF50" alt="Engineering Letters"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
+  <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
 </div>
@@ -196,7 +200,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 - *2023.05-2024.05*, "Research and implementation of MIMO system detection algorithm based on Gaussian tree", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
 - *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**.(Project completed)
-- *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Second participant.(Project completed)
+- *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Participant.(Project completed)
 - *2025.05-2026.05*, "Early Diagnosis System for Alzheimer's Disease Based on Mixture of Experts (MoE) Multimodal Model", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
 - *2025.05-2026.05*, "Diffusion Model-Empowered Multimodal Decision Making: Breaking the Bottleneck of Rare Disease Medical Image Shortage for AI-Assisted Diagnosis Platform", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
 
