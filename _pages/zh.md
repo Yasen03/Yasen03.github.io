@@ -176,14 +176,10 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
-- *2025.09 - 2026.01*, 中国农业大学
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）
-  - **毕业设计:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
+- *2025.09 - 2026.01*, 中国农业大学, 在读
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
-    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
-    <div class="paper-links">
-      <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a>
-    </div>
+    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计 <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a></div>
     <strong>摘要</strong><br>
     随着人工智能与深度学习技术的深入发展，多模态情感分析在教育领域的应用潜力日益显现。传统单模态情感识别方法在捕捉学生复杂情绪状态方面存在局限，而多模态分析通过整合面部表情、语音信息与生理信号，能显著提升情感识别的准确性。当前教育信息化背景下，学生心理健康监测需求迫切，但现有方法存在时效性差、主观性强、难以规模化等问题，限制了其在校园环境的普及。<br><br>
     

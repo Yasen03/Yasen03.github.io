@@ -20,7 +20,11 @@
 }
 
 .publications-anchor + .paper-box {
-  padding-top: 0.6em;
+  padding-top: 0.2em;
+}
+
+.paper-title .paper-badge-text {
+  margin-left: 6px;
 }
 
 .paper-box:last-child {

@@ -175,13 +175,9 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
 - *2025.09 - 2026.01*, China Agricultural University
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**)
-  - **Graduation Project:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button>（同届全校最高分）
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
   <div id="thesis-en" class="thesis-abstract">
-    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
-    <div class="paper-links">
-      <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a>
-    </div>
+    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a></div>
     <strong>ABSTRACT</strong><br>
     With the in-depth development of artificial intelligence and deep learning technologies, the application potential of multimodal sentiment analysis in the educational field is increasingly evident. Traditional unimodal emotion recognition methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
     
