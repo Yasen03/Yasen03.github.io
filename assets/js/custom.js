@@ -59,9 +59,13 @@ function copyToClipboard(text, btnElement) {
   });
 }
 
-function toggleThesis(id) {
+function toggleThesis(id, event) {
   var abstract = document.getElementById(id);
-  var titleElement = event.currentTarget;
+  var evt = event || window.event;
+  var titleElement = evt && evt.currentTarget ? evt.currentTarget : evt && evt.target ? evt.target : null;
+  if (!titleElement) {
+    return;
+  }
   
   if(abstract.style.display === 'block') {
     abstract.style.display = 'none';

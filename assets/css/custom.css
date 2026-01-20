@@ -19,6 +19,10 @@
   padding: 1.2em 0;
 }
 
+.publications-anchor + .paper-box {
+  padding-top: 0.6em;
+}
+
 .paper-box:last-child {
   border-bottom: none;
 }

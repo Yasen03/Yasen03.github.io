@@ -30,11 +30,11 @@ redirect_from:
 # 🔥 新闻
 <span class='anchor' id='-news'></span>
 - *2026.01*: &nbsp;🚀 我发布 **Awesome Affective Computing**：Affective Computing & Emotion AI 精选清单，涵盖多模态情感识别、情感推理、多模态情感分析与共情式 LLM/MLLM 的论文、数据集与工具包。<a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none;"> <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;"></a>
-- *2025.08*: &nbsp;🏆🏆 我获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
-- *2025.08*: &nbsp;📄📄 我的第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
-- *2024.12*: &nbsp;&nbsp;🎉🎉 我获评 2023 年度**广东省年度大学生人物**（全省仅 10 人），为同年度**最年轻的获奖者**。
-- *2024.05*: &nbsp;&nbsp;🎉🎉 我作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
-- *2023.12*: &nbsp;&nbsp;🎉🎉 我获得**国家奖学金**。
+- *2025.08*: &nbsp;🏆 我获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
+- *2025.08*: &nbsp;📄 我的第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
+- *2024.12*: &nbsp;&nbsp;🎉 我获评 2023 年度**广东省年度大学生人物**（全省仅 10 人），为同年度**最年轻的获奖者**。
+- *2024.05*: &nbsp;&nbsp;🎉 我作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
+- *2023.12*: &nbsp;&nbsp;🎉 我获得**国家奖学金**。
 
 # 📝 发表论文
 <span class='anchor' id='-publications'></span>
@@ -65,6 +65,7 @@ redirect_from:
   
 **Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
 
+<div class="paper-meta">ACM MM 2025 MRAC Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
@@ -86,10 +87,12 @@ redirect_from:
   
 **Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
 
+<div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-555" alt="arXiv"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
+  <a class="paper-badge-text" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025-zh', event)">引用</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
 <div id="citation-arxiv2025-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -106,11 +109,12 @@ redirect_from:
   
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
+<div class="paper-meta">CMC - Computers, Materials & Continua</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/badge/项目-GitHub-24292e" alt="GitHub"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1-zh', event)">引用</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
 </div>
 <div id="citation1-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -138,8 +142,8 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <div class="paper-links">
   <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-555" alt="Engineering Letters"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/badge/项目-GitHub-24292e" alt="GitHub"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2-zh', event)">引用</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
 </div>
 <div id="citation2-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -173,9 +177,13 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
 - *2025.09 - 2026.01*, 中国农业大学
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学。（**GPA:91.9/100, 排名:1/112**）
-  - **毕业设计:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</button>
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）
+  - **毕业设计:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
+    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
+    <div class="paper-links">
+      <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a>
+    </div>
     <strong>摘要</strong><br>
     随着人工智能与深度学习技术的深入发展，多模态情感分析在教育领域的应用潜力日益显现。传统单模态情感识别方法在捕捉学生复杂情绪状态方面存在局限，而多模态分析通过整合面部表情、语音信息与生理信号，能显著提升情感识别的准确性。当前教育信息化背景下，学生心理健康监测需求迫切，但现有方法存在时效性差、主观性强、难以规模化等问题，限制了其在校园环境的普及。<br><br>
     

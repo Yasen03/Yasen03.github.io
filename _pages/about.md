@@ -28,11 +28,11 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 # 🔥 News
 <span class='anchor' id='-news'></span>
 - *2026.01*: &nbsp;🚀 I released **Awesome Affective Computing** — A curated list of Affective Computing & Emotion AI: Papers, datasets, and toolkits for Multimodal Emotion Recognition, Emotional Reasoning, Multimodal Sentiment Analysis, and Empathetic LLMs/MLLMs. <a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none;"> <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;"></a>
-- *2025.08*: &nbsp;🏆🏆 I won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
-- *2025.08*: &nbsp;📄📄 My first-author paper was accepted by the **ACM MM 2025 Main Conference Grand Challenge Track**!
-- *2024.12*: &nbsp;&nbsp;🎉🎉 I was selected as the 2023 **Guangdong Provincial Person of the Year** (one of 10 winners), the **youngest winner** that year.
-- *2024.05*: &nbsp;&nbsp;🎉🎉 I was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
-- *2023.12*: &nbsp;&nbsp;🎉🎉 I was awarded the **National Scholarship**.
+- *2025.08*: &nbsp;🏆 I won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
+- *2025.08*: &nbsp;📄 My first-author paper was accepted by the **ACM MM 2025 Main Conference Grand Challenge Track**!
+- *2024.12*: &nbsp;&nbsp;🎉 I was selected as the 2023 **Guangdong Provincial Person of the Year** (one of 10 winners), the **youngest winner** that year.
+- *2024.05*: &nbsp;&nbsp;🎉 I was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
+- *2023.12*: &nbsp;&nbsp;🎉 I was awarded the **National Scholarship**.
 
 # 📝 Publications 
 <span class='anchor publications-anchor' id='-publications'></span>
@@ -63,6 +63,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
   
 **Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
 
+<div class="paper-meta">ACM MM 2025 MRAC Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place"></span>
@@ -84,10 +85,12 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
   
 **Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
 
+<div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-555" alt="arXiv"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
+  <a class="paper-badge-text" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025', event)">Cite</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
 <div id="citation-arxiv2025" class="citation-popup">
   <div class="citation-format-container">
@@ -104,11 +107,12 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
   
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
+<div class="paper-meta">CMC - Computers, Materials & Continua</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1', event)">Cite</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
 </div>
 <div id="citation1" class="citation-popup">
   <div class="citation-format-container">
@@ -136,8 +140,8 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <div class="paper-links">
   <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-555" alt="Engineering Letters"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2', event)">Cite</button>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
 </div>
 <div id="citation2" class="citation-popup">
   <div class="citation-format-container">
@@ -171,9 +175,13 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
 - *2025.09 - 2026.01*, China Agricultural University
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University.(**GPA:91.9/100, Rank:1/112**)
-  - **Graduation Project:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</button>
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**)
+  - **Graduation Project:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button>（同届全校最高分）
   <div id="thesis-en" class="thesis-abstract">
+    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
+    <div class="paper-links">
+      <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a>
+    </div>
     <strong>ABSTRACT</strong><br>
     With the in-depth development of artificial intelligence and deep learning technologies, the application potential of multimodal sentiment analysis in the educational field is increasingly evident. Traditional unimodal emotion recognition methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
     
