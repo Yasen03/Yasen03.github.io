@@ -110,6 +110,45 @@
   cursor: pointer;
 }
 
+.paper-badge-text.citation-trigger {
+  background-color: #5A6E8C;
+  padding: 1px 6px;
+  font-size: 0.74em;
+}
+
+.paper-badge-text.poster-badge {
+  background-color: #4E7F6F;
+}
+
+.thesis-button {
+  background-color: #0071C5;
+}
+
+.sidebar .profile_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar .author__avatar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar .author__content,
+.sidebar .author__urls,
+.sidebar .author__urls-wrapper,
+.sidebar .author__urls_sm {
+  text-align: center;
+}
+
+.sidebar .author__urls li,
+.sidebar .author__urls li a,
+.sidebar .author__urls li div {
+  text-align: center;
+}
+
 .lang-switch {
   display: flex;
   justify-content: flex-end;

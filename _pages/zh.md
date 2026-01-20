@@ -19,7 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前是**中国农业大学（CAU）**的学生。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #FF7F0E;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #2196F3;">多模态情感智能</span>。欢迎就相关方向合作交流。
+我目前是**中国农业大学（CAU）**的学生。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
 
 我曾担任团队负责人并获得了 **ACM MM 2025 MER (多模态情感识别) 挑战赛 DES 赛道的第一名**。此外，我的第一作者论文已被 **ACM MM 主会 Grand Challenge 赛道**录用。
 
@@ -90,7 +90,7 @@ redirect_from:
 <div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <a class="paper-badge-text" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
+  <a class="paper-badge-text poster-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025-zh', event)">引用</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
@@ -111,7 +111,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 <div class="paper-meta">CMC - Computers, Materials & Continua</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
+  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-00A0E9" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1-zh', event)">引用</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>

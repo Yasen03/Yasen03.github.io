@@ -17,7 +17,7 @@ redirect_from:
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
 
-I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #FF7F0E;">Agentic AI</span> and <span class="paper-badge-text" style="background-color: #2196F3;">Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
+I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;">Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
 
 I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
 
@@ -88,7 +88,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 <div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <a class="paper-badge-text" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
+  <a class="paper-badge-text poster-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
@@ -109,7 +109,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 <div class="paper-meta">CMC - Computers, Materials & Continua</div>
 <div class="paper-links">
-  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
+  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-00A0E9" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
