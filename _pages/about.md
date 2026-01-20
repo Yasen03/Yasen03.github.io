@@ -32,9 +32,10 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 - *2025.08*: &nbsp;📄📄 My first-author paper was accepted by the **ACM MM 2025 Main Conference Grand Challenge Track**!
 - *2024.12*: &nbsp;&nbsp;🎉🎉 I was selected as the 2023 **Guangdong Provincial Person of the Year** (one of 10 winners), the **youngest winner** that year.
 - *2024.05*: &nbsp;&nbsp;🎉🎉 I was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
+- *2023.12*: &nbsp;&nbsp;🎉🎉 I was awarded the **National Scholarship**.
 
 # 📝 Publications 
-<span class='anchor' id='-publications'></span>
+<span class='anchor publications-anchor' id='-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow</div>
@@ -155,21 +156,23 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 </div>
 
-# 🏆 Honors and Awards
+# 🏆 Competition Awards
 <span class='anchor' id='-honors-and-awards'></span>
+- *2025.08* **Champion (1st Place)** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader.
 - *2025.02* **First Prize** in Information Technology, Healthcare, and Modern Service Tracks at the China University Student Technology Innovation and Entrepreneurship Competition.
-- *2024.05* **Finalist Award** for the E problem of the American College Students Mathematical Contest in Modeling (**Top 2%** in the world), COMAP.
-- *2023.12* Awarded the **National scholarship**.
-- *2023.11* **First prize** in Guangdong division of China University Students Mathematical Contest in Modeling, Guangdong Provincial Department of Education.
-- *2023.08* **First prize** of China College Student Computer Design Competition Guangdong Division, Guangdong Provincial Department of Education.
-- *2023.08* **Outstanding Award** in International University Mathematical Contest in Modeling.
-- *2023.08* The third prize of the National Final of Biomedical Engineering Innovation Design Competition for Chinese College students.
-- *2021.12* **Silver Medal** in Kaggle Lux AI Competition.
+- *2024.06* **Silver Award** in the **Challenge Cup** Entrepreneurship Plan Competition (Guangdong), Guangdong Provincial Department of Education.
+- *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
+- *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling, Guangdong Provincial Department of Education.
+- *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division), Guangdong Provincial Department of Education.
+- *2023.08* **Outstanding Award** in the International University Mathematical Contest in Modeling.
+- *2023.07* **First Prize** in the National Undergraduate Electrical Mathematical Modeling Competition, China Electrotechnical Society.
+- *2021.12* **Silver Medal** in the Kaggle Lux AI Competition.
 
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
-- *2021.09 - 2025.06 (now)*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University.(**GPA:91.9/100, Rank:1/112**)
-  - **Graduation Project:** <span class="thesis-title" onclick="toggleThesis('thesis-en')">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</span>
+- *2025.09 - 2026.01*, China Agricultural University
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University.(**GPA:91.9/100, Rank:1/112**)
+  - **Graduation Project:** <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</button>
   <div id="thesis-en" class="thesis-abstract">
     <strong>ABSTRACT</strong><br>
     With the in-depth development of artificial intelligence and deep learning technologies, the application potential of multimodal sentiment analysis in the educational field is increasingly evident. Traditional unimodal emotion recognition methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
@@ -195,6 +198,10 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # ©️ Patents and Copyrights
 <span class='anchor' id='-patents-and-copyrights'></span>
+- *2026*, "A Two-Stage Oracle Bone Inscription Recognition Method Based on Visual Perception and Feature Disentanglement", Patent (Pending)
+- *2025*, "Multimodal Disease Diagnosis Software Based on Diffusion-Model Image Synthesis V1.0", Chinese software copyright, 2025SR1592713, First contributor
+- *2025*, "Student Affective Intelligence Analysis System Platform Based on Multimodal Large Language Models V1.0", Chinese software copyright, 2025SR1585138, First contributor
+- *2025*, "Batch Oracle Bone Inscription Online Recognition Platform Based on Deep Learning V1.0", Chinese software copyright, 2025SR0968056
 - *2024*, "Flask based medical image segmentation platform V1.0", Chinese software copyright, 2024SR0877362
 - *2023*, "Medical glucan information test system V1.0", Chinese software copyright, 2023SR1635698
 - *2023*, "Multi-arm obstacle detection and motion planning software V1.0 based on sound wave sensing", Chinese software copyright, 2023SR1657692
