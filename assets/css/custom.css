@@ -54,6 +54,41 @@
   vertical-align: middle;
 }
 
+.paper-badge-text {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #6c757d;
+  color: #fff;
+  font-size: 0.78em;
+  line-height: 1.2;
+  border: none;
+  font-family: inherit;
+  appearance: none;
+}
+
+.citation-trigger {
+  cursor: pointer;
+}
+
+.lang-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
 /* 引用弹窗样式 */
 .citation-popup {
   display: none;

@@ -8,11 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<div style="text-align: right; margin-bottom: 20px;">
-  <a href="/" style="display: inline-block; padding: 5px 10px; background-color: #f8f9fa; border-radius: 4px; text-decoration: none; color: #333; font-weight: bold; border: 1px solid #ddd;">English</a>
-  <a href="/zh" style="display: inline-block; padding: 5px 10px; text-decoration: none; color: #666;">中文</a>
-</div>
-
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -28,16 +23,13 @@ I am honored to have served as the team leader and won **1st Place** in the **DE
 
 In 2024, I was recognized as the **Guangdong Provincial Person of the Year** (one of only 10 winners) and selected as a student representative of the **People's Daily National Scholarship** (one of only 4 winners from Guangdong).
 
-<a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none; display: inline-block; margin-top: 10px;">
-  <i class="fab fa-fw fa-github" aria-hidden="true"></i> **Awesome Affective Computing** <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;">
-</a>
-
-Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
+Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
 # 🔥 News
 <span class='anchor' id='-news'></span>
 - *2025.08*: &nbsp;🏆🏆 Won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
 - *2025.08*: &nbsp;📄📄 First-author paper accepted by **ACM MM 2025 Main Conference Grand Challenge Track**!
+- *2025.07*: &nbsp;🚀 Released **Awesome Affective Computing**, a curated list of Agentic AI and multimodal affective intelligence resources. <a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none;"> <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;"></a>
 - *2024.12*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was selected as the 2023 **Guangdong Provincial Person of the Year**. Guangdong Province only selected **10 people**. He is the **youngest winner** in the same year.
 - *2024.05*: &nbsp;&nbsp;🎉🎉 Yuesheng Huang was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
 
@@ -53,7 +45,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-Champion-gold" alt="Champion"></span>
-  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-acmmm2025')"><img src="https://img.shields.io/badge/Cite-BibTeX-6c757d" alt="Cite"></a>
+  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025')">Cite</button>
 </div>
 <div id="citation-acmmm2025" class="citation-popup">
   <div class="citation-format-container">
@@ -74,7 +66,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-555" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
-  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-dare2025')"><img src="https://img.shields.io/badge/Cite-BibTeX-6c757d" alt="Cite"></a>
+  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025')">Cite</button>
 </div>
 <div id="citation-dare2025" class="citation-popup">
   <div class="citation-format-container">
@@ -94,7 +86,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-555" alt="arXiv"></a>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
-  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation-arxiv2025')"><img src="https://img.shields.io/badge/Cite-BibTeX-6c757d" alt="Cite"></a>
+  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025')">Cite</button>
 </div>
 <div id="citation-arxiv2025" class="citation-popup">
   <div class="citation-format-container">
@@ -115,7 +107,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
   <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-555" alt="CMC 2024"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
-  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation1')"><img src="https://img.shields.io/badge/Cite-BibTeX-6c757d" alt="Cite"></a>
+  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1')">Cite</button>
 </div>
 <div id="citation1" class="citation-popup">
   <div class="citation-format-container">
@@ -144,7 +136,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
   <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-555" alt="Engineering Letters"></a>
   <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/badge/Project-GitHub-24292e" alt="GitHub"></a>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
-  <a class="paper-badge" href="javascript:void(0)" onclick="toggleCitation('citation2')"><img src="https://img.shields.io/badge/Cite-BibTeX-6c757d" alt="Cite"></a>
+  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2')">Cite</button>
 </div>
 <div id="citation2" class="citation-popup">
   <div class="citation-format-container">
