@@ -43,7 +43,42 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 
 # 📝 Publications 
 <span class='anchor' id='-publications'></span>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow](https://dl.acm.org/doi/10.1145/3695952.3731175) <img src="https://img.shields.io/badge/MER2025--DES-Champion-gold" alt="Champion">
+  
+**Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
+
+- ACM MM 2025 Main Conference Grand Challenge Track
+<span class="citation-btn" onclick="toggleCitation('citation-acmmm2025')">Cite</span>
+<div id="citation-acmmm2025" class="citation-popup">
+  <div class="citation-format-container">
+    <div class="citation-format-label">BibTeX</div>
+    <div class="citation-format">@inproceedings{huang2025affective, <br>      title={Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow}, <br>      author={Huang, Yuesheng and Liu, Jinming and Chen, Jiajia and Lin, Yihang and Chen, Yanmei and Dong, Jianwei}, <br>      booktitle={Proceedings of the 33rd ACM International Conference on Multimedia}, <br>      pages={13848--13855}, <br>      year={2025} <br>}</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC workshop@ACM MM</div><img src='{{ site.baseurl }}/images/DARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition](https://dl.acm.org/doi/10.1145/3706591.3706600) <img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place">
+  
+**Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
+
+- [**Project**](https://github.com/GPNU-AIoT/DARE)
+- <a href="https://github.com/GPNU-AIoT/DARE">https://github.com/GPNU-AIoT/DARE <img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt=""></a>
+<span class="citation-btn" onclick="toggleCitation('citation-dare2025')">Cite</span>
+<div id="citation-dare2025" class="citation-popup">
+  <div class="citation-format-container">
+    <div class="citation-format-label">BibTeX</div>
+    <div class="citation-format">@inproceedings{huang2025dare, <br>      title={DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition}, <br>      author={Huang, Yuesheng and Feng, Meiqi and He, Zhenming and Peng, Yueyuan and Li, Jiawen}, <br>      booktitle={Proceedings of the 3rd International Workshop on Multimodal and Responsible Affective Computing}, <br>      pages={41--50}, <br>      year={2025} <br>}</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML Workshop</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?](https://arxiv.org/abs/2506.17623)
   
@@ -60,16 +95,16 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn)
 </div>
 </div>
 </div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CMC 2024</div><img src='{{ site.baseurl }}/images/cmc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model](https://www.techscience.com/cmc/v80n1/57421)
   
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
+[**Project**](https://github.com/Yasen03/T2I-SA)
 
-[**Project**](https://github.com/Yasen03/Text-to-image-SA)
-
-- <a> https://github.com/Yasen03/Text-to-image-SA <img src="https://img.shields.io/github/stars/Yasen03/Text-to-image-SA?style=social" alt=""></a>
+- <a href="https://github.com/Yasen03/T2I-SA">https://github.com/Yasen03/T2I-SA <img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"> <img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation1')">Cite</span>
 <div id="citation1" class="citation-popup">
   <div class="citation-format-container">
@@ -87,15 +122,16 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 </div>
 </div>
 </div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Engineering Letters</div><img src='{{ site.baseurl }}/images/EL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)
   
 **Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
-[**Project**](https://github.com/Yasen03/CNN-LSTM-Attention-Prediction)
+[**Project**](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)
 
-- <a>KOA-CNN-LSTM-Attention-Prediction <img src="https://img.shields.io/github/stars/Yasen03/CNN-LSTM-Attention-Prediction?style=social" alt=""></a>
+- <a href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention">https://github.com/Yasen03/KOA-CNN-LSTM-Attention <img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"> <img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation2')">Cite</span>
 <div id="citation2" class="citation-popup">
   <div class="citation-format-container">
@@ -110,7 +146,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
     <div class="citation-format-label">APA</div>
     <div class="citation-format">Huang, Y., Li, J., Li Y., Lin, R., Wu, J., Wang, L., & Chen, R. (2024). An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction. Engineering Letters, 32(10).</div>
   </div>
-  </div>
+</div>
 </div>
 </div>
 </div>

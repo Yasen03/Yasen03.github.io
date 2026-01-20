@@ -45,7 +45,42 @@ redirect_from:
 
 # 📝 发表论文
 <span class='anchor' id='-publications'></span>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow](https://dl.acm.org/doi/10.1145/3695952.3731175) <img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion">
+  
+**Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
+
+- ACM MM 2025 主会 Grand Challenge 赛道
+<span class="citation-btn" onclick="toggleCitation('citation-acmmm2025-zh')">引用</span>
+<div id="citation-acmmm2025-zh" class="citation-popup">
+  <div class="citation-format-container">
+    <div class="citation-format-label">BibTeX</div>
+    <div class="citation-format">@inproceedings{huang2025affective, <br>      title={Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow}, <br>      author={Huang, Yuesheng and Liu, Jinming and Chen, Jiajia and Lin, Yihang and Chen, Yanmei and Dong, Jianwei}, <br>      booktitle={Proceedings of the 33rd ACM International Conference on Multimedia}, <br>      pages={13848--13855}, <br>      year={2025} <br>}</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC workshop@ACM MM</div><img src='{{ site.baseurl }}/images/DARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition](https://dl.acm.org/doi/10.1145/3706591.3706600) <img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="7th Place">
+  
+**Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
+
+- [**项目**](https://github.com/GPNU-AIoT/DARE)
+- <a href="https://github.com/GPNU-AIoT/DARE">https://github.com/GPNU-AIoT/DARE <img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt=""></a>
+<span class="citation-btn" onclick="toggleCitation('citation-dare2025-zh')">引用</span>
+<div id="citation-dare2025-zh" class="citation-popup">
+  <div class="citation-format-container">
+    <div class="citation-format-label">BibTeX</div>
+    <div class="citation-format">@inproceedings{huang2025dare, <br>      title={DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition}, <br>      author={Huang, Yuesheng and Feng, Meiqi and He, Zhenming and Peng, Yueyuan and Li, Jiawen}, <br>      booktitle={Proceedings of the 3rd International Workshop on Multimodal and Responsible Affective Computing}, <br>      pages={41--50}, <br>      year={2025} <br>}</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML Workshop</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?](https://arxiv.org/abs/2506.17623)
   
@@ -69,9 +104,9 @@ redirect_from:
   
 Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
 
-[**项目**](https://github.com/Yasen03/Text-to-image-SA)
+[**项目**](https://github.com/Yasen03/T2I-SA)
 
-- <a href="https://github.com/Yasen03/Text-to-image-SA">https://github.com/Yasen03/Text-to-image-SA <img src="https://img.shields.io/github/stars/Yasen03/Text-to-image-SA?style=social" alt=""></a>
+- <a href="https://github.com/Yasen03/T2I-SA">https://github.com/Yasen03/T2I-SA <img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"> <img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation1-zh')">引用</span>
 <div id="citation1-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -96,9 +131,9 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
   
 **Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
-[**项目**](https://github.com/Yasen03/CNN-LSTM-Attention-Prediction)
+[**项目**](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)
 
-- <a>KOA-CNN-LSTM-Attention-Prediction <img src="https://img.shields.io/github/stars/Yasen03/CNN-LSTM-Attention-Prediction?style=social" alt=""></a>
+- <a href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention">https://github.com/Yasen03/KOA-CNN-LSTM-Attention <img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt=""></a>
 - <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"> <img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a><span class="citation-btn" onclick="toggleCitation('citation2-zh')">引用</span>
 <div id="citation2-zh" class="citation-popup">
   <div class="citation-format-container">
