@@ -1,4 +1,4 @@
-function toggleCitation(id) {
+function toggleCitation(id, event) {
   var popup = document.getElementById(id);
   var allPopups = document.getElementsByClassName('citation-popup');
   
@@ -16,7 +16,11 @@ function toggleCitation(id) {
     popup.style.display = 'block';
     
     // Position the popup
-    var btn = event.currentTarget;
+    var evt = event || window.event;
+    var btn = evt && evt.currentTarget ? evt.currentTarget : evt && evt.target ? evt.target : null;
+    if (!btn) {
+      return;
+    }
     var btnRect = btn.getBoundingClientRect();
     var popupRect = popup.getBoundingClientRect();
     
@@ -70,7 +74,8 @@ function toggleThesis(id) {
 
 // Close popups when clicking outside
 window.onclick = function(event) {
-  if (!event.target.matches('.citation-btn') && 
+  if (!event.target.matches('.citation-trigger') && 
+      !event.target.closest('.citation-trigger') && 
       !event.target.closest('.citation-popup') && 
       !event.target.matches('.copy-btn')) {
     var popups = document.getElementsByClassName('citation-popup');
@@ -85,12 +90,14 @@ document.addEventListener("DOMContentLoaded", function() {
   // Create copy buttons for citation formats
   var citationFormats = document.querySelectorAll('.citation-format');
   citationFormats.forEach(function(format) {
+    var citationText = format.innerText.trim();
+    format.setAttribute('data-citation-text', citationText);
     var copyBtn = document.createElement('button');
     copyBtn.className = 'copy-btn';
     copyBtn.textContent = document.documentElement.lang === 'zh' ? '复制' : 'Copy';
     copyBtn.onclick = function(e) {
       e.stopPropagation();
-      copyToClipboard(format.textContent, this);
+      copyToClipboard(format.getAttribute('data-citation-text') || format.textContent, this);
     };
     format.appendChild(copyBtn);
   });
