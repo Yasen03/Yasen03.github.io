@@ -78,6 +78,7 @@
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 0.35em;
+  align-items: center;
 }
 
 .paper-links a {
@@ -90,17 +91,19 @@
 
 .paper-links img {
   vertical-align: middle;
+  height: 20px;
 }
 
 .paper-badge-text {
   display: inline-flex;
   align-items: center;
-  padding: 2px 8px;
+  padding: 0 8px;
   border-radius: 4px;
-  background-color: #6c757d;
+  background-color: #5F6F8A;
   color: #fff;
-  font-size: 0.78em;
-  line-height: 1.2;
+  font-size: 0.76em;
+  line-height: 20px;
+  height: 20px;
   border: none;
   font-family: inherit;
   appearance: none;
@@ -111,9 +114,11 @@
 }
 
 .paper-badge-text.citation-trigger {
-  background-color: #5A6E8C;
-  padding: 1px 6px;
+  background-color: #4D6A86;
+  padding: 0 6px;
   font-size: 0.74em;
+  line-height: 20px;
+  height: 20px;
 }
 
 .paper-badge-text.poster-badge {
@@ -121,7 +126,7 @@
 }
 
 .thesis-button {
-  background-color: #0071C5;
+  background-color: #55728A;
 }
 
 .sidebar .profile_box {
