@@ -90,7 +90,7 @@ redirect_from:
 <div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <a class="paper-badge-text poster-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
+  <a class="paper-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719"><img src="https://img.shields.io/badge/ICML-Poster-1aa6b7?labelColor=2f6f73" alt="ICML Poster"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025-zh', event)">引用</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
@@ -180,17 +180,24 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 - *2025.09 - 2026.01*, 中国农业大学, 在读
 - *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
-    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计 <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a></div>
-    <strong>摘要</strong><br>
-    随着人工智能与深度学习技术的深入发展，多模态情感分析在教育领域的应用潜力日益显现。传统单模态情感识别方法在捕捉学生复杂情绪状态方面存在局限，而多模态分析通过整合面部表情、语音信息与生理信号，能显著提升情感识别的准确性。当前教育信息化背景下，学生心理健康监测需求迫切，但现有方法存在时效性差、主观性强、难以规模化等问题，限制了其在校园环境的普及。<br><br>
-    
-    针对上述挑战，本文提出并实现了一套基于ESP32与ESP32S3硬件平台，结合轻量化多模态融合算法及大语言模型的学生情感智能分析与监测系统。该系统旨在利用低成本、高集成度的嵌入式技术，融合面部、语音、心率等多源数据，为教育工作者、家长及学生提供实时、准确、便捷的情感监测与支持工具。<br><br>
-    
-    在硬件层面，采用ESP32与ESP32S3双主板分布式架构。ESP32主板集成ESP32CAM、心率传感器等，实现面部表情识别、生理数据采集及基础反馈；ESP32S3主板集成数字麦克风、音频功放、显示屏等，实现基于百度文心一言API的智能对话功能。软件层面，基于Node.js构建服务端，采用SQLite进行数据存储，开发了面向教师、学生、家长的多角色Web应用界面。算法层面，设计了基于Deepface的面部情绪识别、基于文心一言API的语音情感分析，设计了动态权重决策级多模态融合算法，并引入基于数据量的多模型情绪趋势预测方法。同时，利用提示词优化了大模型在情感支持对话任务中的表现。<br><br>
-    
-    设计完成后，完成了系统硬件平台的搭建与调试，并对软件系统进行了全面的功能测试与验证，包括白盒测试与黑盒测试。测试结果表明，系统各模块运行稳定，功能符合设计要求，能够有效整合多模态数据进行学生情感状态分析与监测，验证了该设计的可行性与有效性。<br><br>
-    
-    <strong>关键词：</strong>多模态情感分析；学生情感监测；ESP32；大语言模型；数据融合
+    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
+    <div class="thesis-toolbar">
+      <button type="button" class="paper-badge-text active" onclick="setThesisView('thesis-zh','abstract')">摘要</button>
+      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-zh','pdf','{{ site.baseurl }}/files/pdfs/thesis.pdf')">PDF</button>
+      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-zh','ppt','{{ site.baseurl }}/files/pdfs/debate.pdf')">PPT</button>
+    </div>
+    <div class="thesis-content">
+      <strong>摘要</strong><br>
+      随着人工智能与深度学习技术的深入发展，<strong>多模态情感分析</strong>在教育领域的应用潜力日益显现。传统单模态<strong>情感识别</strong>方法在捕捉学生复杂情绪状态方面存在局限，而多模态分析通过整合面部表情、语音信息与生理信号，能显著提升情感识别的准确性。当前教育信息化背景下，学生心理健康监测需求迫切，但现有方法存在时效性差、主观性强、难以规模化等问题，限制了其在校园环境的普及。<br><br>
+      
+      针对上述挑战，本文提出并实现了一套基于<strong>ESP32</strong>与<strong>ESP32S3</strong>硬件平台，结合轻量化多模态融合算法及<strong>大语言模型</strong>的学生情感智能分析与监测系统。该系统旨在利用低成本、高集成度的嵌入式技术，融合面部、语音、心率等多源数据，为教育工作者、家长及学生提供实时、准确、便捷的情感监测与支持工具。<br><br>
+      
+      在硬件层面，采用ESP32与ESP32S3双主板分布式架构。ESP32主板集成ESP32CAM、心率传感器等，实现面部表情识别、生理数据采集及基础反馈；ESP32S3主板集成数字麦克风、音频功放、显示屏等，实现基于百度<strong>文心一言API</strong>的智能对话功能。软件层面，基于Node.js构建服务端，采用SQLite进行数据存储，开发了面向教师、学生、家长的多角色Web应用界面。算法层面，设计了基于<strong>Deepface</strong>的面部情绪识别、基于文心一言API的语音情感分析，设计了动态权重决策级多模态融合算法，并引入基于数据量的多模型情绪趋势预测方法。同时，利用提示词优化了大模型在情感支持对话任务中的表现。<br><br>
+      
+      设计完成后，完成了系统硬件平台的搭建与调试，并对软件系统进行了全面的功能测试与验证，包括白盒测试与黑盒测试。测试结果表明，系统各模块运行稳定，功能符合设计要求，能够有效整合多模态数据进行学生情感状态分析与监测，验证了该设计的可行性与有效性。<br><br>
+      
+      <strong>关键词：</strong>多模态情感分析；学生情感监测；ESP32；大语言模型；数据融合
+    </div>
   </div>
 - *2018.09 - 2021.06*, 普通高中, 韶关市翁源中学
 

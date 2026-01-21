@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yuesheng Huang"
-description              : "Student at China Agricultural University, focused on Agentic AI and Multimodal Affective Intelligence"
+description              : ""
 url                      : "https://yasen03.github.io" # your site's URL
 baseurl                  : "" # the subpath of your site, e.g. /blog
 repository               : "Yasen03/Yasen03.github.io"

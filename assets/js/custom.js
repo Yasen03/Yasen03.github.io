@@ -59,13 +59,9 @@ function copyToClipboard(text, btnElement) {
   });
 }
 
-function toggleThesis(id, event) {
+function toggleThesis(id) {
   var abstract = document.getElementById(id);
-  var evt = event || window.event;
-  var titleElement = evt && evt.currentTarget ? evt.currentTarget : evt && evt.target ? evt.target : null;
-  if (!titleElement) {
-    return;
-  }
+  var titleElement = event.currentTarget;
   
   if(abstract.style.display === 'block') {
     abstract.style.display = 'none';
@@ -76,6 +72,38 @@ function toggleThesis(id, event) {
   }
 }
 
+function setThesisView(id, type, url) {
+  var container = document.getElementById(id);
+  if (!container) return;
+  var content = container.querySelector('.thesis-content');
+  if (!content) return;
+  if (!container.dataset.abstractHtml) {
+    container.dataset.abstractHtml = content.innerHTML;
+  }
+  var toolbar = container.querySelector('.thesis-toolbar');
+  if (toolbar) {
+    var buttons = toolbar.querySelectorAll('.paper-badge-text');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('active');
+    }
+    if (event && event.currentTarget) {
+      event.currentTarget.classList.add('active');
+    }
+  }
+  if (type === 'abstract') {
+    content.innerHTML = container.dataset.abstractHtml;
+    return;
+  }
+  var isZh = document.documentElement.lang === 'zh';
+  var fullText = isZh ? '查看完整文件' : 'Open Full File';
+  var embed = '<div class="thesis-pdf">'
+            + '<object data="' + url + '#toolbar=1" type="application/pdf" width="100%" height="360">'
+            + '<iframe src="' + url + '" width="100%" height="360"></iframe>'
+            + '</object>'
+            + '<div class="thesis-download"><a class="paper-badge-text" href="' + url + '">' + fullText + '</a></div>'
+            + '</div>';
+  content.innerHTML = embed;
+}
 // Close popups when clicking outside
 window.onclick = function(event) {
   if (!event.target.matches('.citation-trigger') && 

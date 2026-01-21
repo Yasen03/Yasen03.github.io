@@ -16,8 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-
-I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;">Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
+I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-robot" aria-hidden="true"></i>&nbsp;Agentic AI</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-heart" aria-hidden="true"></i>&nbsp;Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
 
 I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
 
@@ -88,7 +87,7 @@ Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <st
 <div class="paper-meta">ICML 2025 NewInML Workshop</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <a class="paper-badge-text poster-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719">ICML | Poster</a>
+  <a class="paper-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719"><img src="https://img.shields.io/badge/ICML-Poster-1aa6b7?labelColor=2f6f73" alt="ICML Poster"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025', event)">Cite</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
@@ -178,17 +177,24 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 - *2025.09 - 2026.01*, China Agricultural University
 - *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
   <div id="thesis-en" class="thesis-abstract">
-    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models <a class="paper-badge-text" href="https://my.feishu.cn/wiki/YZj0wPCfSiTjnhkbTW0cmJCXnqb">PPT</a></div>
-    <strong>ABSTRACT</strong><br>
-    With the in-depth development of artificial intelligence and deep learning technologies, the application potential of multimodal sentiment analysis in the educational field is increasingly evident. Traditional unimodal emotion recognition methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
-    
-    To address these challenges, this paper proposes and implements a student emotion intelligent analysis and monitoring system based on ESP32 and ESP32S3 hardware platforms, combined with lightweight multimodal fusion algorithms and large language models. The system aims to utilize low-cost, highly integrated embedded technology to fuse multi-source data including facial, speech, and heart rate information, providing educators, parents, and students with real-time, accurate, and convenient emotion monitoring and support tools.<br><br>
-    
-    At the hardware level, a distributed dual-mainboard architecture using ESP32 and ESP32S3 is adopted. The ESP32 mainboard integrates ESP32CAM and heart rate sensors to implement facial expression recognition, physiological data collection, and basic feedback. The ESP32S3 mainboard integrates a digital microphone, audio amplifier, display screen, etc., to achieve intelligent dialogue functions based on Baidu's ERNIE Bot API. At the software level, a Node.js-based server is constructed, SQLite is used for data storage, and multi-role web application interfaces for teachers, students, and parents are developed. On the algorithmic level, the system implements facial emotion recognition based on Deepface, speech emotion analysis using the ERNIE Bot API, designs a dynamic weight decision-level multimodal fusion algorithm, and introduces a data-volume-based multi-model emotion trend prediction method. Additionally, prompt optimization is employed to enhance the performance of large language models in emotional support dialogue tasks.<br><br>
-    
-    Finally, the system hardware platform was successfully built and debugged, with comprehensive functional testing and verification conducted on the software system, including white-box testing and black-box testing. The test results demonstrate stable operation of all system modules, compliance with design requirements, and effective integration of multimodal data for student emotion state analysis and monitoring, validating the feasibility and effectiveness of the design.<br><br>
-    
-    <strong>Keywords:</strong> Multimodal sentiment analysis; Student emotion monitoring; ESP32; Large language models; Data fusion
+    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
+    <div class="thesis-toolbar">
+      <button type="button" class="paper-badge-text active" onclick="setThesisView('thesis-en','abstract')">Abstract</button>
+      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-en','pdf','{{ site.baseurl }}/files/pdfs/thesis.pdf')">PDF</button>
+      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-en','ppt','{{ site.baseurl }}/files/pdfs/debate.pdf')">PPT</button>
+    </div>
+    <div class="thesis-content">
+      <strong>ABSTRACT</strong><br>
+      With the in-depth development of artificial intelligence and deep learning technologies, the application potential of <strong>multimodal sentiment analysis</strong> in the educational field is increasingly evident. Traditional unimodal <strong>emotion recognition</strong> methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
+      
+      To address these challenges, this paper proposes and implements a student emotion intelligent analysis and monitoring system based on <strong>ESP32</strong> and <strong>ESP32S3</strong> hardware platforms, combined with lightweight multimodal fusion algorithms and <strong>large language models</strong>. The system aims to utilize low-cost, highly integrated embedded technology to fuse multi-source data including facial, speech, and heart rate information, providing educators, parents, and students with real-time, accurate, and convenient emotion monitoring and support tools.<br><br>
+      
+      At the hardware level, a distributed dual-mainboard architecture using ESP32 and ESP32S3 is adopted. The ESP32 mainboard integrates ESP32CAM and heart rate sensors to implement facial expression recognition, physiological data collection, and basic feedback. The ESP32S3 mainboard integrates a digital microphone, audio amplifier, display screen, etc., to achieve intelligent dialogue functions based on Baidu's <strong>ERNIE Bot API</strong>. At the software level, a Node.js-based server is constructed, SQLite is used for data storage, and multi-role web application interfaces for teachers, students, and parents are developed. On the algorithmic level, the system implements facial emotion recognition based on <strong>Deepface</strong>, speech emotion analysis using the ERNIE Bot API, designs a dynamic weight decision-level multimodal fusion algorithm, and introduces a data-volume-based multi-model emotion trend prediction method. Additionally, prompt optimization is employed to enhance the performance of large language models in emotional support dialogue tasks.<br><br>
+      
+      Finally, the system hardware platform was successfully built and debugged, with comprehensive functional testing and verification conducted on the software system, including white-box testing and black-box testing. The test results demonstrate stable operation of all system modules, compliance with design requirements, and effective integration of multimodal data for student emotion state analysis and monitoring, validating the feasibility and effectiveness of the design.<br><br>
+      
+      <strong>Keywords:</strong> Multimodal sentiment analysis; Student emotion monitoring; ESP32; Large language models; Data fusion
+    </div>
   </div>
 - *2018.09 - 2021.06*, Ordinary high school, Shaoguan City Wengyuan middle School
 
@@ -196,7 +202,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <span class='anchor' id='-research-topics'></span>
 - *2023.05-2024.05*, "Research and implementation of MIMO system detection algorithm based on Gaussian tree", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
 - *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Huang Yuesheng as host**. (Project completed)
-- *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**.(Project completed)
+- *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Participant.(Project completed)
 - *2025.05-2026.05*, "Early Diagnosis System for Alzheimer's Disease Based on Mixture of Experts (MoE) Multimodal Model", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
 - *2025.05-2026.05*, "Diffusion Model-Empowered Multimodal Decision Making: Breaking the Bottleneck of Rare Disease Medical Image Shortage for AI-Assisted Diagnosis Platform", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
