@@ -4,15 +4,15 @@
   "updated": "2026-01-18",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
-      "num_citations": 15,
+      "num_citations": 16,
       "title": "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image..."
     },
     "edyJPQQAAAAJ:2osOgNQ5qMEC": {
-      "num_citations": 8,
+      "num_citations": 9,
       "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm..."
     },
     "edyJPQQAAAAJ:W7OEmFMy1HYC": {
-      "num_citations": 2,
+      "num_citations": 3,
       "title": "Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?"
     }
   }
