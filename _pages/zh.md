@@ -59,13 +59,13 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC workshop@ACM MM</div><img src='{{ site.baseurl }}/images/DARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC@ACM MM</div><img src='{{ site.baseurl }}/images/DARE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition</div>
   
 **Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
 
-<div class="paper-meta">ACM MM 2025 MRAC Workshop</div>
+<div class="paper-meta">ACM MM 2025 MRAC</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
@@ -81,13 +81,13 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML Workshop</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML NewInML</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?</div>
   
 **Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
 
-<div class="paper-meta">ICML 2025 NewInML Workshop</div>
+<div class="paper-meta">ICML 2025 NewInML</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
   <a class="paper-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719"><img src="https://img.shields.io/badge/ICML-Poster-1aa6b7?labelColor=2f6f73" alt="ICML Poster"></a>
