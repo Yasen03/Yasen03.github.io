@@ -174,7 +174,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
   <div id="thesis-en" class="thesis-abstract">
     <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
     <div class="thesis-toolbar">
