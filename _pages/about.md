@@ -203,15 +203,9 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 - *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Participant.(Project completed)
-- *2025.05-2026.05*, "Early Diagnosis System for Alzheimer's Disease Based on Mixture of Experts (MoE) Multimodal Model", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
-- *2025.05-2026.05*, "Diffusion Model-Empowered Multimodal Decision Making: Breaking the Bottleneck of Rare Disease Medical Image Shortage for AI-Assisted Diagnosis Platform", Chinese college students Innovation and Entrepreneurship plan project, Second participant.
 
 # ©️ Patents and Copyrights
 <span class='anchor' id='-patents-and-copyrights'></span>
-- *2026*, "A Two-Stage Oracle Bone Inscription Recognition Method Based on Visual Perception and Feature Disentanglement", Patent (Pending)
 - *2025*, "Multimodal Disease Diagnosis Software Based on Diffusion-Model Image Synthesis V1.0", Chinese software copyright, 2025SR1592713, First contributor
-- *2025*, "Student Affective Intelligence Analysis System Platform Based on Multimodal Large Language Models V1.0", Chinese software copyright, 2025SR1585138, First contributor
-- *2025*, "Batch Oracle Bone Inscription Online Recognition Platform Based on Deep Learning V1.0", Chinese software copyright, 2025SR0968056
 - *2024*, "Flask based medical image segmentation platform V1.0", Chinese software copyright, 2024SR0877362
-- *2023*, "Medical glucan information test system V1.0", Chinese software copyright, 2023SR1635698
-- *2023*, "Multi-arm obstacle detection and motion planning software V1.0 based on sound wave sensing", Chinese software copyright, 2023SR1657692
+
