@@ -19,13 +19,13 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前是**中国农业大学（CAU）**的学生。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
+我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
 
 我曾担任团队负责人并获得了 **ACM MM 2025 MER (多模态情感识别) 挑战赛 DES 赛道的第一名**。此外，我的第一作者论文已被 **ACM MM 主会 Grand Challenge 赛道**录用。
 
 在2024年，我被选树为**广东大学生年度人物**和**人民日报国家奖学金学生代表**。
 
-联系方式：[huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
+联系方式：[yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
 # 🔥 新闻
 <span class='anchor' id='-news'></span>
@@ -177,7 +177,6 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
-- *2025.09 - 2026.01*, 中国农业大学, 在读
 - *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
     <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
