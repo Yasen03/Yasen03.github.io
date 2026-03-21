@@ -177,7 +177,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:91.9/100, 排名:1/112**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
     <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
     <div class="thesis-toolbar">
