@@ -16,13 +16,13 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-I am currently a student at **China Agricultural University (CAU)**. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-robot" aria-hidden="true"></i>&nbsp;Agentic AI</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-heart" aria-hidden="true"></i>&nbsp;Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
+My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-robot" aria-hidden="true"></i>&nbsp;Agentic AI</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-heart" aria-hidden="true"></i>&nbsp;Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
 
 I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
 
 In 2024, I was recognized as the **Guangdong Provincial Person of the Year** (one of only 10 winners) and selected as a student representative of the **People's Daily National Scholarship** (one of only 4 winners from Guangdong).
 
-Contact me at: [huangyuesheng@cau.edu.cn](mailto:huangyuesheng@cau.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
+Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
 # 🔥 News
 <span class='anchor' id='-news'></span>
@@ -174,7 +174,6 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
-- *2025.09 - 2026.01*, China Agricultural University
 - *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:91.9/100, Rank:1/112**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
   <div id="thesis-en" class="thesis-abstract">
     <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
