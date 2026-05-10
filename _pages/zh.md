@@ -19,7 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
+我目前在清华大学深圳国际研究生院（SIGS）攻读硕士学位。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">多模态学习</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
 
 我曾担任团队负责人并获得了 **ACM MM 2025 MER (多模态情感识别) 挑战赛 DES 赛道的第一名**。此外，我的第一作者论文已被 **ACM MM 主会 Grand Challenge 赛道**录用。
 
@@ -49,7 +49,7 @@ redirect_from:
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025-zh', event)">引用</button>
-  <span class="paper-badge"><img id="citation-badge-affective-cot-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="manual:affective-cot-2025" alt="Scholar Citations"></span>
+  <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-affective-cot-zh" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="manual:affective-cot-2025" alt="Scholar Citations"></a>
 </div>
 <div id="citation-acmmm2025-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -72,7 +72,7 @@ redirect_from:
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025-zh', event)">引用</button>
-  <span class="paper-badge"><img id="citation-badge-dare-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="manual:dare-2025" alt="Scholar Citations"></span>
+  <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-dare-zh" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="manual:dare-2025" alt="Scholar Citations"></a>
 </div>
 <div id="citation-dare2025-zh" class="citation-popup">
   <div class="citation-format-container">
