@@ -1,6 +1,6 @@
 {
   "name": "Yuesheng Huang",
-  "citedby": 37,
+  "citedby": 39,
   "updated": "2026-01-18",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
@@ -14,6 +14,14 @@
     "edyJPQQAAAAJ:W7OEmFMy1HYC": {
       "num_citations": 4,
       "title": "Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?"
+    },
+    "manual:affective-cot-2025": {
+      "num_citations": 1,
+      "title": "Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow"
+    },
+    "manual:dare-2025": {
+      "num_citations": 1,
+      "title": "DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition"
     }
   }
 }

@@ -49,7 +49,7 @@ redirect_from:
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025-zh', event)">引用</button>
-  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
+  <span class="paper-badge"><img id="citation-badge-affective-cot-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="manual:affective-cot-2025" alt="Scholar Citations"></span>
 </div>
 <div id="citation-acmmm2025-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -72,7 +72,7 @@ redirect_from:
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025-zh', event)">引用</button>
-  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
+  <span class="paper-badge"><img id="citation-badge-dare-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="manual:dare-2025" alt="Scholar Citations"></span>
 </div>
 <div id="citation-dare2025-zh" class="citation-popup">
   <div class="citation-format-container">
