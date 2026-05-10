@@ -40,14 +40,13 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-<div class="paper-title">Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow</div>
+<div class="paper-title">Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow（🏆 MER2025-DES Champion）</div>
   
-**Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
+**Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen<sup>*</sup>, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025 主会 Grand Challenge 赛道 · 🏆 MER2025-DES 冠军</div>
+<div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track（Oral）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
-  <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025-zh', event)">引用</button>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-affective-cot-zh" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="manual:affective-cot-2025" alt="Scholar Citations"></a>
 </div>
@@ -64,9 +63,9 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition</div>
   
-**Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li
+**Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li<sup>*</sup>
 
-<div class="paper-meta">ACM MM 2025 MRAC</div>
+<div class="paper-meta">ACM MM 2025 MRAC Workshop（Oral）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
@@ -86,12 +85,11 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?</div>
   
-**Yuesheng Huang**, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang
+**Yuesheng Huang**<sup>*</sup>, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang
 
-<div class="paper-meta">ICML 2025 NewInML</div>
+<div class="paper-meta">ICML 2025 NewInML Workshop（Poster）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <a class="paper-badge" href="https://icml.cc/media/PosterPDFs/ICML%202025/50506.png?t=1752508273.1077719"><img src="https://img.shields.io/badge/ICML-Poster-1aa6b7?labelColor=2f6f73" alt="ICML Poster"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025-zh', event)">引用</button>
   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-loading-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
 </div>
@@ -138,7 +136,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <div class='paper-box-text' markdown="1">
 <div class="paper-title">An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction</div>
   
-**Yuesheng Huang**, Jiawen Li, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
+**Yuesheng Huang**, Jiawen Li<sup>*</sup>, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
 
 <div class="paper-meta">Engineering Letters</div>
 <div class="paper-links">
