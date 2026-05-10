@@ -46,6 +46,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-Champion-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025', event)">Cite</button>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
 </div>
 <div id="citation-acmmm2025" class="citation-popup">
   <div class="citation-format-container">
@@ -68,6 +69,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025', event)">Cite</button>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
 </div>
 <div id="citation-dare2025" class="citation-popup">
   <div class="citation-format-container">
@@ -174,6 +176,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
+- *2026 - 2028*, Master's student, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University.
 - *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
   <div id="thesis-en" class="thesis-abstract">
     <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
@@ -208,4 +211,3 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 <span class='anchor' id='-patents-and-copyrights'></span>
 - *2025*, "Multimodal Disease Diagnosis Software Based on Diffusion-Model Image Synthesis V1.0", Chinese software copyright, 2025SR1592713, First contributor
 - *2024*, "Flask based medical image segmentation platform V1.0", Chinese software copyright, 2024SR0877362
-

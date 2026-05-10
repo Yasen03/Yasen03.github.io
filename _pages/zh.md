@@ -49,6 +49,7 @@ redirect_from:
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-acmmm2025-zh', event)">引用</button>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
 </div>
 <div id="citation-acmmm2025-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -71,6 +72,7 @@ redirect_from:
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025-zh', event)">引用</button>
+  <span class="paper-badge"><img src="https://img.shields.io/badge/Citations-1-6c757d" alt="Scholar Citations"></span>
 </div>
 <div id="citation-dare2025-zh" class="citation-popup">
   <div class="citation-format-container">
@@ -177,6 +179,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
+- *2026 - 2028*, 硕士研究生，清华大学深圳国际研究生院（SIGS）。
 - *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
   <div id="thesis-zh" class="thesis-abstract">
     <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
