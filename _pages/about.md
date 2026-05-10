@@ -41,7 +41,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track</div>
+<div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track · 🏆 MER2025-DES Champion</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-Champion-gold" alt="Champion"></span>
@@ -66,7 +66,6 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 <div class="paper-meta">ACM MM 2025 MRAC</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
-  <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-7th_Place-blue" alt="7th Place"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025', event)">Cite</button>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-dare" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="manual:dare-2025" alt="Scholar Citations"></a>
@@ -82,9 +81,9 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML NewInML</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-<div class="paper-title">Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?</div>
+<div class="paper-title">Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?</div>
   
-**Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
+**Yuesheng Huang**, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang
 
 <div class="paper-meta">ICML 2025 NewInML</div>
 <div class="paper-links">
@@ -96,7 +95,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 <div id="citation-arxiv2025" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">BibTeX</div>
-    <div class="citation-format">@misc{huang2025generatedimagesserveviable,<br>      title={Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?}, <br>      author={Yuesheng Huang and Peng Zhang and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
+    <div class="citation-format">@misc{huang2025syntheticperception,<br>      title={Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?}, <br>      author={Yuesheng Huang and Peng Zhang and Xiaoxin Wu and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
   </div>
 </div>
 </div>
@@ -209,5 +208,6 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # ©️ Patents and Copyrights
 <span class='anchor' id='-patents-and-copyrights'></span>
+- *2025*, "Student Emotion Intelligent Analysis System Based on Multimodal Large Language Models V1.0", Chinese software copyright, 2025SR1585138, First contributor
 - *2025*, "Multimodal Disease Diagnosis Software Based on Diffusion-Model Image Synthesis V1.0", Chinese software copyright, 2025SR1592713, First contributor
 - *2024*, "Flask based medical image segmentation platform V1.0", Chinese software copyright, 2024SR0877362

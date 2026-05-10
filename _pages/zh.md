@@ -44,7 +44,7 @@ redirect_from:
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025 主会 Grand Challenge 赛道</div>
+<div class="paper-meta">ACM MM 2025 主会 Grand Challenge 赛道 · 🏆 MER2025-DES 冠军</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <span class="paper-badge"><img src="https://img.shields.io/badge/MER2025--DES-冠军-gold" alt="Champion"></span>
@@ -69,7 +69,6 @@ redirect_from:
 <div class="paper-meta">ACM MM 2025 MRAC</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
-  <span class="paper-badge"><img src="https://img.shields.io/badge/MER_2025--FG-第7名-blue" alt="第7名"></span>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-dare2025-zh', event)">引用</button>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-dare-zh" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="manual:dare-2025" alt="Scholar Citations"></a>
@@ -85,9 +84,9 @@ redirect_from:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML NewInML</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-<div class="paper-title">Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?</div>
+<div class="paper-title">Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?</div>
   
-**Yuesheng Huang**, Peng Zhang, Riliang Liu, Jiaqi Liang
+**Yuesheng Huang**, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang
 
 <div class="paper-meta">ICML 2025 NewInML</div>
 <div class="paper-links">
@@ -99,7 +98,7 @@ redirect_from:
 <div id="citation-arxiv2025-zh" class="citation-popup">
   <div class="citation-format-container">
     <div class="citation-format-label">BibTeX</div>
-    <div class="citation-format">@misc{huang2025generatedimagesserveviable,<br>      title={Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning?}, <br>      author={Yuesheng Huang and Peng Zhang and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
+    <div class="citation-format">@misc{huang2025syntheticperception,<br>      title={Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?}, <br>      author={Yuesheng Huang and Peng Zhang and Xiaoxin Wu and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
   </div>
 </div>
 </div>
@@ -212,5 +211,5 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 
 # ©️ 专利与版权
 <span class='anchor' id='-patents-and-copyrights'></span>
-- *2025*, "基于多模态大语言模型的学生情感智能分析系统平台 V1.0", 中国软件著作权, 2025SR1585138, 第一完成人
+- *2025*, "基于多模态大语言模型的学生情感智能分析系统V1.0", 中国软件著作权, 2025SR1585138, 第一贡献者
 - *2024*, "基于Flask的医学图像分割平台V1.0", 中国软件著作权, 2024SR0877362
