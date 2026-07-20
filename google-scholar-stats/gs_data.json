@@ -4,19 +4,19 @@
   "updated": "2026-01-18",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
-      "num_citations": 22,
+      "num_citations": 25,
       "title": "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image..."
     },
     "edyJPQQAAAAJ:2osOgNQ5qMEC": {
-      "num_citations": 10,
+      "num_citations": 12,
       "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm..."
     },
     "edyJPQQAAAAJ:W7OEmFMy1HYC": {
-      "num_citations": 4,
+      "num_citations": 5,
       "title": "Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?"
     },
     "manual:affective-cot-2025": {
-      "num_citations": 1,
+      "num_citations": 2,
       "title": "Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow"
     },
     "manual:dare-2025": {
