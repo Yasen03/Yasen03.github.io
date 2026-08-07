@@ -43,7 +43,11 @@ SHIELDSIO_PATH = os.path.join(DATA_PATH, "gs_data_shieldsio.json")
 
 
 def main() -> None:
-    author = scholarly.search_author_by_id(AUTHOR_ID)
+    # scholarly >= 1.x renamed search_author_by_id -> search_author_id.
+    search_author = getattr(scholarly, "search_author_id", None)
+    if search_author is None:
+        search_author = scholarly.search_author_by_id
+    author = search_author(AUTHOR_ID)
     if author is None:
         sys.exit("Could not find author with id " + AUTHOR_ID)
     author = scholarly.fill(author, sections=["basics", "publications"])

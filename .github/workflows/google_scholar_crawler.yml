@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install scholarly
-        run: pip install scholarly
+        run: pip install scholarly==1.7.11
 
       - name: Fetch citations
         env:
