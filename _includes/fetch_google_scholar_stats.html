@@ -1,33 +1,39 @@
 <script>
-$(document).ready(function () {
+// Update citation badges from google-scholar-stats/gs_data.json.
+// Uses native fetch() so it works without jQuery on the page.
+(function () {
   var gsDataUrl = '{{ site.baseurl }}/google-scholar-stats/gs_data.json';
-  
-  $.getJSON(gsDataUrl, function (data) {
-    console.log("Successfully loaded Google Scholar data:", data);
-    if (data) {
-      // Update total citations
+
+  fetch(gsDataUrl)
+    .then(function (resp) {
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      return resp.json();
+    })
+    .then(function (data) {
+      console.log("Successfully loaded Google Scholar data:", data);
+      if (!data) return;
+
+      // Update total citations badge
       if (data.citedby !== undefined) {
-        $('.total_citations').each(function() {
-          var newSrc = 'https://img.shields.io/badge/Total%20Citations-' + data.citedby + '-blue?style=social&logo=google-scholar';
-          $(this).attr('src', newSrc);
+        document.querySelectorAll('.total_citations').forEach(function (el) {
+          el.src = 'https://img.shields.io/badge/Total%20Citations-' + data.citedby + '-blue?style=social&logo=google-scholar';
         });
       }
-      
-      // Update individual paper citations
+
+      // Update individual paper citation badges
       if (data.publications) {
-        $('.paper_citations').each(function () {
-          var paperId = $(this).data('paper-id');
+        document.querySelectorAll('.paper_citations').forEach(function (el) {
+          var paperId = el.getAttribute('data-paper-id');
           if (paperId && data.publications[paperId]) {
-            var numCitations = data.publications[paperId].num_citations;
-            var newSrc = 'https://img.shields.io/badge/Citations-' + numCitations + '-blue?style=social&logo=google-scholar';
-            $(this).attr('src', newSrc);
+            var num = data.publications[paperId].num_citations;
+            el.src = 'https://img.shields.io/badge/Citations-' + num + '-blue?style=social&logo=google-scholar';
           }
         });
       }
-    }
-  }).fail(function(jqXHR, textStatus, errorThrown) {
-    console.log("Failed to load Google Scholar stats from " + gsDataUrl);
-    console.log("Error details:", textStatus, errorThrown);
-  });
-});
+    })
+    .catch(function (err) {
+      console.log("Failed to load Google Scholar stats from " + gsDataUrl);
+      console.log("Error details:", err);
+    });
+})();
 </script>
