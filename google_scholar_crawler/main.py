@@ -145,6 +145,7 @@ def main() -> None:
         print(f"Fetched via scholarly: {name}: {citedby} total citations, {len(publications)} publications")
 
     # Keep manually-maintained entries (papers not yet indexed on Scholar).
+    old = {}
     if os.path.exists(GS_DATA_PATH):
         with open(GS_DATA_PATH, encoding="utf-8") as f:
             old = json.load(f)
@@ -176,6 +177,13 @@ def main() -> None:
         for k in keys:
             if k != display_key:
                 del publications[k]
+        # Guard against data-source glitches that return 0 for a paper that
+        # previously had citations (citation counts rarely drop to zero).
+        if total == 0:
+            prev = old.get("publications", {}).get(display_key, {}).get("num_citations", 0)
+            if prev > 0:
+                total = prev
+                print(f"WARNING: merge total was 0 for {display_key}; kept previous value {prev}")
         publications[display_key] = {
             "num_citations": total,
             "title": fixed_title,
