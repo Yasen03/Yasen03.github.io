@@ -16,7 +16,7 @@
       "title": "A FinBERT framework for sentiment analysis of Chinese financial news"
     },
     "edyJPQQAAAAJ:W7OEmFMy1HYC": {
-      "num_citations": 0,
+      "num_citations": 6,
       "title": "Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?"
     },
     "edyJPQQAAAAJ:Y0pCki6q_DkC": {
@@ -28,14 +28,6 @@
       "title": "Prism-OBI: a novel framework for oracle bone inscription recognition via visual perception and feature decoupling"
     },
     "edyJPQQAAAAJ:Tyk-4Ss8FVUC": {
-      "num_citations": 1,
-      "title": "DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition"
-    },
-    "manual:affective-cot-2025": {
-      "num_citations": 2,
-      "title": "Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow"
-    },
-    "manual:dare-2025": {
       "num_citations": 1,
       "title": "DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition"
     }

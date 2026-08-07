@@ -37,13 +37,17 @@ CITATION_OVERRIDES = {}
 
 # Scholar sometimes lists two versions of the same paper as separate rows.
 # Merge them into ONE site entry: sum the citation counts, keep the newest title.
-# display_key -> (fixed_title, [keywords that match all rows of this paper])
+# display_key -> (fixed_title, [keywords that match all rows of this paper], fallback_count)
+# fallback_count is used when the data source returns 0 (e.g. Scrapingdog only
+# returns the row with 0 citations and misses the other version). Set it to the
+# current sum of both Scholar rows; update it when the real total changes.
 MERGE_RULES = {
     # arXiv v1/ICML title: "Can Generated Images Serve as a Viable Modality for
     # Text-Centric Multimodal Learning?"  |  v2 (newest): "Synthetic Perception: ..."
     "edyJPQQAAAAJ:W7OEmFMy1HYC": (
         "Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?",
         ["Synthetic Perception", "Generated Images Serve as a Viable Modality"],
+        6,  # sum of the two merged Scholar rows (v1 + v2)
     ),
 }
 
@@ -166,8 +170,8 @@ def main() -> None:
 
     # Merge Scholar rows that belong to the same paper into a single entry.
     # The citation counts of all matching rows are summed on every run, so the
-    # total always tracks Scholar (nothing is hardcoded).
-    for display_key, (fixed_title, keywords) in MERGE_RULES.items():
+    # total tracks Scholar whenever both rows are returned.
+    for display_key, (fixed_title, keywords, fallback) in MERGE_RULES.items():
         keys = [
             k for k in publications
             if any(kw.lower() in publications[k].get("title", "").lower() for kw in keywords)
@@ -179,13 +183,12 @@ def main() -> None:
         for k in keys:
             if k != display_key:
                 del publications[k]
-        # Guard against data-source glitches that return 0 for a paper that
-        # previously had citations (citation counts rarely drop to zero).
-        if total == 0:
-            prev = old.get("publications", {}).get(display_key, {}).get("num_citations", 0)
-            if prev > 0:
-                total = prev
-                print(f"WARNING: merge total was 0 for {display_key}; kept previous value {prev}")
+        # Fallback: if the source only returned rows with 0 citations (e.g. the
+        # other version of this paper was not returned), use the configured
+        # fallback sum so the badge never shows a wrong 0.
+        if total == 0 and fallback > 0:
+            total = fallback
+            print(f"WARNING: merged total was 0 for {display_key}; used fallback {fallback}")
         publications[display_key] = {
             "num_citations": total,
             "title": fixed_title,
