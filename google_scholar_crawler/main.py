@@ -4,6 +4,12 @@
 Runs inside GitHub Actions (see .github/workflows/google_scholar_crawler.yml).
 The site's JS (fetch_google_scholar_stats.html) reads google-scholar-stats/gs_data.json
 from the main branch, so this script commits updates back to main.
+
+Data source priority:
+  1. Scrapingdog Google Scholar Author API (stable, CAPTCHA handled server-side)
+     when the SCRAPINGDOG_API_KEY env var is set.
+  2. scholarly library (unreliable fallback; direct requests get CAPTCHA-blocked
+     after a handful of calls).
 """
 
 import json
@@ -13,18 +19,19 @@ import sys
 import time
 from datetime import date
 
+import requests
+
 from scholarly import scholarly
 
 # Disable scholarly's built-in free-proxy pool: those proxies frequently hang
-# for many minutes on GitHub runners. Direct connections fail fast instead,
-# which the retry loop can handle. (Set scholarly.proxy to use a paid proxy.)
+# for many minutes on GitHub runners. Direct connections fail fast instead.
 scholarly.use_proxy = False
 
 # Scholar author ID; falls back to the default if the secret is unset.
 AUTHOR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "edyJPQQAAAAJ")
 
 # Manual citation overrides: full paper id ("author_id:pub_id") -> citation count.
-# These win over whatever scholarly returns. Only for cases that really cannot
+# These win over whatever the crawler returns. Only for cases that really cannot
 # be handled automatically (e.g. a number you want pinned forever).
 CITATION_OVERRIDES = {}
 
@@ -48,7 +55,61 @@ GS_DATA_PATH = os.path.join(DATA_PATH, "gs_data.json")
 SHIELDSIO_PATH = os.path.join(DATA_PATH, "gs_data_shieldsio.json")
 
 
-def main() -> None:
+def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
+    """Fetch the author profile via Scrapingdog's Google Scholar Author API.
+
+    Returns (name, citedby, publications) or None when no API key is configured.
+    citation_id values already have the "author_id:pub_id" format we store.
+    """
+    api_key = os.environ.get("SCRAPINGDOG_API_KEY", "")
+    if not api_key:
+        return None
+    url = "https://api.scrapingdog.com/google_scholar/author"
+    params = {"api_key": api_key, "author_id": AUTHOR_ID, "results": 100, "language": "en"}
+    resp = requests.get(url, params=params, timeout=60)
+    resp.raise_for_status()
+    data = resp.json()
+
+    publications = {}
+    for art in data.get("articles", []):
+        cid = art.get("citation_id", "")
+        if not cid:
+            continue
+        cited = art.get("cited_by", 0)
+        if isinstance(cited, dict):
+            cited = cited.get("value", 0)
+        try:
+            num = int(str(cited).replace(",", ""))
+        except (TypeError, ValueError):
+            num = 0
+        publications[cid] = {"num_citations": num, "title": art.get("title", "")}
+
+    # Author-level total citations: look in several possible response fields.
+    citedby = 0
+    for cand in (
+        data.get("cited_by"),
+        data.get("citedby"),
+        data.get("author", {}).get("cited_by"),
+        data.get("author", {}).get("citations"),
+    ):
+        if cand is None:
+            continue
+        if isinstance(cand, dict):
+            cand = cand.get("value", 0)
+        try:
+            citedby = int(str(cand).replace(",", ""))
+            break
+        except (TypeError, ValueError):
+            continue
+    if not citedby:
+        citedby = sum(p["num_citations"] for p in publications.values())
+
+    name = data.get("author", {}).get("name", "Unknown")
+    return name, citedby, publications
+
+
+def fetch_via_scholarly() -> tuple[str, int, dict]:
+    """Fallback: direct scholarly scrape (unreliable, CAPTCHA-prone)."""
     # scholarly >= 1.x renamed search_author_by_id -> search_author_id.
     search_author = getattr(scholarly, "search_author_id", None)
     if search_author is None:
@@ -69,7 +130,19 @@ def main() -> None:
             "num_citations": int(pub.get("num_citations", 0)),
             "title": pub.get("bib", {}).get("title", ""),
         }
-    print(f"Fetched {name}: {citedby} total citations, {len(publications)} publications")
+    return name, citedby, publications
+
+
+def main() -> None:
+    if os.environ.get("SCRAPINGDOG_API_KEY"):
+        fetched = fetch_via_scrapingdog()
+        if fetched is None:
+            sys.exit("Scrapingdog fetch failed (empty response)")
+        name, citedby, publications = fetched
+        print(f"Fetched via Scrapingdog: {name}: {citedby} total citations, {len(publications)} publications")
+    else:
+        name, citedby, publications = fetch_via_scholarly()
+        print(f"Fetched via scholarly: {name}: {citedby} total citations, {len(publications)} publications")
 
     # Keep manually-maintained entries (papers not yet indexed on Scholar).
     if os.path.exists(GS_DATA_PATH):
@@ -132,7 +205,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    # Hard per-attempt timeout: scholarly has no built-in timeout and can hang.
+    # Hard per-attempt timeout: neither data source has a reliable built-in one.
     class FetchTimeout(Exception):
         pass
 
@@ -141,7 +214,7 @@ if __name__ == "__main__":
 
     signal.signal(signal.SIGALRM, _timeout)
 
-    # Scholar is aggressive with rate limiting; retry a few times with backoff.
+    # Retry a few times with backoff.
     for attempt in range(1, 4):
         signal.alarm(300)  # max 5 minutes per attempt
         try:

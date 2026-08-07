@@ -27,6 +27,7 @@ jobs:
       - name: Fetch citations
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID || 'edyJPQQAAAAJ' }}
+          SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
         run: python google_scholar_crawler/main.py
 
       - name: Commit and push if changed
