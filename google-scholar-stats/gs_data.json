@@ -1,19 +1,35 @@
 {
   "name": "Yuesheng Huang",
-  "citedby": 39,
-  "updated": "2026-01-18",
+  "citedby": 50,
+  "updated": "2026-08-07",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
-      "num_citations": 25,
-      "title": "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image..."
+      "num_citations": 22,
+      "title": "Sentiment analysis using e-commerce review keyword-generated image with a hybrid machine learning-based model"
     },
     "edyJPQQAAAAJ:2osOgNQ5qMEC": {
-      "num_citations": 12,
-      "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm..."
+      "num_citations": 14,
+      "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction."
+    },
+    "edyJPQQAAAAJ:YsMSGLbcyi4C": {
+      "num_citations": 8,
+      "title": "A FinBERT framework for sentiment analysis of Chinese financial news"
     },
     "edyJPQQAAAAJ:W7OEmFMy1HYC": {
-      "num_citations": 6,
+      "num_citations": 0,
       "title": "Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?"
+    },
+    "edyJPQQAAAAJ:Y0pCki6q_DkC": {
+      "num_citations": 3,
+      "title": "Affective-CoT: Decomposing Multimodal Emotion Reasoning through a Hierarchical Cognitive Workflow"
+    },
+    "edyJPQQAAAAJ:eQOLeE2rZwMC": {
+      "num_citations": 2,
+      "title": "Prism-OBI: a novel framework for oracle bone inscription recognition via visual perception and feature decoupling"
+    },
+    "edyJPQQAAAAJ:Tyk-4Ss8FVUC": {
+      "num_citations": 1,
+      "title": "DARE to Disagree: A Multi-Agent Adversarial Debate Framework for Open-Vocabulary Multimodal Emotion Recognition"
     },
     "manual:affective-cot-2025": {
       "num_citations": 2,
