@@ -37,17 +37,24 @@ CITATION_OVERRIDES = {}
 
 # Scholar sometimes lists two versions of the same paper as separate rows.
 # Merge them into ONE site entry: sum the citation counts, keep the newest title.
-# display_key -> (fixed_title, [keywords that match all rows of this paper], fallback_count)
-# fallback_count is used when the data source returns 0 (e.g. Scrapingdog only
-# returns the row with 0 citations and misses the other version). Set it to the
-# current sum of both Scholar rows; update it when the real total changes.
+# display_key -> (fixed_title, [keywords that match all rows of this paper])
 MERGE_RULES = {
     # arXiv v1/ICML title: "Can Generated Images Serve as a Viable Modality for
     # Text-Centric Multimodal Learning?"  |  v2 (newest): "Synthetic Perception: ..."
     "edyJPQQAAAAJ:W7OEmFMy1HYC": (
         "Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?",
         ["Synthetic Perception", "Generated Images Serve as a Viable Modality"],
-        6,  # sum of the two merged Scholar rows (v1 + v2)
+    ),
+}
+
+# Version-split papers whose other version (the one with the real citations) is
+# NOT returned by the author API. We look it up through the Scholar *search* API
+# to get its real citation count on every run (no hardcoded numbers).
+# display_key -> (search_query, [keywords to match the result item])
+SEARCH_LOOKUPS = {
+    "edyJPQQAAAAJ:W7OEmFMy1HYC": (
+        "Can Generated Images Serve as a Viable Modality for Text-Centric Multimodal Learning",
+        ["Generated Images Serve as a Viable Modality"],
     ),
 }
 
@@ -57,6 +64,15 @@ DATA_PATH = os.path.join(
 )
 GS_DATA_PATH = os.path.join(DATA_PATH, "gs_data.json")
 SHIELDSIO_PATH = os.path.join(DATA_PATH, "gs_data_shieldsio.json")
+
+
+def _parse_cited_by(value) -> int:
+    """Extract an integer citation count from Scrapingdog's cited_by shapes
+    (e.g. {"total": "Cited by 3031"} or {"value": "3031"} or a raw number)."""
+    if isinstance(value, dict):
+        value = value.get("total") or value.get("value") or 0
+    digits = "".join(ch for ch in str(value) if ch.isdigit())
+    return int(digits) if digits else 0
 
 
 def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
@@ -89,6 +105,36 @@ def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
         except (TypeError, ValueError):
             num = 0
         publications[cid] = {"num_citations": num, "title": art.get("title", "")}
+
+    # Look up the missing version(s) of version-split papers via Scholar search,
+    # so their merged total uses REAL citation numbers (no hardcoded values).
+    for display_key, (search_query, match_kw) in SEARCH_LOOKUPS.items():
+        try:
+            sresp = requests.get(
+                "https://api.scrapingdog.com/google_scholar",
+                params={"api_key": api_key, "query": search_query, "language": "en", "results": 10},
+                timeout=60,
+            )
+            sresp.raise_for_status()
+            sdata = sresp.json()
+        except Exception as exc:  # noqa: BLE001 - lookup is best-effort
+            print(f"SEARCH_LOOKUPS: search failed for {display_key}: {exc!r}")
+            continue
+        best = None
+        for item in sdata.get("scholar_results", []):
+            title = item.get("title", "")
+            if any(kw.lower() in title.lower() for kw in match_kw):
+                best = item
+                break
+        if best is None:
+            print(f"SEARCH_LOOKUPS: no matching result for {display_key}")
+            continue
+        pid = best.get("id", "")
+        cited = _parse_cited_by(best.get("inline_links", {}).get("cited_by", {}))
+        if pid:
+            key = f"{AUTHOR_ID}:{pid}"
+            publications[key] = {"num_citations": cited, "title": best.get("title", "")}
+            print(f"SEARCH_LOOKUPS: {key} = {cited} citations (real value)")
 
     # Author-level total citations: look in several possible response fields.
     citedby = 0
@@ -170,25 +216,34 @@ def main() -> None:
 
     # Merge Scholar rows that belong to the same paper into a single entry.
     # The citation counts of all matching rows are summed on every run, so the
-    # total tracks Scholar whenever both rows are returned.
-    for display_key, (fixed_title, keywords, fallback) in MERGE_RULES.items():
+    # total tracks Scholar whenever the rows are returned.
+    for display_key, (fixed_title, keywords) in MERGE_RULES.items():
         keys = [
             k for k in publications
             if any(kw.lower() in publications[k].get("title", "").lower() for kw in keywords)
         ]
         if not keys:
+            # If this paper is in SEARCH_LOOKUPS but the lookup failed, keep the
+            # last real value instead of dropping the paper or showing 0.
+            if display_key in SEARCH_LOOKUPS:
+                prev = old.get("publications", {}).get(display_key, {}).get("num_citations", 0)
+                if prev > 0:
+                    publications[display_key] = {"num_citations": prev, "title": fixed_title}
+                    print(f"Kept previous real value {prev} for {display_key} (lookup unavailable)")
+                    continue
             print(f"MERGE_RULES: no Scholar rows matched {display_key}, leaving as-is")
             continue
         total = sum(publications[k]["num_citations"] for k in keys)
+        # If the merged total is 0 for a paper whose other version is fetched via
+        # SEARCH_LOOKUPS, the lookup likely failed: keep the last real value.
+        if total == 0 and display_key in SEARCH_LOOKUPS:
+            prev = old.get("publications", {}).get(display_key, {}).get("num_citations", 0)
+            if prev > 0:
+                total = prev
+                print(f"Kept previous real value {prev} for {display_key} (lookup unavailable or zero)")
         for k in keys:
             if k != display_key:
                 del publications[k]
-        # Fallback: if the source only returned rows with 0 citations (e.g. the
-        # other version of this paper was not returned), use the configured
-        # fallback sum so the badge never shows a wrong 0.
-        if total == 0 and fallback > 0:
-            total = fallback
-            print(f"WARNING: merged total was 0 for {display_key}; used fallback {fallback}")
         publications[display_key] = {
             "num_citations": total,
             "title": fixed_title,
