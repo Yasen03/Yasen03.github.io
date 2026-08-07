@@ -104,8 +104,6 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 - *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
 - *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling, Guangdong Provincial Department of Education.
 - *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division), Guangdong Provincial Department of Education.
-- *2023.08* **Outstanding Award** in the International University Mathematical Contest in Modeling.
-- *2023.07* **First Prize** in the National Undergraduate Electrical Mathematical Modeling Competition, China Electrotechnical Society.
 - *2021.12* **Silver Medal** in the Kaggle Lux AI Competition.
 
 # 🎓 Educations
@@ -120,9 +118,3 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 - *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
 - *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Participant.(Project completed)
-
-# ©️ Patents and Copyrights
-<span class='anchor' id='-patents-and-copyrights'></span>
-- *2025*, "Student Emotion Intelligent Analysis System Based on Multimodal Large Language Models V1.0", Chinese software copyright, 2025SR1585138, First contributor
-- *2025*, "Multimodal Disease Diagnosis Software Based on Diffusion-Model Image Synthesis V1.0", Chinese software copyright, 2025SR1592713, First contributor
-- *2024*, "Flask based medical image segmentation platform V1.0", Chinese software copyright, 2024SR0877362

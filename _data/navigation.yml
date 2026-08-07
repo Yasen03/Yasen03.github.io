@@ -18,9 +18,6 @@ main:
   - title: "Research topics"
     url: "/#-research-topics"
 
-  - title: "Patents and Copyrights"
-    url: "/#-patents-and-copyrights"
-
 main_zh:
   - title: "关于我"
     url: "/zh/#about-me"
@@ -39,6 +36,3 @@ main_zh:
 
   - title: "研究课题"
     url: "/zh/#-research-topics"
-
-  - title: "专利版权"
-    url: "/zh/#-patents-and-copyrights"
