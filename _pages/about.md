@@ -102,8 +102,8 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 <span class='anchor' id='-honors-and-awards'></span>
 - *2025.08* **Champion (1st Place)** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader.
 - *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
-- *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling, Guangdong Provincial Department of Education.
-- *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division), Guangdong Provincial Department of Education.
+- *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling.
+- *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division).
 - *2021.12* **Silver Medal** in the Kaggle Lux AI Competition.
 
 # 🎓 Educations
@@ -114,7 +114,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 
 # 📖 Research topics
 <span class='anchor' id='-research-topics'></span>
-- *2023.05-2024.05*, "Research and implementation of MIMO system detection algorithm based on Gaussian tree", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
-- *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Huang Yuesheng as host**. (Project completed)
-- *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Huang Yuesheng as host**. (Project completed)
+- *2023.05-2024.05*, "Research and implementation of MIMO system detection algorithm based on Gaussian tree", Chinese college students Innovation and Entrepreneurship plan project, **Host**. (Project completed)
+- *2024.01-2026-01*, "Research on fine-grained sentiment analysis of multi-modal data fusion based on deep learning", Guangdong Provincial Science and Technology Innovation Fund, 45,000CNY, **Host**. (Project completed)
+- *2024.05-2025.05*, "Neurodetective: An interpretable multimodal contrastive learning Framework for the diagnosis of neurodegenerative diseases", Chinese college students Innovation and Entrepreneurship plan project, **Host**. (Project completed)
 - *2024.05-2025.05*, "Aquaponics, Ecological co-prosperity: A general agricultural visual large model for digital aquaponics fish pond system called DASAM", Chinese college students Innovation and Entrepreneurship plan project, Participant.(Project completed)
