@@ -103,6 +103,7 @@ redirect_from:
 
 # 🏆 竞赛获奖
 <span class='anchor' id='-honors-and-awards'></span>
+- *2026.08* **Physical AI Hackathon 2026**（中国香港）**入围决赛（Finalist）**。
 - *2025.08* **ACM MM 2025 MER Challenge（DES Track）冠军**（团队负责人）。
 - *2024.05* **美国大学生数学建模竞赛（MCM/ICM）**E题**Finalist奖**（全球**前2%**），COMAP。
 - *2023.11* 中国大学生数学建模竞赛广东赛区**一等奖**。

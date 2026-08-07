@@ -100,6 +100,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 
 # 🏆 Competition Awards
 <span class='anchor' id='-honors-and-awards'></span>
+- *2026.08* **Finalist** in the **Physical AI Hackathon 2026** (Hong Kong, China).
 - *2025.08* **Champion (1st Place)** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader.
 - *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
 - *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling.
