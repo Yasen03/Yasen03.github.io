@@ -98,8 +98,8 @@ redirect_from:
 </div>
 </div>
 
-- **Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model.** Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang\*, Yongqi Ren, Rongjun Chen. *Computers, Materials & Continua*, 2024. [[论文](https://www.techscience.com/cmc/v80n1/57421)] [[代码](https://github.com/Yasen03/T2I-SA)]
-- **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[论文](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] [[代码](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)]
+- **Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model.** Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang\*, Yongqi Ren, Rongjun Chen. *Computers, Materials & Continua*, 2024. [[论文](https://www.techscience.com/cmc/v80n1/57421)] <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" src="https://img.shields.io/badge/Citations-25-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
+- **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[论文](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] [[代码](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)] <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" src="https://img.shields.io/badge/Citations-12-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 
 # 🏆 竞赛获奖
 <span class='anchor' id='-honors-and-awards'></span>
