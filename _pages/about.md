@@ -109,7 +109,7 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
 - *2026 - 2028*, Master's student, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University.
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**) (Highest score in the cohort)
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**)
 - *2018.09 - 2021.06*, Ordinary high school, Shaoguan City Wengyuan middle School
 
 # 📖 Research topics
