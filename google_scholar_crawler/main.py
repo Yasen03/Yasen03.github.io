@@ -8,11 +8,17 @@ from the main branch, so this script commits updates back to main.
 
 import json
 import os
+import signal
 import sys
 import time
 from datetime import date
 
 from scholarly import scholarly
+
+# Disable scholarly's built-in free-proxy pool: those proxies frequently hang
+# for many minutes on GitHub runners. Direct connections fail fast instead,
+# which the retry loop can handle. (Set scholarly.proxy to use a paid proxy.)
+scholarly.use_proxy = False
 
 # Scholar author ID; falls back to the default if the secret is unset.
 AUTHOR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "edyJPQQAAAAJ")
@@ -126,12 +132,24 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    # Hard per-attempt timeout: scholarly has no built-in timeout and can hang.
+    class FetchTimeout(Exception):
+        pass
+
+    def _timeout(signum, frame):
+        raise FetchTimeout("Google Scholar fetch exceeded 300s")
+
+    signal.signal(signal.SIGALRM, _timeout)
+
     # Scholar is aggressive with rate limiting; retry a few times with backoff.
     for attempt in range(1, 4):
+        signal.alarm(300)  # max 5 minutes per attempt
         try:
             main()
+            signal.alarm(0)
             break
         except Exception as exc:  # noqa: BLE001 - surface any fetch failure
+            signal.alarm(0)
             print(f"Attempt {attempt} failed: {exc!r}", file=sys.stderr)
             if attempt == 3:
                 sys.exit("Google Scholar fetch failed after 3 attempts")
