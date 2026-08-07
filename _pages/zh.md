@@ -19,11 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前在清华大学深圳国际研究生院（SIGS）攻读硕士学位。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">多模态学习</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">多模态情感智能</span>。欢迎就相关方向合作交流。
-
-我曾担任团队负责人并获得了 **ACM MM 2025 MER (多模态情感识别) 挑战赛 DES 赛道的第一名**。此外，我的第一作者论文已被 **ACM MM 主会 Grand Challenge 赛道**录用。
-
-在2024年，我被选树为**广东大学生年度人物**和**人民日报国家奖学金学生代表**。
+我目前在清华大学深圳国际研究生院（SIGS）攻读硕士学位。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">AI生成音视频检测（内容安全）</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界模型</span>。欢迎就相关方向合作交流。
 
 联系方式：[yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
@@ -102,71 +98,12 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CMC 2024</div><img src='{{ site.baseurl }}/images/cmc.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-title">Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model</div>
-  
-Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
-
-<div class="paper-meta">CMC - Computers, Materials & Continua</div>
-<div class="paper-links">
-  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-00A0E9" alt="CMC 2024"></a>
-  <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt="GitHub Stars"></a>
-  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1-zh', event)">引用</button>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1-zh" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
-</div>
-<div id="citation1-zh" class="citation-popup">
-  <div class="citation-format-container">
-    <div class="citation-format-label">GB/T</div>
-    <div class="citation-format">Li J, Huang Y, Lu Y, et al. Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model[J]. Computers, Materials & Continua, 2024, 80(1).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">MLA</div>
-    <div class="citation-format">Li, Jiawen, et al. "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model." Computers, Materials & Continua 80.1 (2024).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">APA</div>
-    <div class="citation-format">Li, J., Huang, Y., Lu, Y., Wang, L., Ren, Y., & Chen, R. (2024). Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model. Computers, Materials & Continua, 80(1).</div>
-  </div>
-</div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Engineering Letters</div><img src='{{ site.baseurl }}/images/EL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-title">An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction</div>
-  
-**Yuesheng Huang**, Jiawen Li<sup>*</sup>, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
-
-<div class="paper-meta">Engineering Letters</div>
-<div class="paper-links">
-  <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-4CAF50" alt="Engineering Letters"></a>
-  <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt="GitHub Stars"></a>
-  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2-zh', event)">引用</button>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2-zh" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
-</div>
-<div id="citation2-zh" class="citation-popup">
-  <div class="citation-format-container">
-    <div class="citation-format-label">GB/T</div>
-    <div class="citation-format">Huang Y, Li J, Li Y, et al. An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction[J]. Engineering Letters, 2024, 32(10).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">MLA</div>
-    <div class="citation-format">Huang, Yuesheng, et al. "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction." Engineering Letters 32.10 (2024).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">APA</div>
-    <div class="citation-format">Huang, Y., Li, J., Li Y., Lin, R., Wu, J., Wang, L., & Chen, R. (2024). An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction. Engineering Letters, 32(10).</div>
-  </div>
-</div>
-</div>
-</div>
+- **Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model.** Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang\*, Yongqi Ren, Rongjun Chen. *Computers, Materials & Continua*, 2024. [[论文](https://www.techscience.com/cmc/v80n1/57421)] [[代码](https://github.com/Yasen03/T2I-SA)]
+- **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[论文](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] [[代码](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)]
 
 # 🏆 竞赛获奖
 <span class='anchor' id='-honors-and-awards'></span>
 - *2025.08* **ACM MM 2025 MER Challenge（DES Track）冠军**（团队负责人）。
-- *2025.02* 中国大学生技术创新创业大赛信息技术、医疗健康、现代服务赛道三赛道**一等奖**。
-- *2024.06* **广东挑战杯创业计划竞赛银奖**，广东省教育厅。
 - *2024.05* **美国大学生数学建模竞赛（MCM/ICM）**E题**Finalist奖**（全球**前2%**），COMAP。
 - *2023.11* 中国大学生数学建模竞赛广东赛区**一等奖**。
 - *2023.08* 中国大学生计算机设计大赛广东赛区**一等奖**。
@@ -177,27 +114,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
 - *2026 - 2028*, 硕士研究生，清华大学深圳国际研究生院（SIGS）。
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）<button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-zh', event)">毕业设计</button>（同届全校最高分）
-  <div id="thesis-zh" class="thesis-abstract">
-    <div class="paper-title">基于多模态数据与大模型赋能的学生情感智能分析与监测系统设计</div>
-    <div class="thesis-toolbar">
-      <button type="button" class="paper-badge-text active" onclick="setThesisView('thesis-zh','abstract')">摘要</button>
-      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-zh','pdf','{{ site.baseurl }}/files/pdfs/thesis.pdf')">PDF</button>
-      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-zh','ppt','{{ site.baseurl }}/files/pdfs/debate.pdf')">PPT</button>
-    </div>
-    <div class="thesis-content">
-      <strong>摘要</strong><br>
-      随着人工智能与深度学习技术的深入发展，<strong>多模态情感分析</strong>在教育领域的应用潜力日益显现。传统单模态<strong>情感识别</strong>方法在捕捉学生复杂情绪状态方面存在局限，而多模态分析通过整合面部表情、语音信息与生理信号，能显著提升情感识别的准确性。当前教育信息化背景下，学生心理健康监测需求迫切，但现有方法存在时效性差、主观性强、难以规模化等问题，限制了其在校园环境的普及。<br><br>
-      
-      针对上述挑战，本文提出并实现了一套基于<strong>ESP32</strong>与<strong>ESP32S3</strong>硬件平台，结合轻量化多模态融合算法及<strong>大语言模型</strong>的学生情感智能分析与监测系统。该系统旨在利用低成本、高集成度的嵌入式技术，融合面部、语音、心率等多源数据，为教育工作者、家长及学生提供实时、准确、便捷的情感监测与支持工具。<br><br>
-      
-      在硬件层面，采用ESP32与ESP32S3双主板分布式架构。ESP32主板集成ESP32CAM、心率传感器等，实现面部表情识别、生理数据采集及基础反馈；ESP32S3主板集成数字麦克风、音频功放、显示屏等，实现基于百度<strong>文心一言API</strong>的智能对话功能。软件层面，基于Node.js构建服务端，采用SQLite进行数据存储，开发了面向教师、学生、家长的多角色Web应用界面。算法层面，设计了基于<strong>Deepface</strong>的面部情绪识别、基于文心一言API的语音情感分析，设计了动态权重决策级多模态融合算法，并引入基于数据量的多模型情绪趋势预测方法。同时，利用提示词优化了大模型在情感支持对话任务中的表现。<br><br>
-      
-      设计完成后，完成了系统硬件平台的搭建与调试，并对软件系统进行了全面的功能测试与验证，包括白盒测试与黑盒测试。测试结果表明，系统各模块运行稳定，功能符合设计要求，能够有效整合多模态数据进行学生情感状态分析与监测，验证了该设计的可行性与有效性。<br><br>
-      
-      <strong>关键词：</strong>多模态情感分析；学生情感监测；ESP32；大语言模型；数据融合
-    </div>
-  </div>
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）（同届全校最高分）
 - *2018.09 - 2021.06*, 普通高中, 韶关市翁源中学
 
 # 📖 研究课题
@@ -210,4 +127,5 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # ©️ 专利与版权
 <span class='anchor' id='-patents-and-copyrights'></span>
 - *2025*, "基于多模态大语言模型的学生情感智能分析系统V1.0", 中国软件著作权, 2025SR1585138, 第一贡献者
+- *2025*, "基于扩散模型图像合成的多模态疾病诊断软件V1.0", 中国软件著作权, 2025SR1592713, 第一贡献者
 - *2024*, "基于Flask的医学图像分割平台V1.0", 中国软件著作权, 2024SR0877362

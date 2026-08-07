@@ -1,72 +1,50 @@
-
-<h1 align="center">
-AcadHomepage
-</h1>
-
-<div align="center">
-
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
-
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
-
 <p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
+  <img src="https://raw.githubusercontent.com/Yasen03/Yasen03.github.io/main/images/android-chrome-512x512.png" width="120" alt="hys."/>
 </p>
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+<h1 align="center">hys. · Yuesheng Huang</h1>
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+<p align="center">
+  <em>Master's student @ Tsinghua SIGS · building machines that see, hear, and <b>judge</b> the world</em>
+</p>
 
-## Quick Start
+<p align="center">
+  <a href="https://yasen03.github.io"><img src="https://img.shields.io/badge/Homepage-yasen03.github.io-6B7A99?style=flat-square&logo=jekyll&logoColor=white" alt="Homepage"/></a>
+  <a href="https://github.com/Yasen03"><img src="https://img.shields.io/badge/GitHub-Yasen03-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Yuesheng%20Huang-4285F4?style=flat-square&logo=google-scholar&logoColor=white" alt="Google Scholar"/></a>
+  <a href="https://orcid.org/0009-0004-4028-448X"><img src="https://img.shields.io/badge/ORCID-0009--0004--4028--448X-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"/></a>
+  <a href="mailto:yueshenghuang@stu.gpnu.edu.cn"><img src="https://img.shields.io/badge/Email-yueshenghuang%40stu.gpnu.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+---
 
-## Debug Locally
+## 🧭 What is this repo?
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+This is the source code of my personal academic homepage — a Jekyll site powered by the [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) template, deployed on **GitHub Pages** at [yasen03.github.io](https://yasen03.github.io) (with a [中文版](https://yasen03.github.io/zh)).
 
-# Acknowledges
+## 🔬 Research Interests
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+| | |
+|---|---|
+| 🛡️ | **AI-Generated Audio/Video Detection** — telling machine-made media apart from reality (AIGC Safety) |
+| 🌐 | **World Models** — letting models learn how the world works, not just what it looks like |
+
+## 📌 Highlights
+
+- 🏆 **1st Place**, ACM MM 2025 MER Challenge (DES Track), as team leader
+- 📄 First-author paper in **ACM MM 2025 Main Conference Grand Challenge Track**
+- 🧠 Maintaining [Awesome Affective Computing](https://github.com/Yasen03/awesome-affective-computing) — a curated list of Emotion AI resources
+
+## 🚀 Local Development
+
+```bash
+bash run_server.sh   # starts Jekyll livereload at http://127.0.0.1:4000
+```
+
+## 📬 Get in Touch
+
+Found a bug on the site? Want to collaborate on AIGC detection or world models? Drop me an email at [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn). 😉
+
+---
+
+<p align="center"><sub>Made with ❤️, ☕ and a lot of Jekyll Liquid tags.</sub></p>

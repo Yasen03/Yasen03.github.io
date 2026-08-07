@@ -16,11 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-I am currently a master's student at Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-layer-group" aria-hidden="true"></i>&nbsp;Multimodal Learning</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-heart" aria-hidden="true"></i>&nbsp;Multimodal Affective Intelligence</span>. Welcome to collaborate on related projects.
-
-I am honored to have served as the team leader and won **1st Place** in the **DES track** of the **ACM MM 2025 MER (Multimodal Emotion Recognition) Challenge**. Additionally, my first-author paper has been accepted by the **ACM MM Main Conference Grand Challenge Track**.
-
-In 2024, I was recognized as the **Guangdong Provincial Person of the Year** (one of only 10 winners) and selected as a student representative of the **People's Daily National Scholarship** (one of only 4 winners from Guangdong).
+I am currently a master's student at Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-shield-alt" aria-hidden="true"></i>&nbsp;AI-Generated Audio/Video Detection (AIGC Safety)</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Models</span>. Welcome to collaborate on related projects.
 
 Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
@@ -99,71 +95,12 @@ Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CMC 2024</div><img src='{{ site.baseurl }}/images/cmc.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-title">Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model</div>
-  
-Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Chen
-
-<div class="paper-meta">CMC - Computers, Materials & Continua</div>
-<div class="paper-links">
-  <a class="paper-badge" href="https://www.techscience.com/cmc/v80n1/57421"><img src="https://img.shields.io/badge/Paper-CMC%202024-00A0E9" alt="CMC 2024"></a>
-  <a class="paper-badge" href="https://github.com/Yasen03/T2I-SA"><img src="https://img.shields.io/github/stars/Yasen03/T2I-SA?style=social" alt="GitHub Stars"></a>
-  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation1', event)">Cite</button>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img id="citation-badge-1" src="https://img.shields.io/badge/Citations-2-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" alt="Scholar Citations"></a>
-</div>
-<div id="citation1" class="citation-popup">
-  <div class="citation-format-container">
-    <div class="citation-format-label">GB/T</div>
-    <div class="citation-format">Li J, Huang Y, Lu Y, et al. Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model[J]. Computers, Materials & Continua, 2024, 80(1).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">MLA</div>
-    <div class="citation-format">Li, Jiawen, et al. "Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model." Computers, Materials & Continua 80.1 (2024).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">APA</div>
-    <div class="citation-format">Li, J., Huang, Y., Lu, Y., Wang, L., Ren, Y., & Chen, R. (2024). Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model. Computers, Materials & Continua, 80(1).</div>
-  </div>
-</div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Engineering Letters</div><img src='{{ site.baseurl }}/images/EL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-title">An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction</div>
-  
-**Yuesheng Huang**, Jiawen Li<sup>*</sup>, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, and Rongjun Chen
-
-<div class="paper-meta">Engineering Letters</div>
-<div class="paper-links">
-  <a class="paper-badge" href="https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf"><img src="https://img.shields.io/badge/Paper-Engineering%20Letters-4CAF50" alt="Engineering Letters"></a>
-  <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt="GitHub Stars"></a>
-  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation2', event)">Cite</button>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img id="citation-badge-2" src="https://img.shields.io/badge/Citations-3-6c757d" class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" alt="Scholar Citations"></a>
-</div>
-<div id="citation2" class="citation-popup">
-  <div class="citation-format-container">
-    <div class="citation-format-label">GB/T</div>
-    <div class="citation-format">Huang Y, Li J, Li Y, et al. An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction[J]. Engineering Letters, 2024, 32(10).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">MLA</div>
-    <div class="citation-format">Huang, Yuesheng, et al. "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction." Engineering Letters 32.10 (2024).</div>
-  </div>
-  <div class="citation-format-container">
-    <div class="citation-format-label">APA</div>
-    <div class="citation-format">Huang, Y., Li, J., Li Y., Lin, R., Wu, J., Wang, L., & Chen, R. (2024). An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction. Engineering Letters, 32(10).</div>
-  </div>
-</div>
-</div>
-</div>
+- **Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model.** Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang\*, Yongqi Ren, Rongjun Chen. *Computers, Materials & Continua*, 2024. [[Paper](https://www.techscience.com/cmc/v80n1/57421)] [[Code](https://github.com/Yasen03/T2I-SA)]
+- **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[Paper](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] [[Code](https://github.com/Yasen03/KOA-CNN-LSTM-Attention)]
 
 # 🏆 Competition Awards
 <span class='anchor' id='-honors-and-awards'></span>
 - *2025.08* **Champion (1st Place)** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader.
-- *2025.02* **First Prize** in Information Technology, Healthcare, and Modern Service Tracks at the China University Student Technology Innovation and Entrepreneurship Competition.
-- *2024.06* **Silver Award** in the **Challenge Cup** Entrepreneurship Plan Competition (Guangdong), Guangdong Provincial Department of Education.
 - *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
 - *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling, Guangdong Provincial Department of Education.
 - *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division), Guangdong Provincial Department of Education.
@@ -174,27 +111,7 @@ Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang*, Yongqi Ren and Rongjun Che
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
 - *2026 - 2028*, Master's student, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University.
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**) <button type="button" class="paper-badge-text thesis-button" onclick="toggleThesis('thesis-en', event)">Graduation Project</button> (Highest score in the cohort)
-  <div id="thesis-en" class="thesis-abstract">
-    <div class="paper-title">Design of an Intelligent Student Emotion Analysis and Monitoring System Empowered by Multimodal Data and Large Models</div>
-    <div class="thesis-toolbar">
-      <button type="button" class="paper-badge-text active" onclick="setThesisView('thesis-en','abstract')">Abstract</button>
-      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-en','pdf','{{ site.baseurl }}/files/pdfs/thesis.pdf')">PDF</button>
-      <button type="button" class="paper-badge-text" onclick="setThesisView('thesis-en','ppt','{{ site.baseurl }}/files/pdfs/debate.pdf')">PPT</button>
-    </div>
-    <div class="thesis-content">
-      <strong>ABSTRACT</strong><br>
-      With the in-depth development of artificial intelligence and deep learning technologies, the application potential of <strong>multimodal sentiment analysis</strong> in the educational field is increasingly evident. Traditional unimodal <strong>emotion recognition</strong> methods have limitations in capturing students' complex emotional states, while multimodal analysis significantly improves the accuracy of emotion recognition by integrating facial expressions, speech information, and physiological signals. Under the current background of educational informatization, there is an urgent demand for student mental health monitoring. However, existing methods face challenges such as poor timeliness, strong subjectivity, and difficulties in scaling, which limit their widespread adoption in campus environments.<br><br>
-      
-      To address these challenges, this paper proposes and implements a student emotion intelligent analysis and monitoring system based on <strong>ESP32</strong> and <strong>ESP32S3</strong> hardware platforms, combined with lightweight multimodal fusion algorithms and <strong>large language models</strong>. The system aims to utilize low-cost, highly integrated embedded technology to fuse multi-source data including facial, speech, and heart rate information, providing educators, parents, and students with real-time, accurate, and convenient emotion monitoring and support tools.<br><br>
-      
-      At the hardware level, a distributed dual-mainboard architecture using ESP32 and ESP32S3 is adopted. The ESP32 mainboard integrates ESP32CAM and heart rate sensors to implement facial expression recognition, physiological data collection, and basic feedback. The ESP32S3 mainboard integrates a digital microphone, audio amplifier, display screen, etc., to achieve intelligent dialogue functions based on Baidu's <strong>ERNIE Bot API</strong>. At the software level, a Node.js-based server is constructed, SQLite is used for data storage, and multi-role web application interfaces for teachers, students, and parents are developed. On the algorithmic level, the system implements facial emotion recognition based on <strong>Deepface</strong>, speech emotion analysis using the ERNIE Bot API, designs a dynamic weight decision-level multimodal fusion algorithm, and introduces a data-volume-based multi-model emotion trend prediction method. Additionally, prompt optimization is employed to enhance the performance of large language models in emotional support dialogue tasks.<br><br>
-      
-      Finally, the system hardware platform was successfully built and debugged, with comprehensive functional testing and verification conducted on the software system, including white-box testing and black-box testing. The test results demonstrate stable operation of all system modules, compliance with design requirements, and effective integration of multimodal data for student emotion state analysis and monitoring, validating the feasibility and effectiveness of the design.<br><br>
-      
-      <strong>Keywords:</strong> Multimodal sentiment analysis; Student emotion monitoring; ESP32; Large language models; Data fusion
-    </div>
-  </div>
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**) (Highest score in the cohort)
 - *2018.09 - 2021.06*, Ordinary high school, Shaoguan City Wengyuan middle School
 
 # 📖 Research topics

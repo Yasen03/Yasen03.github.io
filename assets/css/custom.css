@@ -121,10 +121,6 @@
   height: 20px;
 }
 
-.thesis-button {
-  background-color: #55728A;
-}
-
 .sidebar .profile_box {
   display: flex;
   flex-direction: column;
@@ -246,93 +242,6 @@
 
 .copy-btn:hover {
   background-color: #0550ab;
-}
-
-/* 毕业设计样式 */
-.thesis-title {
-  cursor: pointer;
-  color: #0366d6;
-  font-weight: 500;
-  transition: color 0.2s;
-  display: inline-flex;
-  align-items: center;
-}
-
-.thesis-title:hover {
-  color: #0550ab;
-  text-decoration: underline;
-}
-
-.thesis-title::after {
-  content: "\f078";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 0.8em;
-  margin-left: 5px;
-  transition: transform 0.2s;
-}
-
-.thesis-title.active::after {
-  transform: rotate(180deg);
-}
-
-.thesis-abstract {
-  display: none;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 15px 0;
-  max-height: 400px;
-  overflow-y: auto;
-  box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
-  line-height: 1.6;
-} 
-
-.thesis-pdf {
-  margin-top: 12px;
-}
-
-.thesis-pdf object,
-.thesis-pdf iframe {
-  width: 100%;
-  height: 360px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fff;
-}
-
-.thesis-toolbar {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.thesis-download {
-  margin-top: 8px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.thesis-abstract .paper-title {
-  text-align: center;
-}
-
-.thesis-content strong:first-of-type {
-  display: block;
-  text-align: center;
-  margin: 6px 0 10px;
-}
-
-.thesis-content {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.thesis-toolbar .paper-badge-text.active {
-  background-color: #0366d6;
 }
 
 .sidebar .author__urls li {
