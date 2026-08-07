@@ -71,6 +71,7 @@ def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
     data = resp.json()
 
     publications = {}
+    print(f"Scrapingdog returned {len(data.get('articles', []))} article row(s):")
     for art in data.get("articles", []):
         cid = art.get("citation_id", "")
         if not cid:
@@ -78,6 +79,7 @@ def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
         cited = art.get("cited_by", 0)
         if isinstance(cited, dict):
             cited = cited.get("value", 0)
+        print(f"  - {cid} | cited_by={cited} | {art.get('title', '')[:70]}")
         try:
             num = int(str(cited).replace(",", ""))
         except (TypeError, ValueError):
