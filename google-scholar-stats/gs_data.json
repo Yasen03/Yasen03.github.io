@@ -1,14 +1,14 @@
 {
   "name": "Yuesheng Huang",
-  "citedby": 56,
-  "updated": "2026-08-07",
+  "citedby": 57,
+  "updated": "2026-08-10",
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
       "num_citations": 22,
       "title": "Sentiment analysis using e-commerce review keyword-generated image with a hybrid machine learning-based model"
     },
     "edyJPQQAAAAJ:2osOgNQ5qMEC": {
-      "num_citations": 14,
+      "num_citations": 15,
       "title": "An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction."
     },
     "edyJPQQAAAAJ:YsMSGLbcyi4C": {
