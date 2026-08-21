@@ -21,7 +21,7 @@ redirect_from:
 
 我目前在清华大学深圳国际研究生院（SIGS）攻读硕士学位。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">AI生成音视频检测（内容安全）</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界模型</span>。欢迎就相关方向合作交流。
 
-联系方式：[yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
+联系方式：[hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
 # 🔥 新闻
 <span class='anchor' id='-news'></span>

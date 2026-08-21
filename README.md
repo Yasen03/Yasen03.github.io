@@ -13,7 +13,7 @@
   <a href="https://github.com/Yasen03"><img src="https://img.shields.io/badge/GitHub-Yasen03-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Yuesheng%20Huang-4285F4?style=flat-square&logo=google-scholar&logoColor=white" alt="Google Scholar"/></a>
   <a href="https://orcid.org/0009-0004-4028-448X"><img src="https://img.shields.io/badge/ORCID-0009--0004--4028--448X-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"/></a>
-  <a href="mailto:yueshenghuang@stu.gpnu.edu.cn"><img src="https://img.shields.io/badge/Email-yueshenghuang%40stu.gpnu.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="mailto:hys26@mails.tsinghua.edu.cn"><img src="https://img.shields.io/badge/Email-hys26%40mails.tsinghua.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
 ---
@@ -43,7 +43,7 @@ bash run_server.sh   # starts Jekyll livereload at http://127.0.0.1:4000
 
 ## 📬 Get in Touch
 
-Found a bug on the site? Want to collaborate on AIGC detection or world models? Drop me an email at [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn). 😉
+Found a bug on the site? Want to collaborate on AIGC detection or world models? Drop me an email at [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn). 😉
 
 ---
 

@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am currently a master's student at Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-shield-alt" aria-hidden="true"></i>&nbsp;AI-Generated Audio/Video Detection (AIGC Safety)</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Models</span>. Welcome to collaborate on related projects.
 
-Contact me at: [yueshenghuang@stu.gpnu.edu.cn](mailto:yueshenghuang@stu.gpnu.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
+Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
 # 🔥 News
 <span class='anchor' id='-news'></span>
