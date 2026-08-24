@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-I am currently a master's student at Tsinghua University. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-shield-alt" aria-hidden="true"></i>&nbsp;AI-Generated Audio/Video Detection (AIGC Safety)</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Models</span>. Welcome to collaborate on related projects.
+I am currently a master's student in Electronic Information at Tsinghua University, advised by Prof. Li Xiu. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-shield-alt" aria-hidden="true"></i>&nbsp;AI-Generated Audio/Video Detection (AIGC Safety)</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Models</span>. Welcome to collaborate on related projects.
 
 Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
@@ -105,11 +105,10 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
 - *2024.05* **Finalist Award** in the **COMAP Mathematical Contest in Modeling (MCM/ICM)**, Problem E (**Top 2%** worldwide).
 - *2023.11* **First Prize** in the Guangdong Division of the China Undergraduate Mathematical Contest in Modeling.
 - *2023.08* **First Prize** in the China College Student Computer Design Competition (Guangdong Division).
-- *2021.12* **Silver Medal** in the Kaggle Lux AI Competition.
 
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
-- *2026.09 - 2028.06*, Master's student, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University.
+- *2026.09 - 2028.06*, Master's student in Electronic Information, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University, advised by Prof. Li Xiu.
 - *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**)
 - *2018.09 - 2021.06*, Ordinary high school, Shaoguan City Wengyuan middle School
 

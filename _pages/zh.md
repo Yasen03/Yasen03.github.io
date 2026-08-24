@@ -19,7 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前在清华大学攻读硕士学位。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">AI生成音视频检测（内容安全）</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界模型</span>。欢迎就相关方向合作交流。
+我目前在清华大学攻读电子信息专业硕士学位，师从李秀教授。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">AI生成音视频检测（内容安全）</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界模型</span>。欢迎就相关方向合作交流。
 
 联系方式：[hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
@@ -108,11 +108,10 @@ redirect_from:
 - *2024.05* **美国大学生数学建模竞赛（MCM/ICM）**E题**Finalist奖**（全球**前2%**），COMAP。
 - *2023.11* 中国大学生数学建模竞赛广东赛区**一等奖**。
 - *2023.08* 中国大学生计算机设计大赛广东赛区**一等奖**。
-- *2021.12* Kaggle Lux AI竞赛**银牌**。
 
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
-- *2026.09 - 2028.06*, 硕士研究生，清华大学深圳国际研究生院（SIGS）。
+- *2026.09 - 2028.06*, 电子信息 硕士研究生，清华大学深圳国际研究生院（SIGS），师从李秀教授。
 - *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）
 - *2018.09 - 2021.06*, 普通高中, 韶关市翁源中学
 
