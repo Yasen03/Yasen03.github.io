@@ -77,27 +77,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML NewInML</div><img src='{{ site.baseurl }}/images/fig1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-title">Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?</div>
-  
-**Yuesheng Huang**<sup>*</sup>, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang
-
-<div class="paper-meta">ICML 2025 NewInML Workshop（Poster）</div>
-<div class="paper-links">
-  <a class="paper-badge" href="https://arxiv.org/abs/2506.17623"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
-  <button type="button" class="paper-badge-text citation-trigger" onclick="toggleCitation('citation-arxiv2025-zh', event)">引用</button>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img id="citation-badge-generated-images-zh" src="https://img.shields.io/badge/Citations-6-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" alt="Scholar Citations"></a>
-</div>
-<div id="citation-arxiv2025-zh" class="citation-popup">
-  <div class="citation-format-container">
-    <div class="citation-format-label">BibTeX</div>
-    <div class="citation-format">@misc{huang2025syntheticperception,<br>      title={Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?}, <br>      author={Yuesheng Huang and Peng Zhang and Xiaoxin Wu and Riliang Liu and Jiaqi Liang},<br>      year={2025},<br>      eprint={2506.17623},<br>      archivePrefix={arXiv},<br>      primaryClass={cs.MM},<br>      url={https://arxiv.org/abs/2506.17623}, <br>}</div>
-  </div>
-</div>
-</div>
-</div>
-
+- **Synthetic Perception: Can Generated Images Unlock Latent Visual Prior for Text-Centric Reasoning?** **Yuesheng Huang**<sup>*</sup>, Peng Zhang, Xiaoxin Wu, Riliang Liu, Jiaqi Liang. *ICML 2025 NewInML Workshop*（Poster）。[[论文](https://arxiv.org/abs/2506.17623)] <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:W7OEmFMy1HYC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:W7OEmFMy1HYC" src="https://img.shields.io/badge/Citations-6-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 - **Sentiment Analysis Using E-Commerce Review Keyword-Generated Image with a Hybrid Machine Learning-Based Model.** Jiawen Li, **Yuesheng Huang**, Yayi Lu, Leijun Wang\*, Yongqi Ren, Rongjun Chen. *Computers, Materials & Continua*, 2024. [[论文](https://www.techscience.com/cmc/v80n1/57421)] <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:d1gkVwhDpl0C"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:d1gkVwhDpl0C" src="https://img.shields.io/badge/Citations-22-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 - **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[论文](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt="GitHub Stars"></a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" src="https://img.shields.io/badge/Citations-14-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 
