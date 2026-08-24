@@ -109,18 +109,6 @@
   appearance: none;
 }
 
-.citation-trigger {
-  cursor: pointer;
-}
-
-.paper-badge-text.citation-trigger {
-  background-color: #4D6A86;
-  padding: 0 6px;
-  font-size: 0.74em;
-  line-height: 20px;
-  height: 20px;
-}
-
 .sidebar .profile_box {
   display: flex;
   flex-direction: column;
@@ -174,74 +162,6 @@
   text-decoration: none;
   border: 1px solid #ddd;
   font-size: 0.9em;
-}
-
-/* 引用弹窗样式 */
-.citation-popup {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  z-index: 1000;
-  width: 550px;
-  max-height: 320px;
-  overflow-y: auto;
-  padding: 15px;
-}
-
-.citation-format-container {
-  display: flex;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
-
-.citation-format-container:last-child {
-  margin-bottom: 0;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.citation-format-label {
-  flex: 0 0 50px;
-  font-weight: bold;
-  color: #555;
-  padding-top: 8px;
-}
-
-.citation-format {
-  flex: 1;
-  position: relative;
-  padding: 8px 12px;
-  background-color: #f8f9fa;
-  border-radius: 4px;
-  font-size: 0.9em;
-  border: 1px solid #e9ecef;
-}
-
-.citation-format:hover .copy-btn {
-  opacity: 1;
-}
-
-.copy-btn {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  background-color: #0366d6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 2px 6px;
-  font-size: 0.8em;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s, background-color 0.2s;
-}
-
-.copy-btn:hover {
-  background-color: #0550ab;
 }
 
 .sidebar .author__urls li {
