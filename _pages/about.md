@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-I am currently a master's student in Electronic Information at Tsinghua University, advised by Prof. Li Xiu. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-layer-group" aria-hidden="true"></i>&nbsp;Multimodal Understanding and Generation</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Action Models</span>. Welcome to collaborate on related projects.
+I am currently a master's student in Electronic Information at Tsinghua University, advised by Prof. Li Xiu. My current research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-layer-group" aria-hidden="true"></i>&nbsp;Multimodal Understanding and Generation</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Action Models</span>. I previously worked on <span class="paper-badge-text" style="background-color: #7A6F8C;"><i class="fas fa-robot" aria-hidden="true"></i>&nbsp;Agentic AI</span> and <span class="paper-badge-text" style="background-color: #8A6B73;"><i class="fas fa-heart" aria-hidden="true"></i>&nbsp;Affective Intelligence</span>. Welcome to collaborate on related projects.
 
 Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
@@ -24,7 +24,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
 <span class='anchor' id='-news'></span>
 - *2026.01*: &nbsp;🚀 I released **Awesome Affective Computing** — A curated list of Affective Computing & Emotion AI: Papers, datasets, and toolkits for Multimodal Emotion Recognition, Emotional Reasoning, Multimodal Sentiment Analysis, and Empathetic LLMs/MLLMs. <a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none;"> <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;"></a>
 - *2025.08*: &nbsp;🏆 I won **1st Place** in the **ACM MM 2025 MER Challenge (DES Track)** as team leader!
-- *2025.08*: &nbsp;📄 My first-author paper was accepted by the **ACM MM 2025 Main Conference Grand Challenge Track**!
+- *2025.08*: &nbsp;📄 My first-author paper was accepted by **ACM MM 2025**!
 - *2024.12*: &nbsp;&nbsp;🎉 I was selected as the 2023 **Guangdong Provincial Person of the Year** (one of 10 winners), the **youngest winner** that year.
 - *2024.05*: &nbsp;&nbsp;🎉 I was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
 - *2023.12*: &nbsp;&nbsp;🎉 I was awarded the **National Scholarship**.
@@ -37,7 +37,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen<sup>*</sup>, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track（Oral）</div>
+<div class="paper-meta">ACM MM 2025（Oral）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-affective-cot" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:Y0pCki6q_DkC" alt="Scholar Citations"></a>
@@ -66,7 +66,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
   
 Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zhang<sup>*</sup>, Xingming Shui, **Yuesheng Huang**, Xuhuan Li, Zihao Liu, Yifan Yang, Jun Zhou, Xiu Li<sup>‡</sup>
 
-<div class="paper-meta">arXiv preprint, 2026</div>
+<div class="paper-meta">arXiv preprint, August 2026</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2608.11201"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:ufrVoPGSRksC"><img id="citation-badge-vidforensics" src="https://img.shields.io/badge/Citations-0-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:ufrVoPGSRksC" alt="Scholar Citations"></a>
@@ -89,8 +89,7 @@ Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zha
 # 🎓 Educations
 <span class='anchor' id='-educations'></span>
 - *2026.09 - 2028.06*, Master's student in Electronic Information, Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University, advised by Prof. Li Xiu.
-- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering(**ESI TOP 1%**), School of Computer Science, Guangdong Polytechnic Normal University, **Excellent Graduate**.(**GPA:92.1/100, Rank:1/111**)
-- *2018.09 - 2021.06*, Ordinary high school, Shaoguan City Wengyuan middle School
+- *2021.09 - 2025.06*, Bachelor of Engineering in Internet of Things Engineering, School of Computer Science, Guangdong Polytechnic Normal University, Excellent Graduate. (GPA:92.1/100, Rank:1/111)
 
 # 📖 Research topics
 <span class='anchor' id='-research-topics'></span>

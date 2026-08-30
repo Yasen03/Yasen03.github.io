@@ -32,7 +32,7 @@ This is the source code of my personal academic homepage — a Jekyll site power
 ## 📌 Highlights
 
 - 🏆 **1st Place**, ACM MM 2025 MER Challenge (DES Track), as team leader
-- 📄 First-author paper in **ACM MM 2025 Main Conference Grand Challenge Track**
+- 📄 First-author paper in **ACM MM 2025**
 - 🧠 Maintaining [Awesome Affective Computing](https://github.com/Yasen03/awesome-affective-computing) — a curated list of Emotion AI resources
 
 ## 🚀 Local Development

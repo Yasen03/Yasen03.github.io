@@ -19,7 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前在清华大学攻读电子信息专业硕士学位，师从李秀教授。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">多模态理解与生成</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界动作模型（World Action Models）</span>。欢迎就相关方向合作交流。
+我目前在清华大学攻读电子信息专业硕士学位，师从李秀教授。我目前的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">多模态理解与生成</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界动作模型（World Action Models）</span>。此前我也关注 <span class="paper-badge-text" style="background-color: #7A6F8C;">Agentic AI</span> 和 <span class="paper-badge-text" style="background-color: #8A6B73;">情感智能</span>。欢迎就相关方向合作交流。
 
 联系方式：[hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
@@ -27,7 +27,7 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 - *2026.01*: &nbsp;🚀 我发布 **Awesome Affective Computing**：Affective Computing & Emotion AI 精选清单，涵盖多模态情感识别、情感推理、多模态情感分析与共情式 LLM/MLLM 的论文、数据集与工具包。<a href="https://github.com/Yasen03/awesome-affective-computing" style="text-decoration: none;"> <i class="fab fa-fw fa-github" aria-hidden="true"></i> Awesome Affective Computing <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="Stars" style="vertical-align: middle;"></a>
 - *2025.08*: &nbsp;🏆 我获得 **ACM MM 2025 MER Challenge (DES Track) 第一名**（担任团队负责人）！
-- *2025.08*: &nbsp;📄 我的第一作者论文被 **ACM MM 2025 主会 Grand Challenge 赛道**录用！
+- *2025.08*: &nbsp;📄 我的第一作者论文被 **ACM MM 2025**录用！
 - *2024.12*: &nbsp;&nbsp;🎉 我获评 2023 年度**广东大学生年度人物**（全省本硕博共评选 10 人），为同年度**最年轻的获奖者**。
 - *2024.05*: &nbsp;&nbsp;🎉 我作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
 - *2023.12*: &nbsp;&nbsp;🎉 我获得**国家奖学金**。
@@ -40,7 +40,7 @@ redirect_from:
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen<sup>*</sup>, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025 Main Conference Grand Challenge Track（Oral）</div>
+<div class="paper-meta">ACM MM 2025（Oral）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-affective-cot-zh" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:Y0pCki6q_DkC" alt="Scholar Citations"></a>
@@ -69,7 +69,7 @@ redirect_from:
   
 Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zhang<sup>*</sup>, Xingming Shui, **Yuesheng Huang**, Xuhuan Li, Zihao Liu, Yifan Yang, Jun Zhou, Xiu Li<sup>‡</sup>
 
-<div class="paper-meta">arXiv preprint，2026</div>
+<div class="paper-meta">arXiv preprint，2026年8月</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://arxiv.org/abs/2608.11201"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:ufrVoPGSRksC"><img id="citation-badge-vidforensics-zh" src="https://img.shields.io/badge/Citations-0-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:ufrVoPGSRksC" alt="Scholar Citations"></a>
@@ -92,8 +92,7 @@ Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zha
 # 🎓 教育背景
 <span class='anchor' id='-educations'></span>
 - *2026.09 - 2028.06*, 电子信息 硕士研究生，清华大学深圳国际研究生院（SIGS），师从李秀教授。
-- *2021.09 - 2025.06*, 物联网工程 工学学士学位（**ESI前1%**）, 计算机科学学院, 广东技术师范大学（**优秀毕业生**）。（**GPA:92.1/100, 排名:1/111**）
-- *2018.09 - 2021.06*, 普通高中, 韶关市翁源中学
+- *2021.09 - 2025.06*, 物联网工程 工学学士学位, 计算机科学学院, 广东技术师范大学（优秀毕业生）。（GPA:92.1/100, 排名:1/111）
 
 # 📖 研究课题
 <span class='anchor' id='-research-topics'></span>
