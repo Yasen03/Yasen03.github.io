@@ -2,7 +2,7 @@ name: Fetch Google Scholar Citations
 
 on:
   schedule:
-    - cron: '0 8 * * 1'   # weekly, Monday 08:00 UTC (16:00 Beijing time)
+    - cron: '0 8 1 * *'   # monthly, 1st day 08:00 UTC (16:00 Beijing time)
   workflow_dispatch:      # also triggerable manually from the Actions tab
 
 permissions:
