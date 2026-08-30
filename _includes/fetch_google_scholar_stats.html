@@ -1,7 +1,42 @@
 <script>
-// Update citation badges from google-scholar-stats/gs_data.json.
+// Update citation / star badges and hide them when the count is 0.
 // Uses native fetch() so it works without jQuery on the page.
 (function () {
+  function hideCountBadge(el) {
+    if (!el) return;
+    var link = el.closest('a');
+    if (!link) {
+      el.style.display = 'none';
+      return;
+    }
+    var text = (link.textContent || '').replace(/\s+/g, ' ').trim();
+    if (link.classList.contains('paper-badge') || !text) {
+      link.style.display = 'none';
+    } else {
+      el.style.display = 'none';
+    }
+  }
+
+  function citationCountFromSrc(src) {
+    var match = (src || '').match(/Citations-(\d+)/i);
+    return match ? parseInt(match[1], 10) : null;
+  }
+
+  function applyCitationCount(el, num) {
+    var count = parseInt(num, 10);
+    if (!count) {
+      hideCountBadge(el);
+      return;
+    }
+    el.src = 'https://img.shields.io/badge/Citations-' + count + '-blue?style=social&logo=google-scholar';
+  }
+
+  document.querySelectorAll('.paper_citations').forEach(function (el) {
+    if (citationCountFromSrc(el.getAttribute('src')) === 0) {
+      hideCountBadge(el);
+    }
+  });
+
   var gsDataUrl = '{{ site.baseurl }}/google-scholar-stats/gs_data.json';
 
   fetch(gsDataUrl)
@@ -13,20 +48,21 @@
       console.log("Successfully loaded Google Scholar data:", data);
       if (!data) return;
 
-      // Update total citations badge
       if (data.citedby !== undefined) {
         document.querySelectorAll('.total_citations').forEach(function (el) {
+          if (!parseInt(data.citedby, 10)) {
+            hideCountBadge(el);
+            return;
+          }
           el.src = 'https://img.shields.io/badge/Total%20Citations-' + data.citedby + '-blue?style=social&logo=google-scholar';
         });
       }
 
-      // Update individual paper citation badges
       if (data.publications) {
         document.querySelectorAll('.paper_citations').forEach(function (el) {
           var paperId = el.getAttribute('data-paper-id');
           if (paperId && data.publications[paperId]) {
-            var num = data.publications[paperId].num_citations;
-            el.src = 'https://img.shields.io/badge/Citations-' + num + '-blue?style=social&logo=google-scholar';
+            applyCitationCount(el, data.publications[paperId].num_citations);
           }
         });
       }
@@ -35,5 +71,32 @@
       console.log("Failed to load Google Scholar stats from " + gsDataUrl);
       console.log("Error details:", err);
     });
+
+  function repoFromStarImg(img) {
+    var src = img.getAttribute('src') || '';
+    var match = src.match(/github\/stars\/([^/?#]+\/[^/?#]+)/);
+    if (match) return match[1];
+    var href = img.closest('a') && img.closest('a').getAttribute('href');
+    match = (href || '').match(/github\.com\/([^/?#]+\/[^/?#]+)/);
+    return match ? match[1] : null;
+  }
+
+  document.querySelectorAll('img[src*="img.shields.io/github/stars/"]').forEach(function (el) {
+    var repo = repoFromStarImg(el);
+    if (!repo) return;
+    fetch('https://api.github.com/repos/' + repo)
+      .then(function (resp) {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+      })
+      .then(function (repoData) {
+        if (!parseInt(repoData.stargazers_count, 10)) {
+          hideCountBadge(el);
+        }
+      })
+      .catch(function (err) {
+        console.log("Failed to load GitHub stars for " + repo, err);
+      });
+  });
 })();
 </script>

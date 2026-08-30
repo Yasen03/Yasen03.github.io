@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 # 💡 About Me
 <span class='anchor' id='about-me'></span>
-I am currently a master's student in Electronic Information at Tsinghua University, advised by Prof. Li Xiu. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-shield-alt" aria-hidden="true"></i>&nbsp;AI-Generated Audio/Video Detection (AIGC Safety)</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Models</span>. Welcome to collaborate on related projects.
+I am currently a master's student in Electronic Information at Tsinghua University, advised by Prof. Li Xiu. My research interests mainly focus on <span class="paper-badge-text" style="background-color: #6B7A99;"><i class="fas fa-layer-group" aria-hidden="true"></i>&nbsp;Multimodal Understanding and Generation</span> and <span class="paper-badge-text" style="background-color: #4A7C8C;"><i class="fas fa-globe" aria-hidden="true"></i>&nbsp;World Action Models</span>. Welcome to collaborate on related projects.
 
 Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <strong>English</strong> / <a href="/zh">中文</a>
 
@@ -56,6 +56,20 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-dare" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:Tyk-4Ss8FVUC" alt="Scholar Citations"></a>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='{{ site.baseurl }}/images/VidM1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<div class="paper-title">VidForensics-M1: Meta-Detection Reinforcement Learning with Verifiable Temporal Grounding for AI-Generated Video Forensics</div>
+  
+Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zhang<sup>*</sup>, Xingming Shui, **Yuesheng Huang**, Xuhuan Li, Zihao Liu, Yifan Yang, Jun Zhou, Xiu Li<sup>‡</sup>
+
+<div class="paper-meta">arXiv preprint, 2026</div>
+<div class="paper-links">
+  <a class="paper-badge" href="https://arxiv.org/abs/2608.11201"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
+  <a class="paper-badge" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:ufrVoPGSRksC"><img id="citation-badge-vidforensics" src="https://img.shields.io/badge/Citations-0-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:ufrVoPGSRksC" alt="Scholar Citations"></a>
 </div>
 </div>
 </div>

@@ -26,8 +26,8 @@ This is the source code of my personal academic homepage — a Jekyll site power
 
 | | |
 |---|---|
-| 🛡️ | **AI-Generated Audio/Video Detection** — telling machine-made media apart from reality (AIGC Safety) |
-| 🌐 | **World Models** — letting models learn how the world works, not just what it looks like |
+| 🧩 | **Multimodal Understanding and Generation** — making sense of, and creating, content across modalities |
+| 🌐 | **World Action Models** — letting models learn how to act in the world, not just how it looks |
 
 ## 📌 Highlights
 
@@ -43,7 +43,7 @@ bash run_server.sh   # starts Jekyll livereload at http://127.0.0.1:4000
 
 ## 📬 Get in Touch
 
-Found a bug on the site? Want to collaborate on AIGC detection or world models? Drop me an email at [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn). 😉
+Found a bug on the site? Want to collaborate on multimodal understanding and generation or world action models? Drop me an email at [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn). 😉
 
 ---
 

@@ -19,7 +19,7 @@ redirect_from:
 # 💡 关于我
 <span class='anchor' id='about-me'></span>
 
-我目前在清华大学攻读电子信息专业硕士学位，师从李秀教授。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">AI生成音视频检测（内容安全）</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界模型</span>。欢迎就相关方向合作交流。
+我目前在清华大学攻读电子信息专业硕士学位，师从李秀教授。我的研究兴趣主要集中在 <span class="paper-badge-text" style="background-color: #6B7A99;">多模态理解与生成</span> 和 <span class="paper-badge-text" style="background-color: #4A7C8C;">世界动作模型（World Action Models）</span>。欢迎就相关方向合作交流。
 
 联系方式：[hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn) | <a href="/">English</a> / <strong>中文</strong>
 
@@ -59,6 +59,20 @@ redirect_from:
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-dare-zh" src="https://img.shields.io/badge/Citations-1-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:Tyk-4Ss8FVUC" alt="Scholar Citations"></a>
+</div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='{{ site.baseurl }}/images/VidM1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<div class="paper-title">VidForensics-M1: Meta-Detection Reinforcement Learning with Verifiable Temporal Grounding for AI-Generated Video Forensics</div>
+  
+Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zhang<sup>*</sup>, Xingming Shui, **Yuesheng Huang**, Xuhuan Li, Zihao Liu, Yifan Yang, Jun Zhou, Xiu Li<sup>‡</sup>
+
+<div class="paper-meta">arXiv preprint，2026</div>
+<div class="paper-links">
+  <a class="paper-badge" href="https://arxiv.org/abs/2608.11201"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B" alt="arXiv"></a>
+  <a class="paper-badge" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:ufrVoPGSRksC"><img id="citation-badge-vidforensics-zh" src="https://img.shields.io/badge/Citations-0-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:ufrVoPGSRksC" alt="Scholar Citations"></a>
 </div>
 </div>
 </div>
