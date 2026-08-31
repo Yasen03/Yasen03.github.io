@@ -183,6 +183,9 @@ def _parse_indices(payload) -> dict:
             if name not in row:
                 continue
             raw = row[name]
+            # Year-graph rows look like {year, citations: 27}; skip those.
+            if name in ("citations", "cited_by") and not isinstance(raw, dict):
+                continue
             take(key, raw, since_key, _since_value(raw) if isinstance(raw, dict) else None)
 
     return out
