@@ -276,59 +276,42 @@
   border-radius: 50%;
 }
 
-.scholar-widget {
+.scholar-stats {
+  flex: 1 1 100%;
   width: 100%;
-  max-width: 320px;
-  margin: 1.5em 0 0.4em;
-  color: #222;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 1.24;
-}
-
-.scholar-widget-title {
-  display: block;
-  margin: 0;
-  padding: 0 8px 12px;
-  border-bottom: 1px solid #e5e5e5;
-  color: #222;
-  font-size: 15px;
-  font-weight: normal;
+  max-width: 220px;
+  margin: 0.85em 0 0.35em;
 }
 
 .scholar-table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.85em;
+  line-height: 1.4;
 }
 
 .scholar-table th,
 .scholar-table td {
-  padding: 8px 8px 8px 0;
-  font-weight: normal;
-  text-align: right;
-  vertical-align: top;
+  padding: 5px 0;
+  border-top: 1px solid #eee;
+  font-weight: 400;
+  vertical-align: baseline;
+}
+
+.scholar-table tr:first-child th,
+.scholar-table tr:first-child td {
+  border-top: 0;
 }
 
 .scholar-table th {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.scholar-table th:first-child,
-.scholar-table td:first-child {
+  color: #656d76;
   text-align: left;
-  padding-left: 8px;
 }
 
-.scholar-table tbody tr td {
-  padding-top: 10px;
-  padding-bottom: 2px;
-}
-
-.scholar-svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 16px;
+.scholar-table td {
+  color: #24292f;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }
 
 .sidebar .author__urls li {

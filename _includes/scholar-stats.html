@@ -1,2 +1,19 @@
-{% assign sc_lang = include.lang | default: "en" %}
-<div id="scholar-citation-chart" class="scholar-widget" data-lang="{{ sc_lang }}" data-fallback='{"citedby":57,"citedby_5y":57,"hindex":4,"hindex_5y":4,"i10index":2,"i10index_5y":2,"since_year":2021,"cites_per_year":{"2024":1,"2025":28,"2026":27}}'></div>
+{% assign sc_lang = include.lang | default: page.lang | default: "en" %}
+<div id="scholar-citation-chart" class="scholar-stats" data-lang="{{ sc_lang }}">
+  <table class="scholar-table">
+    <tbody>
+      <tr>
+        <th>{% if sc_lang == "zh" %}引用{% else %}Citations{% endif %}</th>
+        <td class="js-citedby">57</td>
+      </tr>
+      <tr>
+        <th>{% if sc_lang == "zh" %}h 指数{% else %}h-index{% endif %}</th>
+        <td class="js-hindex">4</td>
+      </tr>
+      <tr>
+        <th>{% if sc_lang == "zh" %}i10 指数{% else %}i10-index{% endif %}</th>
+        <td class="js-i10">2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

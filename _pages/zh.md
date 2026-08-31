@@ -83,8 +83,6 @@ Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zha
 - **Prism-OBI: a novel framework for oracle bone inscription recognition via visual perception and feature decoupling.** Jiawen Li, Jiarui He, Jingru Wu, Jinming Liu, Weibin Lin, **Yuesheng Huang**, Leijun Wang, Jujian Lv, Xianxian Zeng, Rongjun Chen. *npj Heritage Science*, 2026. <a class="paper-badge" href="https://www.nature.com/articles/s40494-026-02493-9"><img src="https://img.shields.io/badge/Paper-Nature-000000" alt="Nature"></a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:eQOLeE2rZwMC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:eQOLeE2rZwMC" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 {% endcomment %}
 
-{% include scholar-stats.html lang='zh' %}
-
 # 💻 GitHub
 <span class='anchor' id='-github'></span>
 {% include github-projects.html lang='zh' %}
