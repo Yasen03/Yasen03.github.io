@@ -3,11 +3,10 @@
   <div class="metrics-row">
     <div class="metrics-card" id="github-activity-card">
       <div class="metrics-label">{% if gh_lang == "zh" %}GitHub 贡献{% else %}GitHub contributions{% endif %}</div>
-      <div id="github-activity-chart" class="github-activity" data-username="Yasen03"></div>
+      <div id="github-activity-chart" class="github-heatmap" data-username="Yasen03"></div>
     </div>
-    <div class="metrics-card" id="scholar-citation-card">
-      <a class="metrics-label" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ">{% if gh_lang == "zh" %}Google Scholar 引用{% else %}Google Scholar citations{% endif %}</a>
-      <div id="scholar-citation-chart" class="scholar-chart" data-fallback='{"2024":1,"2025":28,"2026":27}'></div>
+    <div class="metrics-card scholar-card" id="scholar-citation-card">
+      <div id="scholar-citation-chart" class="scholar-widget" data-lang="{{ gh_lang }}" data-fallback='{"citedby":57,"citedby_5y":57,"hindex":4,"hindex_5y":4,"i10index":2,"i10index_5y":2,"since_year":2021,"cites_per_year":{"2024":1,"2025":28,"2026":27}}'></div>
     </div>
   </div>
 

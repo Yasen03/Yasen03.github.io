@@ -117,6 +117,77 @@ def _parse_cites_per_year(payload) -> dict:
     return out
 
 
+def _parse_int(value):
+    if value is None:
+        return None
+    if isinstance(value, dict):
+        value = value.get("all") or value.get("value") or value.get("total")
+    try:
+        return int(str(value).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def _since_value(value):
+    if not isinstance(value, dict):
+        return None
+    for key, raw in value.items():
+        if str(key).startswith("since"):
+            return _parse_int(raw)
+    return None
+
+
+def _parse_indices(payload) -> dict:
+    """Pull h-index / i10-index / 5-year citation totals from an author payload."""
+    out = {}
+    if not isinstance(payload, dict):
+        return out
+
+    def take(key, raw, since_key=None, since_raw=None):
+        parsed = _parse_int(raw)
+        if parsed is not None:
+            out[key] = parsed
+        if since_key:
+            parsed_since = _parse_int(since_raw)
+            if parsed_since is not None:
+                out[since_key] = parsed_since
+
+    take("hindex", payload.get("hindex") or payload.get("h_index"))
+    take("i10index", payload.get("i10index") or payload.get("i10_index"))
+    take("citedby_5y", payload.get("citedby5y") or payload.get("citedby_5y"))
+
+    tables = []
+    cited_by = payload.get("cited_by")
+    if isinstance(cited_by, dict) and isinstance(cited_by.get("table"), list):
+        tables.extend(cited_by["table"])
+    author = payload.get("author")
+    if isinstance(author, dict):
+        take("hindex", author.get("hindex") or author.get("h_index"))
+        take("i10index", author.get("i10index") or author.get("i10_index"))
+        take("citedby_5y", author.get("citedby5y") or author.get("citedby_5y"))
+        author_cited = author.get("cited_by")
+        if isinstance(author_cited, dict) and isinstance(author_cited.get("table"), list):
+            tables.extend(author_cited["table"])
+
+    for row in tables:
+        if not isinstance(row, dict):
+            continue
+        for name, key, since_key in (
+            ("citations", "citedby", "citedby_5y"),
+            ("cited_by", "citedby", "citedby_5y"),
+            ("h_index", "hindex", "hindex_5y"),
+            ("hindex", "hindex", "hindex_5y"),
+            ("i10_index", "i10index", "i10index_5y"),
+            ("i10index", "i10index", "i10index_5y"),
+        ):
+            if name not in row:
+                continue
+            raw = row[name]
+            take(key, raw, since_key, _since_value(raw) if isinstance(raw, dict) else None)
+
+    return out
+
+
 def _parse_cited_by(value) -> int:
     """Extract an integer citation count from Scrapingdog's cited_by shapes
     (e.g. {"total": "Cited by 3031"} or {"value": "3031"} or a raw number)."""
@@ -126,12 +197,12 @@ def _parse_cited_by(value) -> int:
     return int(digits) if digits else 0
 
 
-def fetch_via_scrapingdog() -> tuple[str, int, dict, dict] | None:
+def fetch_via_scrapingdog() -> tuple[str, int, dict, dict, dict] | None:
     """Fetch the author profile via Scrapingdog's Google Scholar Author API.
 
-    Returns (name, citedby, publications, cites_per_year) or None when no API
-    key is configured. citation_id values already have the "author_id:pub_id"
-    format we store.
+    Returns (name, citedby, publications, cites_per_year, indices) or None when
+    no API key is configured. citation_id values already have the
+    "author_id:pub_id" format we store.
     """
     api_key = os.environ.get("SCRAPINGDOG_API_KEY", "")
     if not api_key:
@@ -209,10 +280,10 @@ def fetch_via_scrapingdog() -> tuple[str, int, dict, dict] | None:
         citedby = sum(p["num_citations"] for p in publications.values())
 
     name = data.get("author", {}).get("name", "Unknown")
-    return name, citedby, publications, _parse_cites_per_year(data)
+    return name, citedby, publications, _parse_cites_per_year(data), _parse_indices(data)
 
 
-def fetch_via_scholarly() -> tuple[str, int, dict, dict]:
+def fetch_via_scholarly() -> tuple[str, int, dict, dict, dict]:
     """Fallback: direct scholarly scrape (unreliable, CAPTCHA-prone)."""
     # scholarly >= 1.x renamed search_author_by_id -> search_author_id.
     search_author = getattr(scholarly, "search_author_id", None)
@@ -234,7 +305,7 @@ def fetch_via_scholarly() -> tuple[str, int, dict, dict]:
             "num_citations": int(pub.get("num_citations", 0)),
             "title": pub.get("bib", {}).get("title", ""),
         }
-    return name, citedby, publications, _parse_cites_per_year(author)
+    return name, citedby, publications, _parse_cites_per_year(author), _parse_indices(author)
 
 
 def main() -> None:
@@ -242,13 +313,15 @@ def main() -> None:
         fetched = fetch_via_scrapingdog()
         if fetched is None:
             sys.exit("Scrapingdog fetch failed (empty response)")
-        name, citedby, publications, cites_per_year = fetched
+        name, citedby, publications, cites_per_year, indices = fetched
         print(f"Fetched via Scrapingdog: {name}: {citedby} total citations, {len(publications)} publications")
     else:
-        name, citedby, publications, cites_per_year = fetch_via_scholarly()
+        name, citedby, publications, cites_per_year, indices = fetch_via_scholarly()
         print(f"Fetched via scholarly: {name}: {citedby} total citations, {len(publications)} publications")
     if not cites_per_year:
         cites_per_year = {}
+    if not indices:
+        indices = {}
 
     # Keep manually-maintained entries (papers not yet indexed on Scholar).
     old = {}
@@ -263,6 +336,9 @@ def main() -> None:
             cites_per_year = old.get("cites_per_year") or {}
             if cites_per_year:
                 print("Kept previous cites_per_year (graph missing from this fetch)")
+        for key in ("citedby_5y", "hindex", "hindex_5y", "i10index", "i10index_5y", "since_year"):
+            if indices.get(key) is None and old.get(key) is not None:
+                indices[key] = old[key]
 
     # Apply manual overrides (e.g. merged/duplicate Scholar rows summed by hand).
     for key, count in CITATION_OVERRIDES.items():
@@ -311,6 +387,12 @@ def main() -> None:
     data = {
         "name": name,
         "citedby": citedby,
+        "citedby_5y": indices.get("citedby_5y", citedby),
+        "hindex": indices.get("hindex"),
+        "hindex_5y": indices.get("hindex_5y", indices.get("hindex")),
+        "i10index": indices.get("i10index"),
+        "i10index_5y": indices.get("i10index_5y", indices.get("i10index")),
+        "since_year": indices.get("since_year", date.today().year - 5),
         "updated": date.today().isoformat(),
         "cites_per_year": cites_per_year,
         "publications": publications,

@@ -67,9 +67,7 @@
         });
       }
 
-      if (data.cites_per_year) {
-        renderScholarChart(data.cites_per_year);
-      }
+      renderScholarWidget(data);
     })
     .catch(function (err) {
       console.log("Failed to load Google Scholar stats from " + gsDataUrl);
@@ -111,102 +109,148 @@
       .replace(/"/g, '&quot;');
   }
 
-  function renderScholarChart(citesPerYear) {
+  function numOr(value, fallback) {
+    var n = parseInt(value, 10);
+    return isNaN(n) ? fallback : n;
+  }
+
+  function renderScholarWidget(data) {
     var el = document.getElementById('scholar-citation-chart');
-    if (!el || !citesPerYear) return;
+    if (!el || !data) return;
+    var citesPerYear = data.cites_per_year || {};
     var years = Object.keys(citesPerYear).sort();
-    if (!years.length) {
-      var card = document.getElementById('scholar-citation-card');
-      if (card) card.style.display = 'none';
-      return;
-    }
-    var counts = years.map(function (year) { return parseInt(citesPerYear[year], 10) || 0; });
-    var max = Math.max.apply(null, counts.concat([1]));
-    var mid = Math.round(max / 2);
-    var html = '<div class="scholar-chart-plot">';
-    html += '<div class="scholar-y" style="top:0">' + max + '</div>';
-    html += '<div class="scholar-y" style="top:50%">' + mid + '</div>';
-    html += '<div class="scholar-y" style="top:100%">0</div>';
-    html += '<div class="scholar-bars">';
-    years.forEach(function (year, i) {
-      var count = counts[i];
-      var height = Math.max(3, Math.round((count / max) * 86));
-      html += '<div class="scholar-bar-wrap">';
-      html += '<div class="scholar-bar" style="height:' + height + '%"><span class="scholar-bar-value">' + count + '</span></div>';
-      html += '<div class="scholar-bar-year">' + escapeHtml(year) + '</div>';
-      html += '</div>';
+    var citedby = numOr(data.citedby, 0);
+    var zh = el.getAttribute('data-lang') === 'zh';
+    var sinceYear = numOr(data.since_year, new Date().getFullYear() - 5);
+    var html = '';
+    html += '<a class="scholar-widget-title" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ">';
+    html += zh ? '被引用次数' : 'Cited by';
+    html += '</a>';
+    html += '<table class="scholar-table"><thead><tr><th></th><th>';
+    html += zh ? '总计' : 'All';
+    html += '</th><th>';
+    html += zh ? (sinceYear + ' 年至今') : ('Since ' + sinceYear);
+    html += '</th></tr></thead><tbody>';
+    [
+      [zh ? '引用' : 'Citations', citedby, numOr(data.citedby_5y, citedby)],
+      [zh ? 'h 指数' : 'h-index', numOr(data.hindex, 0), numOr(data.hindex_5y, numOr(data.hindex, 0))],
+      [zh ? 'i10 指数' : 'i10-index', numOr(data.i10index, 0), numOr(data.i10index_5y, numOr(data.i10index, 0))]
+    ].forEach(function (row) {
+      html += '<tr><td>' + row[0] + '</td><td>' + row[1] + '</td><td>' + row[2] + '</td></tr>';
     });
-    html += '</div></div>';
+    html += '</tbody></table>';
+
+    if (years.length) {
+      var counts = years.map(function (year) { return numOr(citesPerYear[year], 0); });
+      var max = Math.max.apply(null, counts.concat([1]));
+      var mid = Math.round(max / 2);
+      html += '<div class="scholar-hist">';
+      html += '<div class="scholar-y" style="top:8px">' + max + '</div>';
+      html += '<div class="scholar-y" style="top:91px">' + mid + '</div>';
+      html += '<div class="scholar-y" style="top:174px">0</div>';
+      html += '<div class="scholar-hist-plot">';
+      html += '<div class="scholar-grid-line" style="top:0"></div>';
+      html += '<div class="scholar-grid-line" style="top:50%"></div>';
+      html += '<div class="scholar-grid-line" style="top:100%"></div>';
+      html += '<div class="scholar-bars">';
+      years.forEach(function (year, i) {
+        var height = Math.max(2, Math.round((counts[i] / max) * 100));
+        html += '<div class="scholar-bar-wrap" title="' + counts[i] + '">';
+        html += '<div class="scholar-bar" style="height:' + height + '%"></div>';
+        html += '<div class="scholar-bar-year">' + escapeHtml(year) + '</div>';
+        html += '</div>';
+      });
+      html += '</div></div></div>';
+    }
     el.innerHTML = html;
   }
 
-  function renderGithubActivity(days) {
+  function isoDate(date) {
+    return date.getFullYear() + '-' +
+      String(date.getMonth() + 1).padStart(2, '0') + '-' +
+      String(date.getDate()).padStart(2, '0');
+  }
+
+  function renderGithubHeatmap(days) {
     var el = document.getElementById('github-activity-chart');
     if (!el) return;
-    var weeks = {};
-    days.forEach(function (day) {
-      if (!day || !day.date) return;
-      var date = new Date(day.date + 'T00:00:00');
-      if (isNaN(date.getTime())) return;
-      var weekday = (date.getDay() + 6) % 7;
-      date.setDate(date.getDate() - weekday);
-      var key = date.getFullYear() + '-' +
-        String(date.getMonth() + 1).padStart(2, '0') + '-' +
-        String(date.getDate()).padStart(2, '0');
-      weeks[key] = (weeks[key] || 0) + (parseInt(day.count, 10) || 0);
+    var byDate = {};
+    (days || []).forEach(function (day) {
+      if (day && day.date) byDate[day.date] = day;
     });
-    var keys = Object.keys(weeks).sort().slice(-52);
-    if (!keys.length) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var start = new Date(today);
+    start.setDate(start.getDate() - 52 * 7);
+    start.setDate(start.getDate() - start.getDay());
+
+    var cell = 11;
+    var gap = 3;
+    var left = 28;
+    var top = 16;
+    var weeks = [];
+    var cursor = new Date(start);
+    while (cursor <= today) {
+      weeks.push(new Date(cursor));
+      cursor.setDate(cursor.getDate() + 7);
+    }
+    if (!weeks.length) {
       var card = document.getElementById('github-activity-card');
       if (card) card.style.display = 'none';
       return;
     }
-    var values = keys.map(function (key) { return weeks[key]; });
-    var max = Math.max.apply(null, values.concat([1]));
-    var width = 600;
-    var height = 132;
-    var padL = 8;
-    var padR = 8;
-    var padT = 10;
-    var padB = 22;
-    var innerW = width - padL - padR;
-    var innerH = height - padT - padB;
-    var points = values.map(function (value, i) {
-      var x = padL + (keys.length === 1 ? innerW / 2 : (i / (keys.length - 1)) * innerW);
-      var y = padT + innerH - (value / max) * innerH;
-      return [x, y];
-    });
-    var line = points.map(function (p, i) {
-      return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1);
-    }).join(' ');
-    var area = line +
-      ' L' + points[points.length - 1][0].toFixed(1) + ' ' + (padT + innerH) +
-      ' L' + points[0][0].toFixed(1) + ' ' + (padT + innerH) + ' Z';
+    var colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+    var width = left + weeks.length * (cell + gap) - gap;
+    var height = top + 7 * (cell + gap) - gap + 18;
     var monthLabels = '';
-    var lastMonth = '';
-    keys.forEach(function (key, i) {
-      var month = key.slice(0, 7);
-      if (month === lastMonth) return;
-      lastMonth = month;
-      var date = new Date(key + 'T00:00:00');
-      var label = date.toLocaleString('en', { month: 'short' });
-      var x = points[i][0];
-      if (x > width - 28) return;
-      monthLabels += '<text x="' + x.toFixed(1) + '" y="' + (height - 6) +
-        '" fill="#656d76" font-size="10">' + escapeHtml(label) + '</text>';
+    var lastMonth = -1;
+    var cells = '';
+    weeks.forEach(function (weekStart, w) {
+      if (weekStart.getMonth() !== lastMonth) {
+        lastMonth = weekStart.getMonth();
+        var labelX = left + w * (cell + gap);
+        if (labelX < width - 24) {
+          monthLabels += '<text x="' + labelX + '" y="11" fill="#656d76" font-size="10">' +
+            escapeHtml(weekStart.toLocaleString('en', { month: 'short' })) + '</text>';
+        }
+      }
+      for (var d = 0; d < 7; d++) {
+        var day = new Date(weekStart);
+        day.setDate(weekStart.getDate() + d);
+        if (day > today) continue;
+        var info = byDate[isoDate(day)] || {};
+        var level = Math.max(0, Math.min(4, numOr(info.level, 0)));
+        var count = numOr(info.count, 0);
+        var x = left + w * (cell + gap);
+        var y = top + d * (cell + gap);
+        cells += '<rect x="' + x + '" y="' + y + '" width="' + cell + '" height="' + cell +
+          '" rx="2" ry="2" fill="' + colors[level] + '"><title>' + count +
+          ' contributions on ' + isoDate(day) + '</title></rect>';
+      }
     });
+    var dayLabels = ['', 'Mon', '', 'Wed', '', 'Fri', ''].map(function (label, i) {
+      if (!label) return '';
+      return '<text x="0" y="' + (top + i * (cell + gap) + 9) +
+        '" fill="#656d76" font-size="9">' + label + '</text>';
+    }).join('');
+    var legendX = width - 92;
+    var legend = '<text x="' + (legendX - 22) + '" y="' + (height - 2) +
+      '" fill="#656d76" font-size="9">Less</text>';
+    colors.forEach(function (color, i) {
+      legend += '<rect x="' + (legendX + i * 12) + '" y="' + (height - 11) +
+        '" width="10" height="10" rx="2" fill="' + color + '"></rect>';
+    });
+    legend += '<text x="' + (legendX + 64) + '" y="' + (height - 2) +
+      '" fill="#656d76" font-size="9">More</text>';
     el.innerHTML =
       '<svg viewBox="0 0 ' + width + ' ' + height + '" role="img" aria-label="GitHub contributions">' +
-      '<path d="' + area + '" fill="#6B7A99" fill-opacity="0.16"></path>' +
-      '<path d="' + line + '" fill="none" stroke="#6B7A99" stroke-width="2"></path>' +
-      monthLabels +
-      '</svg>';
+      monthLabels + dayLabels + cells + legend + '</svg>';
   }
 
   var scholarEl = document.getElementById('scholar-citation-chart');
   if (scholarEl && scholarEl.getAttribute('data-fallback')) {
     try {
-      renderScholarChart(JSON.parse(scholarEl.getAttribute('data-fallback')));
+      renderScholarWidget(JSON.parse(scholarEl.getAttribute('data-fallback')));
     } catch (err) {
       console.log('Failed to parse scholar chart fallback', err);
     }
@@ -221,7 +265,7 @@
         return resp.json();
       })
       .then(function (payload) {
-        renderGithubActivity(payload.contributions || []);
+        renderGithubHeatmap(payload.contributions || []);
       })
       .catch(function (err) {
         console.log('Failed to load GitHub contributions', err);

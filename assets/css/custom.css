@@ -171,14 +171,14 @@
 .metrics-row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 28px;
   margin: 0 0 1.2em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .metrics-row {
-    grid-template-columns: 1.7fr 0.9fr;
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr) 317px;
+    align-items: start;
   }
 }
 
@@ -186,97 +186,149 @@
   min-width: 0;
 }
 
-.metrics-label,
-a.metrics-label {
+.scholar-card {
+  max-width: 317px;
+}
+
+.metrics-label {
   display: block;
   margin: 0 0 8px;
   color: #656d76;
   font-size: 13px;
   line-height: 1.4;
-  text-decoration: none;
 }
 
-a.metrics-label:hover {
-  color: #24292f;
-  text-decoration: none;
-}
-
-.github-activity {
+.github-heatmap {
   width: 100%;
-  min-height: 132px;
+  overflow-x: auto;
 }
 
-.github-activity svg {
+.github-heatmap svg {
   display: block;
   width: 100%;
-  height: 132px;
+  height: auto;
+  min-width: 520px;
 }
 
-.scholar-chart {
-  position: relative;
-  height: 168px;
-  padding: 16px 4px 22px 28px;
+.scholar-widget {
+  width: 100%;
+  max-width: 317px;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.24;
 }
 
-.scholar-chart-plot {
-  position: relative;
-  height: 100%;
-  border-left: 1px solid #e5e5e5;
+.scholar-widget-title {
+  display: block;
+  margin: 0 0 8px;
+  padding: 8px 8px 12px;
   border-bottom: 1px solid #e5e5e5;
+  color: #222;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.scholar-widget-title:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+.scholar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scholar-table th,
+.scholar-table td {
+  padding: 8px 8px 8px 0;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+}
+
+.scholar-table th {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.scholar-table th:first-child,
+.scholar-table td:first-child {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.scholar-table tbody tr td {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+.scholar-hist {
+  position: relative;
+  height: 196px;
+  margin-top: 20px;
+}
+
+.scholar-hist-plot {
+  position: absolute;
+  top: 8px;
+  right: 28px;
+  bottom: 22px;
+  left: 0;
+}
+
+.scholar-grid-line {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #eee;
 }
 
 .scholar-y {
   position: absolute;
-  left: 0;
+  top: 0;
+  right: 0;
   width: 24px;
   color: #777;
   font-size: 11px;
   line-height: 1;
-  text-align: right;
-  transform: translate(-28px, -50%);
+  transform: translateY(-50%);
 }
 
 .scholar-bars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  height: 100%;
-  padding: 0 8px;
+  padding: 0 12px;
 }
 
 .scholar-bar-wrap {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
   width: 32px;
   height: 100%;
 }
 
 .scholar-bar {
-  position: relative;
   width: 15px;
-  min-height: 3px;
+  min-height: 2px;
   background: #777;
-}
-
-.scholar-bar-value {
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% + 2px);
-  color: #222;
-  font-size: 11px;
-  line-height: 1;
-  transform: translateX(-50%);
 }
 
 .scholar-bar-year {
   position: absolute;
-  bottom: -18px;
+  top: calc(100% + 6px);
   color: #777;
   font-size: 11px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .github-repos {
