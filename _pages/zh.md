@@ -31,7 +31,7 @@ redirect_from:
 - *2024.12*: &nbsp;&nbsp;🎉 我获评 2023 年度**广东大学生年度人物**（全省本硕博共评选 10 人），为同年度**最年轻的获奖者**。
 - *2024.05*: &nbsp;&nbsp;🎉 我作为 100 名本科生国家奖学金获得者代表之一被**《人民日报》**报道（广东省仅 4 名）。
 
-# 📝 发表论文
+# 📝 精选论文
 <span class='anchor' id='-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">

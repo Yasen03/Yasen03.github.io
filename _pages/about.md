@@ -28,7 +28,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
 - *2024.12*: &nbsp;&nbsp;🎉 I was selected as the 2023 **Guangdong Provincial Person of the Year** (one of 10 winners), the **youngest winner** that year.
 - *2024.05*: &nbsp;&nbsp;🎉 I was featured in the **People's Daily** as a representative of 100 undergraduate national scholarship winners, **only 4** of whom were from Guangdong Province. 
 
-# 📝 Publications 
+# 📝 Selected Papers 
 <span class='anchor publications-anchor' id='-publications'></span>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='{{ site.baseurl }}/images/affective.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
