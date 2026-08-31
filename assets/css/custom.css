@@ -168,51 +168,111 @@
   margin: 0.2em 0 0.4em;
 }
 
-.metrics-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  margin: 0 0 1.2em;
-}
-
-@media (min-width: 900px) {
-  .metrics-row {
-    grid-template-columns: minmax(0, 1fr) 317px;
-    align-items: start;
-  }
-}
-
-.metrics-card {
-  min-width: 0;
-}
-
-.scholar-card {
-  max-width: 317px;
-}
-
-.metrics-label {
-  display: block;
-  margin: 0 0 8px;
-  color: #656d76;
-  font-size: 13px;
-  line-height: 1.4;
-}
-
-.github-heatmap {
-  width: 100%;
+.github-chart {
   overflow-x: auto;
+  margin: 0 0 1.25em;
 }
 
-.github-heatmap svg {
+.github-chart img {
   display: block;
   width: 100%;
   height: auto;
-  min-width: 520px;
+}
+
+.github-pins {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .github-pins {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.gh-pin {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 132px;
+  padding: 16px 18px;
+  border: 1px solid #e4e2e2;
+  border-radius: 4.5px;
+  background: #fffefe;
+  color: #434d58;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.gh-pin:hover {
+  text-decoration: none;
+}
+
+.gh-pin-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f80ed;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.gh-pin-title svg {
+  flex: 0 0 16px;
+  color: #4c71f2;
+}
+
+.gh-pin-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gh-pin-desc {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  margin: 10px 0 0;
+  color: #434d58;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.gh-pin-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+  color: #434d58;
+  font-size: 13px;
+}
+
+.gh-pin-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gh-pin-meta svg {
+  color: #434d58;
+}
+
+.gh-pin-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 .scholar-widget {
   width: 100%;
-  max-width: 317px;
+  max-width: 320px;
+  margin: 1.5em 0 0.4em;
   color: #222;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -221,8 +281,8 @@
 
 .scholar-widget-title {
   display: block;
-  margin: 0 0 8px;
-  padding: 8px 8px 12px;
+  margin: 0;
+  padding: 0 8px 12px;
   border-bottom: 1px solid #e5e5e5;
   color: #222;
   font-size: 15px;
@@ -263,143 +323,11 @@
   padding-bottom: 2px;
 }
 
-.scholar-hist {
-  position: relative;
-  height: 196px;
-  margin-top: 20px;
-}
-
-.scholar-hist-plot {
-  position: absolute;
-  top: 8px;
-  right: 28px;
-  bottom: 22px;
-  left: 0;
-}
-
-.scholar-grid-line {
-  position: absolute;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #eee;
-}
-
-.scholar-y {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  color: #777;
-  font-size: 11px;
-  line-height: 1;
-  transform: translateY(-50%);
-}
-
-.scholar-bars {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 0 12px;
-}
-
-.scholar-bar-wrap {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 32px;
-  height: 100%;
-}
-
-.scholar-bar {
-  width: 15px;
-  min-height: 2px;
-  background: #777;
-}
-
-.scholar-bar-year {
-  position: absolute;
-  top: calc(100% + 6px);
-  color: #777;
-  font-size: 11px;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.github-repos {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  align-items: stretch;
-}
-
-@media (min-width: 700px) {
-  .github-repos {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.github-repo {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  text-decoration: none;
-  color: inherit;
-  background: #fff;
-  min-height: 100%;
-}
-
-.github-repo:hover {
-  text-decoration: none;
-  border-color: #afb8c1;
-}
-
-.github-repo-name {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #0969da;
-}
-
-.github-repo-name i {
-  margin-right: 6px;
-  color: #656d76;
-}
-
-.github-repo-desc {
-  flex: 1;
-  margin: 8px 0 16px;
-  color: #656d76;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.github-repo-meta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #656d76;
-  font-size: 12px;
-}
-
-.github-lang,
-.github-stars {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.github-lang-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+.scholar-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
 }
 
 .sidebar .author__urls li {

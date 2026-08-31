@@ -144,107 +144,34 @@
       var counts = years.map(function (year) { return numOr(citesPerYear[year], 0); });
       var max = Math.max.apply(null, counts.concat([1]));
       var mid = Math.round(max / 2);
-      html += '<div class="scholar-hist">';
-      html += '<div class="scholar-y" style="top:8px">' + max + '</div>';
-      html += '<div class="scholar-y" style="top:91px">' + mid + '</div>';
-      html += '<div class="scholar-y" style="top:174px">0</div>';
-      html += '<div class="scholar-hist-plot">';
-      html += '<div class="scholar-grid-line" style="top:0"></div>';
-      html += '<div class="scholar-grid-line" style="top:50%"></div>';
-      html += '<div class="scholar-grid-line" style="top:100%"></div>';
-      html += '<div class="scholar-bars">';
-      years.forEach(function (year, i) {
-        var height = Math.max(2, Math.round((counts[i] / max) * 100));
-        html += '<div class="scholar-bar-wrap" title="' + counts[i] + '">';
-        html += '<div class="scholar-bar" style="height:' + height + '%"></div>';
-        html += '<div class="scholar-bar-year">' + escapeHtml(year) + '</div>';
-        html += '</div>';
+      var w = 300;
+      var h = 190;
+      var plotL = 4;
+      var plotR = 272;
+      var plotT = 8;
+      var plotB = 168;
+      var plotW = plotR - plotL;
+      var plotH = plotB - plotT;
+      var barW = 15;
+      var step = plotW / years.length;
+      html += '<svg class="scholar-svg" viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="Citations per year">';
+      [0, 0.5, 1].forEach(function (t) {
+        var y = plotT + plotH * t;
+        html += '<line x1="' + plotL + '" x2="' + plotR + '" y1="' + y + '" y2="' + y + '" stroke="#eeeeee"></line>';
       });
-      html += '</div></div></div>';
+      html += '<text x="278" y="' + (plotT + 3) + '" fill="#777" font-size="11">' + max + '</text>';
+      html += '<text x="278" y="' + (plotT + plotH / 2 + 3) + '" fill="#777" font-size="11">' + mid + '</text>';
+      html += '<text x="278" y="' + (plotB + 3) + '" fill="#777" font-size="11">0</text>';
+      years.forEach(function (year, i) {
+        var barH = Math.max(2, (counts[i] / max) * plotH);
+        var x = plotL + step * i + (step - barW) / 2;
+        var y = plotB - barH;
+        html += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + barW + '" height="' + barH.toFixed(1) + '" fill="#777"><title>' + counts[i] + '</title></rect>';
+        html += '<text x="' + (x + barW / 2).toFixed(1) + '" y="184" text-anchor="middle" fill="#777" font-size="11">' + escapeHtml(year) + '</text>';
+      });
+      html += '</svg>';
     }
     el.innerHTML = html;
-  }
-
-  function isoDate(date) {
-    return date.getFullYear() + '-' +
-      String(date.getMonth() + 1).padStart(2, '0') + '-' +
-      String(date.getDate()).padStart(2, '0');
-  }
-
-  function renderGithubHeatmap(days) {
-    var el = document.getElementById('github-activity-chart');
-    if (!el) return;
-    var byDate = {};
-    (days || []).forEach(function (day) {
-      if (day && day.date) byDate[day.date] = day;
-    });
-    var today = new Date();
-    today.setHours(0, 0, 0, 0);
-    var start = new Date(today);
-    start.setDate(start.getDate() - 52 * 7);
-    start.setDate(start.getDate() - start.getDay());
-
-    var cell = 11;
-    var gap = 3;
-    var left = 28;
-    var top = 16;
-    var weeks = [];
-    var cursor = new Date(start);
-    while (cursor <= today) {
-      weeks.push(new Date(cursor));
-      cursor.setDate(cursor.getDate() + 7);
-    }
-    if (!weeks.length) {
-      var card = document.getElementById('github-activity-card');
-      if (card) card.style.display = 'none';
-      return;
-    }
-    var colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
-    var width = left + weeks.length * (cell + gap) - gap;
-    var height = top + 7 * (cell + gap) - gap + 18;
-    var monthLabels = '';
-    var lastMonth = -1;
-    var cells = '';
-    weeks.forEach(function (weekStart, w) {
-      if (weekStart.getMonth() !== lastMonth) {
-        lastMonth = weekStart.getMonth();
-        var labelX = left + w * (cell + gap);
-        if (labelX < width - 24) {
-          monthLabels += '<text x="' + labelX + '" y="11" fill="#656d76" font-size="10">' +
-            escapeHtml(weekStart.toLocaleString('en', { month: 'short' })) + '</text>';
-        }
-      }
-      for (var d = 0; d < 7; d++) {
-        var day = new Date(weekStart);
-        day.setDate(weekStart.getDate() + d);
-        if (day > today) continue;
-        var info = byDate[isoDate(day)] || {};
-        var level = Math.max(0, Math.min(4, numOr(info.level, 0)));
-        var count = numOr(info.count, 0);
-        var x = left + w * (cell + gap);
-        var y = top + d * (cell + gap);
-        cells += '<rect x="' + x + '" y="' + y + '" width="' + cell + '" height="' + cell +
-          '" rx="2" ry="2" fill="' + colors[level] + '"><title>' + count +
-          ' contributions on ' + isoDate(day) + '</title></rect>';
-      }
-    });
-    var dayLabels = ['', 'Mon', '', 'Wed', '', 'Fri', ''].map(function (label, i) {
-      if (!label) return '';
-      return '<text x="0" y="' + (top + i * (cell + gap) + 9) +
-        '" fill="#656d76" font-size="9">' + label + '</text>';
-    }).join('');
-    var legendX = width - 92;
-    var legend = '<text x="' + (legendX - 22) + '" y="' + (height - 2) +
-      '" fill="#656d76" font-size="9">Less</text>';
-    colors.forEach(function (color, i) {
-      legend += '<rect x="' + (legendX + i * 12) + '" y="' + (height - 11) +
-        '" width="10" height="10" rx="2" fill="' + color + '"></rect>';
-    });
-    legend += '<text x="' + (legendX + 64) + '" y="' + (height - 2) +
-      '" fill="#656d76" font-size="9">More</text>';
-    el.innerHTML =
-      '<svg viewBox="0 0 ' + width + ' ' + height + '" role="img" aria-label="GitHub contributions">' +
-      monthLabels + dayLabels + cells + legend + '</svg>';
   }
 
   var scholarEl = document.getElementById('scholar-citation-chart');
@@ -256,22 +183,23 @@
     }
   }
 
-  var githubEl = document.getElementById('github-activity-chart');
-  var githubUser = githubEl && githubEl.getAttribute('data-username');
-  if (githubUser) {
-    fetch('https://github-contributions-api.jogruber.de/v4/' + githubUser)
+  document.querySelectorAll('[data-gh-repo]').forEach(function (card) {
+    var repo = card.getAttribute('data-gh-repo');
+    if (!repo) return;
+    fetch('https://api.github.com/repos/' + repo)
       .then(function (resp) {
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         return resp.json();
       })
-      .then(function (payload) {
-        renderGithubHeatmap(payload.contributions || []);
+      .then(function (repoData) {
+        var stars = card.querySelector('.gh-pin-stars');
+        var forks = card.querySelector('.gh-pin-forks');
+        if (stars) stars.textContent = repoData.stargazers_count;
+        if (forks) forks.textContent = repoData.forks_count;
       })
       .catch(function (err) {
-        console.log('Failed to load GitHub contributions', err);
-        var card = document.getElementById('github-activity-card');
-        if (card) card.style.display = 'none';
+        console.log('Failed to load GitHub repo card for ' + repo, err);
       });
-  }
+  });
 })();
 </script>

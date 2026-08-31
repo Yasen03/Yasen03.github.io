@@ -1,39 +1,53 @@
 {% assign gh_lang = include.lang | default: "en" %}
 <div class="github-section">
-  <div class="metrics-row">
-    <div class="metrics-card" id="github-activity-card">
-      <div class="metrics-label">{% if gh_lang == "zh" %}GitHub 贡献{% else %}GitHub contributions{% endif %}</div>
-      <div id="github-activity-chart" class="github-heatmap" data-username="Yasen03"></div>
-    </div>
-    <div class="metrics-card scholar-card" id="scholar-citation-card">
-      <div id="scholar-citation-chart" class="scholar-widget" data-lang="{{ gh_lang }}" data-fallback='{"citedby":57,"citedby_5y":57,"hindex":4,"hindex_5y":4,"i10index":2,"i10index_5y":2,"since_year":2021,"cites_per_year":{"2024":1,"2025":28,"2026":27}}'></div>
-    </div>
+  <div class="github-chart">
+    <img src="https://ghchart.rshah.org/40c463/Yasen03" alt="GitHub contribution graph" onerror="this.parentElement.style.display='none'">
   </div>
 
-  <div class="github-repos">
-    <a class="github-repo" href="https://github.com/Yasen03/awesome-affective-computing">
-      <div class="github-repo-name"><i class="fas fa-book" aria-hidden="true"></i> awesome-affective-computing</div>
+  <div class="github-pins">
+    <a class="gh-pin" href="https://github.com/Yasen03/awesome-affective-computing" data-gh-repo="Yasen03/awesome-affective-computing">
+      <div class="gh-pin-title">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+        <span>awesome-affective-computing</span>
+      </div>
       {% if gh_lang == "zh" %}
-      <p class="github-repo-desc">Affective Computing & Emotion AI 精选清单，涵盖论文、数据集与工具包。</p>
+      <p class="gh-pin-desc">Affective Computing & Emotion AI 精选清单，涵盖论文、数据集与工具包。</p>
       {% else %}
-      <p class="github-repo-desc">A curated list of Affective Computing & Emotion AI: papers, datasets, and toolkits.</p>
+      <p class="gh-pin-desc">A curated list of Affective Computing & Emotion AI: papers, datasets, and toolkits.</p>
       {% endif %}
-      <div class="github-repo-meta">
-        <span class="github-lang"><i class="github-lang-dot" style="background:#000000"></i> Markdown</span>
-        <span class="github-stars"><i class="far fa-star" aria-hidden="true"></i> 38</span>
+      <div class="gh-pin-meta">
+        <span><i class="gh-pin-dot" style="background:#000000"></i> Markdown</span>
+        <span>
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+          <span class="gh-pin-stars">38</span>
+        </span>
+        <span>
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zm-3 8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+          <span class="gh-pin-forks">0</span>
+        </span>
       </div>
     </a>
 
-    <a class="github-repo" href="https://github.com/GPNU-AIoT/DARE">
-      <div class="github-repo-name"><i class="fas fa-book" aria-hidden="true"></i> DARE</div>
+    <a class="gh-pin" href="https://github.com/GPNU-AIoT/DARE" data-gh-repo="GPNU-AIoT/DARE">
+      <div class="gh-pin-title">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+        <span>GPNU-AIoT/DARE</span>
+      </div>
       {% if gh_lang == "zh" %}
-      <p class="github-repo-desc">开放词汇多模态情感识别的多智能体对抗辩论框架。</p>
+      <p class="gh-pin-desc">开放词汇多模态情感识别的多智能体对抗辩论框架。</p>
       {% else %}
-      <p class="github-repo-desc">A multi-agent adversarial debate framework for open-vocabulary multimodal emotion recognition.</p>
+      <p class="gh-pin-desc">A multi-agent adversarial debate framework for open-vocabulary multimodal emotion recognition.</p>
       {% endif %}
-      <div class="github-repo-meta">
-        <span class="github-lang"><i class="github-lang-dot" style="background:#3572A5"></i> Python</span>
-        <span class="github-stars"><i class="far fa-star" aria-hidden="true"></i> 1</span>
+      <div class="gh-pin-meta">
+        <span><i class="gh-pin-dot" style="background:#3572A5"></i> Python</span>
+        <span>
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+          <span class="gh-pin-stars">1</span>
+        </span>
+        <span>
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zm-3 8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+          <span class="gh-pin-forks">0</span>
+        </span>
       </div>
     </a>
   </div>
