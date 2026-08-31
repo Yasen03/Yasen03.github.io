@@ -66,6 +66,10 @@
           }
         });
       }
+
+      if (data.cites_per_year) {
+        renderScholarChart(data.cites_per_year);
+      }
     })
     .catch(function (err) {
       console.log("Failed to load Google Scholar stats from " + gsDataUrl);
@@ -98,5 +102,132 @@
         console.log("Failed to load GitHub stars for " + repo, err);
       });
   });
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderScholarChart(citesPerYear) {
+    var el = document.getElementById('scholar-citation-chart');
+    if (!el || !citesPerYear) return;
+    var years = Object.keys(citesPerYear).sort();
+    if (!years.length) {
+      var card = document.getElementById('scholar-citation-card');
+      if (card) card.style.display = 'none';
+      return;
+    }
+    var counts = years.map(function (year) { return parseInt(citesPerYear[year], 10) || 0; });
+    var max = Math.max.apply(null, counts.concat([1]));
+    var mid = Math.round(max / 2);
+    var html = '<div class="scholar-chart-plot">';
+    html += '<div class="scholar-y" style="top:0">' + max + '</div>';
+    html += '<div class="scholar-y" style="top:50%">' + mid + '</div>';
+    html += '<div class="scholar-y" style="top:100%">0</div>';
+    html += '<div class="scholar-bars">';
+    years.forEach(function (year, i) {
+      var count = counts[i];
+      var height = Math.max(3, Math.round((count / max) * 86));
+      html += '<div class="scholar-bar-wrap">';
+      html += '<div class="scholar-bar" style="height:' + height + '%"><span class="scholar-bar-value">' + count + '</span></div>';
+      html += '<div class="scholar-bar-year">' + escapeHtml(year) + '</div>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+    el.innerHTML = html;
+  }
+
+  function renderGithubActivity(days) {
+    var el = document.getElementById('github-activity-chart');
+    if (!el) return;
+    var weeks = {};
+    days.forEach(function (day) {
+      if (!day || !day.date) return;
+      var date = new Date(day.date + 'T00:00:00');
+      if (isNaN(date.getTime())) return;
+      var weekday = (date.getDay() + 6) % 7;
+      date.setDate(date.getDate() - weekday);
+      var key = date.getFullYear() + '-' +
+        String(date.getMonth() + 1).padStart(2, '0') + '-' +
+        String(date.getDate()).padStart(2, '0');
+      weeks[key] = (weeks[key] || 0) + (parseInt(day.count, 10) || 0);
+    });
+    var keys = Object.keys(weeks).sort().slice(-52);
+    if (!keys.length) {
+      var card = document.getElementById('github-activity-card');
+      if (card) card.style.display = 'none';
+      return;
+    }
+    var values = keys.map(function (key) { return weeks[key]; });
+    var max = Math.max.apply(null, values.concat([1]));
+    var width = 600;
+    var height = 132;
+    var padL = 8;
+    var padR = 8;
+    var padT = 10;
+    var padB = 22;
+    var innerW = width - padL - padR;
+    var innerH = height - padT - padB;
+    var points = values.map(function (value, i) {
+      var x = padL + (keys.length === 1 ? innerW / 2 : (i / (keys.length - 1)) * innerW);
+      var y = padT + innerH - (value / max) * innerH;
+      return [x, y];
+    });
+    var line = points.map(function (p, i) {
+      return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1);
+    }).join(' ');
+    var area = line +
+      ' L' + points[points.length - 1][0].toFixed(1) + ' ' + (padT + innerH) +
+      ' L' + points[0][0].toFixed(1) + ' ' + (padT + innerH) + ' Z';
+    var monthLabels = '';
+    var lastMonth = '';
+    keys.forEach(function (key, i) {
+      var month = key.slice(0, 7);
+      if (month === lastMonth) return;
+      lastMonth = month;
+      var date = new Date(key + 'T00:00:00');
+      var label = date.toLocaleString('en', { month: 'short' });
+      var x = points[i][0];
+      if (x > width - 28) return;
+      monthLabels += '<text x="' + x.toFixed(1) + '" y="' + (height - 6) +
+        '" fill="#656d76" font-size="10">' + escapeHtml(label) + '</text>';
+    });
+    el.innerHTML =
+      '<svg viewBox="0 0 ' + width + ' ' + height + '" role="img" aria-label="GitHub contributions">' +
+      '<path d="' + area + '" fill="#6B7A99" fill-opacity="0.16"></path>' +
+      '<path d="' + line + '" fill="none" stroke="#6B7A99" stroke-width="2"></path>' +
+      monthLabels +
+      '</svg>';
+  }
+
+  var scholarEl = document.getElementById('scholar-citation-chart');
+  if (scholarEl && scholarEl.getAttribute('data-fallback')) {
+    try {
+      renderScholarChart(JSON.parse(scholarEl.getAttribute('data-fallback')));
+    } catch (err) {
+      console.log('Failed to parse scholar chart fallback', err);
+    }
+  }
+
+  var githubEl = document.getElementById('github-activity-chart');
+  var githubUser = githubEl && githubEl.getAttribute('data-username');
+  if (githubUser) {
+    fetch('https://github-contributions-api.jogruber.de/v4/' + githubUser)
+      .then(function (resp) {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+      })
+      .then(function (payload) {
+        renderGithubActivity(payload.contributions || []);
+      })
+      .catch(function (err) {
+        console.log('Failed to load GitHub contributions', err);
+        var card = document.getElementById('github-activity-card');
+        if (card) card.style.display = 'none';
+      });
+  }
 })();
 </script>

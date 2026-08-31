@@ -66,6 +66,57 @@ GS_DATA_PATH = os.path.join(DATA_PATH, "gs_data.json")
 SHIELDSIO_PATH = os.path.join(DATA_PATH, "gs_data_shieldsio.json")
 
 
+def _parse_cites_per_year(payload) -> dict:
+    """Pull {year: count} from scholarly / Scrapingdog author payloads."""
+    if not isinstance(payload, dict):
+        return {}
+    out = {}
+
+    def _ingest_map(raw):
+        if not isinstance(raw, dict):
+            return
+        for key, value in raw.items():
+            try:
+                out[str(int(key))] = int(str(value).replace(",", ""))
+            except (TypeError, ValueError):
+                continue
+
+    def _ingest_graph(graph):
+        if not isinstance(graph, list):
+            return
+        for item in graph:
+            if not isinstance(item, dict):
+                continue
+            year = item.get("year") or item.get("label")
+            cites = item.get("citations")
+            if cites is None:
+                cites = item.get("value", item.get("cited"))
+            try:
+                out[str(int(year))] = int(str(cites).replace(",", ""))
+            except (TypeError, ValueError):
+                continue
+
+    _ingest_map(payload.get("cites_per_year"))
+    for key in ("graph", "cited_by_graph", "citation_graph"):
+        _ingest_graph(payload.get(key))
+
+    cited_by = payload.get("cited_by")
+    if isinstance(cited_by, dict):
+        _ingest_map(cited_by.get("cites_per_year"))
+        _ingest_graph(cited_by.get("graph"))
+        _ingest_graph(cited_by.get("table"))
+
+    author = payload.get("author")
+    if isinstance(author, dict):
+        _ingest_map(author.get("cites_per_year"))
+        author_cited = author.get("cited_by")
+        if isinstance(author_cited, dict):
+            _ingest_map(author_cited.get("cites_per_year"))
+            _ingest_graph(author_cited.get("graph"))
+
+    return out
+
+
 def _parse_cited_by(value) -> int:
     """Extract an integer citation count from Scrapingdog's cited_by shapes
     (e.g. {"total": "Cited by 3031"} or {"value": "3031"} or a raw number)."""
@@ -75,11 +126,12 @@ def _parse_cited_by(value) -> int:
     return int(digits) if digits else 0
 
 
-def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
+def fetch_via_scrapingdog() -> tuple[str, int, dict, dict] | None:
     """Fetch the author profile via Scrapingdog's Google Scholar Author API.
 
-    Returns (name, citedby, publications) or None when no API key is configured.
-    citation_id values already have the "author_id:pub_id" format we store.
+    Returns (name, citedby, publications, cites_per_year) or None when no API
+    key is configured. citation_id values already have the "author_id:pub_id"
+    format we store.
     """
     api_key = os.environ.get("SCRAPINGDOG_API_KEY", "")
     if not api_key:
@@ -157,10 +209,10 @@ def fetch_via_scrapingdog() -> tuple[str, int, dict] | None:
         citedby = sum(p["num_citations"] for p in publications.values())
 
     name = data.get("author", {}).get("name", "Unknown")
-    return name, citedby, publications
+    return name, citedby, publications, _parse_cites_per_year(data)
 
 
-def fetch_via_scholarly() -> tuple[str, int, dict]:
+def fetch_via_scholarly() -> tuple[str, int, dict, dict]:
     """Fallback: direct scholarly scrape (unreliable, CAPTCHA-prone)."""
     # scholarly >= 1.x renamed search_author_by_id -> search_author_id.
     search_author = getattr(scholarly, "search_author_id", None)
@@ -169,7 +221,7 @@ def fetch_via_scholarly() -> tuple[str, int, dict]:
     author = search_author(AUTHOR_ID)
     if author is None:
         sys.exit("Could not find author with id " + AUTHOR_ID)
-    author = scholarly.fill(author, sections=["basics", "publications"])
+    author = scholarly.fill(author, sections=["basics", "indices", "publications"])
 
     name = author.get("name", "Unknown")
     citedby = int(author.get("citedby", 0))
@@ -182,7 +234,7 @@ def fetch_via_scholarly() -> tuple[str, int, dict]:
             "num_citations": int(pub.get("num_citations", 0)),
             "title": pub.get("bib", {}).get("title", ""),
         }
-    return name, citedby, publications
+    return name, citedby, publications, _parse_cites_per_year(author)
 
 
 def main() -> None:
@@ -190,11 +242,13 @@ def main() -> None:
         fetched = fetch_via_scrapingdog()
         if fetched is None:
             sys.exit("Scrapingdog fetch failed (empty response)")
-        name, citedby, publications = fetched
+        name, citedby, publications, cites_per_year = fetched
         print(f"Fetched via Scrapingdog: {name}: {citedby} total citations, {len(publications)} publications")
     else:
-        name, citedby, publications = fetch_via_scholarly()
+        name, citedby, publications, cites_per_year = fetch_via_scholarly()
         print(f"Fetched via scholarly: {name}: {citedby} total citations, {len(publications)} publications")
+    if not cites_per_year:
+        cites_per_year = {}
 
     # Keep manually-maintained entries (papers not yet indexed on Scholar).
     old = {}
@@ -205,6 +259,10 @@ def main() -> None:
             if key.startswith("manual:") and key not in publications:
                 publications[key] = value
                 print(f"Preserved manual entry: {key}")
+        if not cites_per_year:
+            cites_per_year = old.get("cites_per_year") or {}
+            if cites_per_year:
+                print("Kept previous cites_per_year (graph missing from this fetch)")
 
     # Apply manual overrides (e.g. merged/duplicate Scholar rows summed by hand).
     for key, count in CITATION_OVERRIDES.items():
@@ -254,6 +312,7 @@ def main() -> None:
         "name": name,
         "citedby": citedby,
         "updated": date.today().isoformat(),
+        "cites_per_year": cites_per_year,
         "publications": publications,
     }
     with open(GS_DATA_PATH, "w", encoding="utf-8") as f:

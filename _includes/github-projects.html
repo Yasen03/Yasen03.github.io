@@ -1,7 +1,14 @@
 {% assign gh_lang = include.lang | default: "en" %}
 <div class="github-section">
-  <div class="github-chart">
-    <img src="https://ghchart.rshah.org/6B7A99/Yasen03" alt="GitHub contribution graph" onerror="this.parentElement.style.display='none'">
+  <div class="metrics-row">
+    <div class="metrics-card" id="github-activity-card">
+      <div class="metrics-label">{% if gh_lang == "zh" %}GitHub 贡献{% else %}GitHub contributions{% endif %}</div>
+      <div id="github-activity-chart" class="github-activity" data-username="Yasen03"></div>
+    </div>
+    <div class="metrics-card" id="scholar-citation-card">
+      <a class="metrics-label" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ">{% if gh_lang == "zh" %}Google Scholar 引用{% else %}Google Scholar citations{% endif %}</a>
+      <div id="scholar-citation-chart" class="scholar-chart" data-fallback='{"2024":1,"2025":28,"2026":27}'></div>
+    </div>
   </div>
 
   <div class="github-repos">

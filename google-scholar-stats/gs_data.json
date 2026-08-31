@@ -1,7 +1,12 @@
 {
   "name": "Yuesheng Huang",
-  "citedby": 51,
-  "updated": "2026-08-24",
+  "citedby": 57,
+  "updated": "2026-08-31",
+  "cites_per_year": {
+    "2024": 1,
+    "2025": 28,
+    "2026": 27
+  },
   "publications": {
     "edyJPQQAAAAJ:d1gkVwhDpl0C": {
       "num_citations": 22,
