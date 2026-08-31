@@ -1,19 +1,15 @@
 {% assign sc_lang = include.lang | default: page.lang | default: "en" %}
 <div id="scholar-citation-chart" class="scholar-stats" data-lang="{{ sc_lang }}">
-  <table class="scholar-table">
-    <tbody>
-      <tr>
-        <th>{% if sc_lang == "zh" %}引用{% else %}Citations{% endif %}</th>
-        <td class="js-citedby">57</td>
-      </tr>
-      <tr>
-        <th>{% if sc_lang == "zh" %}h 指数{% else %}h-index{% endif %}</th>
-        <td class="js-hindex">4</td>
-      </tr>
-      <tr>
-        <th>{% if sc_lang == "zh" %}i10 指数{% else %}i10-index{% endif %}</th>
-        <td class="js-i10">2</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="scholar-metric">
+    <span class="scholar-metric-num js-citedby">57</span>
+    <span class="scholar-metric-label">{% if sc_lang == "zh" %}引用{% else %}Citations{% endif %}</span>
+  </div>
+  <div class="scholar-metric">
+    <span class="scholar-metric-num js-hindex">4</span>
+    <span class="scholar-metric-label">h-index</span>
+  </div>
+  <div class="scholar-metric">
+    <span class="scholar-metric-num js-i10">2</span>
+    <span class="scholar-metric-label">i10</span>
+  </div>
 </div>

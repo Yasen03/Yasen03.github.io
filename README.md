@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Yasen03/Yasen03.github.io/main/images/android-chrome-512x512.png" width="120" alt="hys."/>
+  <img src="https://raw.githubusercontent.com/Yasen03/Yasen03.github.io/main/images/avatar.jpg" width="120" alt="hys."/>
 </p>
 
 <h1 align="center">hys. · Yuesheng Huang</h1>

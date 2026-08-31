@@ -277,41 +277,38 @@
 }
 
 .scholar-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
   flex: 1 1 100%;
   width: 100%;
   max-width: 220px;
-  margin: 0.85em 0 0.35em;
+  margin: 0.9em 0 0.45em;
 }
 
-.scholar-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85em;
-  line-height: 1.4;
+.scholar-metric {
+  padding: 8px 4px 7px;
+  border-radius: 8px;
+  background: #f4f7f8;
+  text-align: center;
 }
 
-.scholar-table th,
-.scholar-table td {
-  padding: 5px 0;
-  border-top: 1px solid #eee;
-  font-weight: 400;
-  vertical-align: baseline;
-}
-
-.scholar-table tr:first-child th,
-.scholar-table tr:first-child td {
-  border-top: 0;
-}
-
-.scholar-table th {
-  color: #656d76;
-  text-align: left;
-}
-
-.scholar-table td {
-  color: #24292f;
-  text-align: right;
+.scholar-metric-num {
+  display: block;
+  color: #3a7081;
+  font-size: 1.2em;
+  font-weight: 650;
   font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+}
+
+.scholar-metric-label {
+  display: block;
+  margin-top: 3px;
+  color: #6b7a80;
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
 }
 
 .sidebar .author__urls li {
