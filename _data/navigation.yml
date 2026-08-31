@@ -6,7 +6,7 @@ main:
   - title: "News"
     url: "/#-news"
 
-      - title: "Selected Papers"
+  - title: "Selected Papers"
     url: "/#-publications"
 
   - title: "GitHub"
@@ -28,7 +28,7 @@ main_zh:
   - title: "新闻动态"
     url: "/zh/#-news"
 
-      - title: "精选论文"
+  - title: "精选论文"
     url: "/zh/#-publications"
 
   - title: "GitHub"
