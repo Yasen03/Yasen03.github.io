@@ -9,6 +9,9 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
+  - title: "GitHub"
+    url: "/#-github"
+
   - title: "Competition Awards"
     url: "/#-honors-and-awards"
 
@@ -27,6 +30,9 @@ main_zh:
 
   - title: "学术成果"
     url: "/zh/#-publications"
+
+  - title: "GitHub"
+    url: "/zh/#-github"
 
   - title: "竞赛获奖"
     url: "/zh/#-honors-and-awards"

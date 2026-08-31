@@ -36,7 +36,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
   
 **Yuesheng Huang**, Jinming Liu, Jiajia Chen, Yihang Lin, Yanmei Chen<sup>*</sup>, Jianwei Dong
 
-<div class="paper-meta">ACM MM 2025（Oral）</div>
+<div class="paper-meta">ACM MM 2025（Oral Presentation）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3695952.3731175"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ"><img id="citation-badge-affective-cot" src="https://img.shields.io/badge/Citations-3-blue?style=social&logo=google-scholar" class="paper_citations" data-paper-id="edyJPQQAAAAJ:Y0pCki6q_DkC" alt="Scholar Citations"></a>
@@ -50,7 +50,7 @@ Contact me at: [hys26@mails.tsinghua.edu.cn](mailto:hys26@mails.tsinghua.edu.cn)
   
 **Yuesheng Huang**, Meiqi Feng, Zhenming He, Yueyuan Peng, Jiawen Li<sup>*</sup>
 
-<div class="paper-meta">ACM MM 2025 MRAC Workshop（Oral）</div>
+<div class="paper-meta">ACM MM 2025 MRAC Workshop（Oral Presentation）</div>
 <div class="paper-links">
   <a class="paper-badge" href="https://dl.acm.org/doi/10.1145/3706591.3706600"><img src="https://img.shields.io/badge/Paper-ACM%20DL-0071C5" alt="ACM DL"></a>
   <a class="paper-badge" href="https://github.com/GPNU-AIoT/DARE"><img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars"></a>
@@ -79,6 +79,10 @@ Bowei Liu<sup>*</sup>, Zheng Lu<sup>*</sup>, Yuhan Bian<sup>*</sup>, Xinchen Zha
 - **An Improved Hybrid CNN-LSTM-Attention Model with Kepler Optimization Algorithm for Wind Speed Prediction.** **Yuesheng Huang**, Jiawen Li\*, Yushan Li, Routing Lin, Jingru Wu, Leijun Wang, Rongjun Chen. *Engineering Letters*, 2024. [[Paper](https://www.engineeringletters.com/issues_v32/issue_10/EL_32_10_14.pdf)] <a class="paper-badge" href="https://github.com/Yasen03/KOA-CNN-LSTM-Attention"><img src="https://img.shields.io/github/stars/Yasen03/KOA-CNN-LSTM-Attention?style=social" alt="GitHub Stars"></a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:2osOgNQ5qMEC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:2osOgNQ5qMEC" src="https://img.shields.io/badge/Citations-14-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 - **Prism-OBI: a novel framework for oracle bone inscription recognition via visual perception and feature decoupling.** Jiawen Li, Jiarui He, Jingru Wu, Jinming Liu, Weibin Lin, **Yuesheng Huang**, Leijun Wang, Jujian Lv, Xianxian Zeng, Rongjun Chen. *npj Heritage Science*, 2026. <a class="paper-badge" href="https://www.nature.com/articles/s40494-026-02493-9"><img src="https://img.shields.io/badge/Paper-Nature-000000" alt="Nature"></a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=edyJPQQAAAAJ&citation_for_view=edyJPQQAAAAJ:eQOLeE2rZwMC"><img class="paper_citations" data-paper-id="edyJPQQAAAAJ:eQOLeE2rZwMC" src="https://img.shields.io/badge/Citations-2-blue?style=social&logo=google-scholar" alt="Scholar Citations"></a>
 {% endcomment %}
+
+# 💻 GitHub
+<span class='anchor' id='-github'></span>
+{% include github-projects.html lang='en' %}
 
 # 🏆 Competition Awards
 <span class='anchor' id='-honors-and-awards'></span>

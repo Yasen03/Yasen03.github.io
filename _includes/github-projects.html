@@ -1,0 +1,38 @@
+{% assign gh_lang = include.lang | default: "en" %}
+<div class="github-section">
+  {% if gh_lang == "zh" %}
+  <p class="github-lead">精选公开项目。下图为近一年的 GitHub 贡献。<a href="https://github.com/Yasen03">@Yasen03</a></p>
+  {% else %}
+  <p class="github-lead">Selected public projects. The chart below shows GitHub contributions over the past year. <a href="https://github.com/Yasen03">@Yasen03</a></p>
+  {% endif %}
+
+  <div class="github-chart">
+    <img src="https://ghchart.rshah.org/6B7A99/Yasen03" alt="GitHub contribution graph" onerror="this.parentElement.style.display='none'">
+  </div>
+
+  <div class="github-repos">
+    <a class="github-repo" href="https://github.com/Yasen03/awesome-affective-computing">
+      <div class="github-repo-name"><i class="fab fa-github" aria-hidden="true"></i> awesome-affective-computing</div>
+      {% if gh_lang == "zh" %}
+      <div class="github-repo-desc">Affective Computing & Emotion AI 精选清单：论文、数据集与工具包。</div>
+      {% else %}
+      <div class="github-repo-desc">A curated list of Affective Computing & Emotion AI: papers, datasets, and toolkits.</div>
+      {% endif %}
+      <div class="github-repo-meta">
+        <img src="https://img.shields.io/github/stars/Yasen03/awesome-affective-computing?style=social" alt="GitHub Stars">
+      </div>
+    </a>
+
+    <a class="github-repo" href="https://github.com/GPNU-AIoT/DARE">
+      <div class="github-repo-name"><i class="fab fa-github" aria-hidden="true"></i> DARE</div>
+      {% if gh_lang == "zh" %}
+      <div class="github-repo-desc">开放词汇多模态情感识别的多智能体对抗辩论框架。</div>
+      {% else %}
+      <div class="github-repo-desc">A multi-agent adversarial debate framework for open-vocabulary multimodal emotion recognition.</div>
+      {% endif %}
+      <div class="github-repo-meta">
+        <img src="https://img.shields.io/github/stars/GPNU-AIoT/DARE?style=social" alt="GitHub Stars">
+      </div>
+    </a>
+  </div>
+</div>

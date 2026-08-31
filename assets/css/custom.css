@@ -164,6 +164,76 @@
   font-size: 0.9em;
 }
 
+.github-section {
+  margin: 0.4em 0 1.4em;
+}
+
+.github-lead {
+  color: #555;
+  margin: 0 0 0.8em;
+}
+
+.github-chart {
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+
+.github-chart img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+
+.github-repos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .github-repos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.github-repo {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+}
+
+.github-repo:hover {
+  border-color: #cfd6df;
+  box-shadow: 0 2px 10px rgba(95, 111, 138, 0.08);
+}
+
+.github-repo-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.github-repo-name i {
+  margin-right: 6px;
+  color: #5F6F8A;
+}
+
+.github-repo-desc {
+  margin: 0.45em 0 0.7em;
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.45;
+}
+
+.github-repo-meta img {
+  height: 20px;
+  vertical-align: middle;
+}
+
 .sidebar .author__urls li {
   padding-left: 0;
 }
