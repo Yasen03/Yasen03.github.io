@@ -123,9 +123,9 @@
     var zh = el.getAttribute('data-lang') === 'zh';
     var sinceYear = numOr(data.since_year, new Date().getFullYear() - 5);
     var html = '';
-    html += '<a class="scholar-widget-title" href="https://scholar.google.com/citations?user=edyJPQQAAAAJ">';
+    html += '<div class="scholar-widget-title">';
     html += zh ? '被引用次数' : 'Cited by';
-    html += '</a>';
+    html += '</div>';
     html += '<table class="scholar-table"><thead><tr><th></th><th>';
     html += zh ? '总计' : 'All';
     html += '</th><th>';
